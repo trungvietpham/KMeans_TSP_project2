@@ -4,6 +4,8 @@ from scipy import rand
 from scipy.spatial import distance
 
 import sys
+
+from torch import zero_
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 from SupportClass import Cluster
 
@@ -32,7 +34,7 @@ class KMeans:
             clusters_list.append([rand_city_list[i].x, rand_city_list[i].y])
         return clusters_list
 
-    def assign_labels(self, optimizer, city_list, cluster_list, alpha, penalty_coef):
+    def assign_labels(self, optimizer, city_list, cluster_list, alpha, penalty_coef, zero_penalty):
         '''
         Params: 
         optimizer: hàm tối ưu (tự build) - cần trả về dạng 1 mảng city_array hàng, centers cột
@@ -40,7 +42,7 @@ class KMeans:
         cluster_list: list class Cluster
         Return: Vector cột mà gồm id của từng điểm dữ liệu thuộc về
         '''
-        (_, labels) = optimizer(city_list, cluster_list, alpha, penalty_coef)
+        (_, labels) = optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty)
         # return index of the closest center
         return labels
 
@@ -86,7 +88,7 @@ class KMeans:
         return diff<epsilon
 
 
-    def fit(self, optimizer, city_list, capacity_array, epsilon = 1e-6, alpha = 100, penalty_coef = 300):
+    def fit(self, optimizer, city_list, capacity_array, epsilon = 1e-6, alpha = 100, penalty_coef = 300, zeros_penalty = 100000):
         '''
         Hàm fit để thực hiện quá trình học của thuật toán.
 
@@ -117,7 +119,7 @@ class KMeans:
         it = 0 
         while True:
             print('Loop thread')
-            labels.append(self.assign_labels(optimizer, city_list, cluster_list, alpha, penalty_coef))
+            labels.append(self.assign_labels(optimizer, city_list, cluster_list, alpha, penalty_coef, zeros_penalty))
             print('Assign done')
             new_centers = self.update_centers(city_list, labels[-1])
             print('Update done')

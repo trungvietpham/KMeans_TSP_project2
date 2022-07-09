@@ -14,16 +14,28 @@ def manhattan_distance(p1, p2):
     '''
     return np.sum(np.abs(np.array(p1) - np.array(p2)))
 
-def optimizer(city_list, cluster_list, alpha, penalty_coef):
+def optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty_coef):
     '''
+    Dạng hàm: L1(city_i, center_j) - alpha*(chuyên chở - trọng số)
+
     Params:
-    city_list: list class City
-    cluster_list: list class Cluster
+
+    `city_list`: list class City
+
+    `cluster_list`: list class Cluster
+
+    `alpha`: trọng số của khối lượng trong công thức hàm tối ưu
+
+    `penalty_coef`: hệ số phạt cho những item đã quá khối lượng cho phép
+
+    `zero_penalty_coef`: hệ số phạt cho item không chở được, nên đặt là 1 số rất lớn (1000000)
+
     Return:
+
     Trả về dạng 1 mảng n_city hàng, n_clusters cột
+
     Trả về 1 mảng labels n_city hàng
 
-    Dạng hàm: L1(city_i, center_j) - alpha*(chuyên chở - trọng số)
     '''
     n_cities = len(city_list)
     n_clusters  = len(cluster_list)
@@ -41,9 +53,10 @@ def optimizer(city_list, cluster_list, alpha, penalty_coef):
 
             remain_capa = np.array(cluster_list[j].capacity_list) - np.array(cluster_list[j].current_mass) - city_list_shuffle[i].demand_array
             tmp = 0.0
-            for remain in remain_capa: 
-                if remain>0: tmp+=remain
-                else: tmp+=penalty_coef*remain
+            for i in range(len(remain_capa)): 
+                if remain_capa[i]>0: tmp+=remain_capa[i]
+                elif cluster_list[j].capacity_list[i] == 0: tmp+=zero_penalty_coef*remain_capa[i]
+                else: tmp+=penalty_coef*remain_capa[i]
 
             tmp = tmp/np.sum(np.array(cluster_list[j].capacity_list))
             result_array[i,j] -= alpha*tmp
@@ -65,7 +78,7 @@ def optimizer(city_list, cluster_list, alpha, penalty_coef):
     
     return (result_array, np.array(labels))
 
-def load_vehicle_from_text(file_name):
+def load_vehicle_from_text(file_name, n_items):
     '''
     Params: 
     file_name: đường dẫn tới file text
@@ -81,21 +94,25 @@ def load_vehicle_from_text(file_name):
     n_vehicles = int(data[0])
     vehicle_list = []
     for i in range(n_vehicles):
-        data_i = np.array(re.split(re.compile(' +'), data[i+1]))
-        tmp = []
-        for j in range(len(data_i)):
-            tmp.append(float(data_i[j]))
-        data_i = np.array(tmp)
-        vehicle_list.append(Vehicle(i, data_i))
+        item_i = np.array(re.split(re.compile(' +'), data[2*i+1]))
+        data_i = np.array(re.split(re.compile(' +'), data[2*i+2]))
+        data_array_i = np.zeros(n_items)
+        for j in range(len(item_i)):
+            data_array_i[int(item_i[j])-1] = float(data_i[j])
+        vehicle_list.append(Vehicle(i, data_array_i))
 
     
     return (n_vehicles, vehicle_list)
 
 
-def load_city_from_text(file_name):
+def load_node_from_text(file_name, format, n_items):
     '''
+
     Params: 
+
     file_name: đường dẫn tới file text
+
+    format: phần nội dung sẽ đọc vào, nhận giá trị là 'market', 'vendor', 'depot'
 
     định dạng file text: 
     line 1: số lượng thành phố n
@@ -104,28 +121,56 @@ def load_city_from_text(file_name):
     n_city: số lượng thành phố
     city_list: list class City
     '''
+
+    if format not in ['market', 'vendor', 'depot']: 
+        raise Exception("format must be in list 'market', 'vendor', 'depot'. Found {}".format(format))
+    
     with open(file_name, 'r') as f:
         data = f.read()
     data = data.split('\n')
 
-    n_cities = int(data[0])
+    offset = 0
+    #Tìm ra vị trí bắt đầu đọc
+    for line in data:
+        offset += 1
+        if format in line: break
+
+    n_cities = int(data[0+offset])
     city_list = []
     for i in range(n_cities):
 
-        location_i = np.array(re.split(re.compile(' +'), data[2*i+1]))
-        demand_i = np.array(re.split(re.compile(' +'), data[2*i+2]))
+        location_i = np.array(re.split(re.compile(' +'), data[3*i+1 + offset]))
+        index_i = np.array(re.split(re.compile(' +'), data[3*i+2 + offset]))
+        demand_i = np.array(re.split(re.compile(' +'), data[3*i+3 + offset]))
         tmp = []
         for j in range(len(location_i)):
             tmp.append(float(location_i[j]))
         location_i = np.array(tmp)
 
-        tmp = []
+        demand_list_i = np.zeros(n_items)
         for j in range(len(demand_i)):
-            tmp.append(float(demand_i[j]))
-        demand_i = np.array(tmp)
-        city_list.append(Node(location_i[0], location_i[1], i, demand_i))
+            demand_list_i[int(index_i[j])-1] = float(demand_i[j])
+        city_list.append(Node(location_i[0], location_i[1], i, demand_list_i))
     
     return (n_cities, city_list)
+
+def load_item_from_text(file_name):
+    '''
+    Load danh sách các item từ file text
+    
+    Return: (n_items, item_list)
+    '''
+    with open(file_name, 'r') as f:
+        data = f.read()
+    data = data.split('\n')
+    n_items = int(data[0])
+    item_list = []
+    for i in range(n_items):
+        tmp = [data[2*i+1], data[2*i+2]]
+        item_list.append(tmp)
+    
+    return (n_items, item_list)
+
 
 
 def total_capacity(vehicle_list):

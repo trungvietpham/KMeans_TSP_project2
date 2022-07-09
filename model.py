@@ -8,11 +8,13 @@ from KMeans import KMeans
 from utils import *
 
 print('Start model:')
-city_fname = 'VietVRP/data/city.txt'
-vehicle_fname = 'VietVRP/data/vehicle.txt'
+item_fname = 'input/item.txt'
+city_fname = 'input/node.txt'
+vehicle_fname = 'input/vehicle.txt'
 
-(n_cities, city_list) = load_city_from_text('VietVRP/data/city.txt')
-(n_vehicles, vehicle_list) = load_vehicle_from_text('VietVRP/data/vehicle.txt')
+(n_items, item_list) = load_item_from_text(item_fname)
+(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
+(n_vehicles, vehicle_list) = load_vehicle_from_text(vehicle_fname, n_items=n_items)
 print('\tPrepare for clustering:')
 
 n_clusters = n_vehicles
