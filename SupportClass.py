@@ -59,7 +59,7 @@ class Cluster:
     """
         Lớp chứa thông tin về 1 cụm, gồm: mảng sức chứa, mảng class City, số lượng items, mảng chứa trọng số hiện tại của cụm
     """
-    def __init__(self, x, y, capacity_list, n_items = 2, n_cities = 0):
+    def __init__(self, x, y, capacity_list, n_items = 2, n_cities = 0, city_id_list = []):
         """
         Get the number of city in this cluster
         
@@ -82,6 +82,7 @@ class Cluster:
         #     for city in city_list:
         #         self.current_mass += city.demand_array
         self.n_cities = n_cities
+        self.city_id_list = city_id_list
         
     def get_center(self):
         return [self.x, self.y]
@@ -93,14 +94,18 @@ class Cluster:
     # def clear_city(self):
     #     self.city_list = []
     #     self.current_mass = np.array(np.zeros((self.n_items)))
-    
-    def update_mass(self, add_mass):
+    def append_city(self, city_id):
+        self.city_id_list.append(city_id)
+
+    def update_mass(self, add_mass, city_id):
         self.current_mass+=add_mass
         self.n_cities+=1
+        self.append_city(city_id)
     
     def clear_mass(self):
         self.current_mass = np.array(np.zeros(self.n_items))
         self.n_cities = 0
+        self.city_id_list = []
         
     # def get_quantity(self):
     #     """
@@ -159,8 +164,9 @@ class Cluster:
         
     #     return min_distance, connect_city
 
-    def print(self, location_flag = False, capa_flag = False, current_mass_flag = False, get_n_cities_flag = False):
-        if location_flag: print('Location: {}'.format(self.get_center()))
-        if capa_flag: print('Capacity list: {}'.format(self.capacity_list))
-        if current_mass_flag: print('Current mass:  {}'.format(self.current_mass))
-        if get_n_cities_flag: print('Num of city: {}'.format(self.n_cities))
+    def print(self, location_flag = False, capa_flag = False, current_mass_flag = False, get_n_cities_flag = False, city_id_list_flag = False, header = ''):
+        if location_flag: print('{}Location: {}'.format(header, self.get_center()))
+        if capa_flag: print('{}Capacity list: {}'.format(header,self.capacity_list))
+        if current_mass_flag: print('{}Current mass:  {}'.format(header,self.current_mass))
+        if get_n_cities_flag: print('{}Num of city: {}'.format(header,self.n_cities))
+        if city_id_list_flag: print('{}City id list: {}'.format(header, self.city_id_list))

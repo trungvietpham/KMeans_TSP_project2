@@ -33,8 +33,15 @@ for i in range(n_clusters):
 capacity_array = np.array(capacity_array)
 
 model = KMeans(n_clusters)
-(centers, labels, it) = model.fit(optimizer, city_list, capacity_array, alpha=2, penalty_coef=6)
+(centers, labels, it, cluster_list) = model.fit(optimizer, city_list, capacity_array, alpha=2, penalty_coef=6)
 print('Coverged after {} step'.format(it))
+
+#In ra các thông tin trong cụm:
+for i in range(len(cluster_list)):
+    print('Cluster {}: '.format(i))
+    cluster_list[i].print(True, True, True, True,True, '\t')
+
+output_to_json_file(cluster_list, city_list, 'output/phase2.json')
 
 
 

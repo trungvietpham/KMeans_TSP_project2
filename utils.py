@@ -2,6 +2,7 @@ import numpy as np
 from scipy.spatial import distance
 import re
 import sys
+import json
 
 from sklearn.utils import shuffle
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
@@ -43,33 +44,37 @@ def optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty_coef):
     #Shuffle cities:
     shuffle_index = [i for i in range(n_cities)]
     shuffle_index = shuffle(shuffle_index)
+    print(shuffle_index)
     city_list_shuffle = [city_list[i] for i in shuffle_index]
+    # for i in range(n_cities): city_list_shuffle[i].print(id_flag = True)
 
-    labels = []
+    labels = np.zeros(n_cities)
     result_array = np.zeros((n_cities, n_clusters))
     for i in range(n_cities):
+        city_id = city_list_shuffle[i].id
         for j in range(n_clusters):
             result_array[i,j] = manhattan_distance(city_list_shuffle[i].get_location(), cluster_list[j].get_center()) 
 
             remain_capa = np.array(cluster_list[j].capacity_list) - np.array(cluster_list[j].current_mass) - city_list_shuffle[i].demand_array
             tmp = 0.0
-            for i in range(len(remain_capa)): 
-                if remain_capa[i]>0: tmp+=remain_capa[i]
-                elif cluster_list[j].capacity_list[i] == 0: tmp+=zero_penalty_coef*remain_capa[i]
-                else: tmp+=penalty_coef*remain_capa[i]
+            for k in range(len(remain_capa)): 
+                if remain_capa[k]>0: tmp+=remain_capa[k]
+                elif cluster_list[j].capacity_list[k] == 0: tmp+=zero_penalty_coef*remain_capa[k]
+                else: tmp+=penalty_coef*remain_capa[k]
 
             tmp = tmp/np.sum(np.array(cluster_list[j].capacity_list))
             result_array[i,j] -= alpha*tmp
             print('Res[{}, {}] = {}'.format(i,j,result_array[i,j]))
 
-        labels.append(np.argmin(result_array[i]))
-        print('Assign to cluster {}'.format(labels[-1]))
-        print('Before assign: ')
-        for k in range(n_clusters):
-            print('Cluster {}: '.format(k))
-            cluster_list[k].print()
-        (cluster_list[labels[-1]]).update_mass(city_list_shuffle[i].demand_array)
-        city_list_shuffle[i].cluster_id = labels[-1]
+        labels[city_id] = np.argmin(result_array[i])
+        # print('Assign to cluster {}'.format(labels[-1]))
+        # print('Before assign: ')
+        # for k in range(n_clusters):
+        #     print('Cluster {}: '.format(k))
+        #     cluster_list[k].print()
+        (cluster_list[int(labels[city_id])]).update_mass(city_list_shuffle[i].demand_array, city_list_shuffle[i].id)
+        city_list_shuffle[i].print(id_flag = True)
+        city_list_shuffle[i].cluster_id = labels[city_id]
 
         print('After assign: ')
         for k in range(n_clusters): 
@@ -198,4 +203,55 @@ def total_demand(city_list):
     
     return total
 
+def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json'):
+    '''
+    dạng json: 
+    "": {
+        id
+        center: {
+            x:
+            y:
+        }
+        node_list:{
+            "":{
+                id:
+                demand:{
+                    item1:{
+                        name:
+                        quantity:
+                        unit:
+                    }
+                }
+            }
+        }
+    }
+    '''
+    save_data = {}
+    n_cluster = len(cluster_list)
+    n_city = len(city_list)
+    for i in range(n_cluster):
+        tmp = {}
+        tmp['id'] = i
+        center_tmp = {}
+
+        center_tmp['x'] = cluster_list[i].x
+        center_tmp['y'] = cluster_list[i].y
+        tmp['center'] = center_tmp
+
+        cities_tmp = {}
+        for city_id in cluster_list[i].city_id_list:
+            city_tmp = {}
+            city_tmp['id'] = int(city_id)
+            demand = city_list[int(city_id)].demand_array
+            demand_tmp = {}
+            for j in range(len(demand)):
+                demand_tmp['Item ' + str(j)] = demand[j]
+            
+            city_tmp['demand'] = demand_tmp
+            cities_tmp[str(int(city_id))] = city_tmp
+        tmp['node_list'] = cities_tmp
+        save_data[str(i)] = tmp
     
+    with open(dump_file, 'w', encoding='utf-8') as json_file:
+        json.dump(save_data, json_file, ensure_ascii=False, indent=4)
+

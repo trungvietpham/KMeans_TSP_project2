@@ -4,6 +4,7 @@ from scipy import rand
 from scipy.spatial import distance
 
 import sys
+from sklearn import cluster
 
 from torch import zero_
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
@@ -63,7 +64,8 @@ class KMeans:
                 if labels[i] == k: cities_k.append(cities[i])
                 # take average
                 #Note: Sửa lại để cập nhật theo hàm optimizer
-            centers[k,:] = np.mean(cities_k, axis = 0)
+            if len(cities_k) != 0: 
+                centers[k,:] = np.mean(cities_k, axis = 0)
         return centers
 
 
@@ -81,6 +83,7 @@ class KMeans:
         diff = 0.0
         length = len(centers)
         for i in range(length): 
+            print('Cluster {}: Old center: {}, new center: {}'.format(i, centers[i], new_centers[i]))
             diff += distance.euclidean(centers[i], new_centers[i])
         
         diff/=self.n_clusters
@@ -134,7 +137,7 @@ class KMeans:
                 cluster_list[i].clear_mass()
                 #cluster_list[i].clear_city()
             it += 1
-        return (centers, labels, it)
+        return (centers, labels, it, cluster_list)
 
     
         
