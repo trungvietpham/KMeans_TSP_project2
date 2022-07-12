@@ -3,7 +3,10 @@ from scipy.spatial import distance
 import re
 import sys
 import json
-
+import csv
+import random
+import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 from SupportClass import Vehicle, Node, Cluster
@@ -127,6 +130,7 @@ def load_node_from_text(file_name, format, n_items):
     city_list: list class City
     '''
 
+    #Kiểm tra format có thỏa mãn nằm trong list yêu cầu hay không
     if format not in ['market', 'vendor', 'depot']: 
         raise Exception("format must be in list 'market', 'vendor', 'depot'. Found {}".format(format))
     
@@ -156,6 +160,50 @@ def load_node_from_text(file_name, format, n_items):
         for j in range(len(demand_i)):
             demand_list_i[int(index_i[j])-1] = float(demand_i[j])
         city_list.append(Node(location_i[0], location_i[1], i, demand_list_i))
+    
+    return (n_cities, city_list)
+
+def load_node_from_json(file_name, format, n_items):
+    '''
+
+    Params: 
+
+    file_name: đường dẫn tới file json
+
+    format: phần nội dung sẽ đọc vào, nhận giá trị là 'market', 'vendor', 'depot'
+
+    định dạng file text: 
+
+    line 1: số lượng thành phố n
+
+    2n line tiếp theo: dòng đầu là tọa độ, dòng sau là demand đối với mỗi loại mặt hàng
+
+    Return:
+
+    n_city: số lượng thành phố
+
+    city_list: list class City
+    '''
+
+    if format not in ['market', 'vendor', 'depot']: 
+        raise Exception("format must be in list 'market', 'vendor', 'depot'. Found {}".format(format))
+    
+    f = open(file_name, 'r')
+    data = json.load(f)
+
+    n_cities = int(data['length'])
+    city_list = []
+    for i in range(n_cities):
+
+        location_i = data[format][str(i)]['location']
+        demand_i = data[format][str(i)]['demand_list']
+        # index_i = np.array(re.split(re.compile(' +'), data[3*i+2 + offset]))
+        # demand_i = np.array(re.split(re.compile(' +'), data[3*i+3 + offset]))
+
+        demand_list_i = np.zeros(n_items)
+        for j in demand_i:
+            demand_list_i[demand_i[j]['id'] - 1] = float(demand_i[j]['demand'])
+        city_list.append(Node(location_i['lat'], location_i['long'], i, demand_list_i))
     
     return (n_cities, city_list)
 
@@ -209,8 +257,8 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
     "": {
         id
         center: {
-            x:
-            y:
+            'lat':x
+            'long':y
         }
         node_list:{
             "":{
@@ -234,8 +282,8 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
         tmp['id'] = i
         center_tmp = {}
 
-        center_tmp['x'] = cluster_list[i].x
-        center_tmp['y'] = cluster_list[i].y
+        center_tmp['lat'] = cluster_list[i].x
+        center_tmp['long'] = cluster_list[i].y
         tmp['center'] = center_tmp
 
         cities_tmp = {}
@@ -255,3 +303,115 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
     with open(dump_file, 'w', encoding='utf-8') as json_file:
         json.dump(save_data, json_file, ensure_ascii=False, indent=4)
 
+def csv_to_txt(csv_file, txt_file = 'input/node.txt', data_type = 'market', mode = 'w'):
+    '''
+    Chuyển từ file csv về file txt
+    csv_file: tên file csv. file csv gồm tọa độ của các điểm, mỗi điểm nằm trên 1 dòng, là tọa độ lat - long
+    txt_file: tên txt file được save vào
+    data_type: nhận các giá trị là 'market', 'vendor', 'depot'
+    mode: mode save, là 'w' hoặc 'w+'
+    '''
+    
+    with open(csv_file, 'r') as handle:
+        data = csv.reader(handle)
+        #handle.close()
+    
+        length = 0
+        for line in data: 
+            #print(type(line))
+            length+=1
+
+    with open(csv_file, 'r') as handle:
+        data = csv.reader(handle)
+
+        if data_type == 'market':
+            #Tự động gen ra các thông tin về demand
+            low_threshold = 0
+            high_threshold = 20
+            n_items = 2
+            save_data = ['market']
+            save_data.append(str(length))
+            for line in data:
+                location = '{} {}'.format(line[0], line[1])
+                print('Location: {}, {}'.format(line[0], line[1]))
+                save_data.append(location)
+                index_list = ''
+                demand_list = ''
+                for item in range(n_items):
+                    gen_num = random.randint(low_threshold, high_threshold)
+                    if gen_num!=0:
+                        index_list+=str(item+1)
+                        index_list+=' '
+                        demand_list+=str(gen_num)
+                        demand_list+=' '
+                    
+                    else: print('Gen 0')
+                index_list = index_list[:-1]
+                save_data.append(index_list)
+                demand_list = demand_list[:-1]
+                save_data.append(demand_list)
+                print(save_data[-1])
+
+            #Lưu save_data vào txt_file 
+            #np.savetxt(txt_file, save_data, delimiter='\n')
+            with open(txt_file, mode) as dumppy:
+                file_content = "\n".join(save_data)
+                dumppy.write(file_content)
+
+                print(file_content)
+
+def csv_to_json_file(csv_file, json_file, data_type = 'market', mode = 'w'):
+    '''
+    JSON:
+    'length': length
+    'market': {
+        number: {
+            'location': {
+                'lat': x
+                'long': y
+            }
+            'demand_list':{
+                number: {
+                    'id': id
+                    'demand': demand
+                }
+            }
+        }
+    }
+    '''
+    df = pd.read_csv(csv_file)
+    print(df)
+    save_data = {}
+    save_data['length'] = len(df)
+    markets_dict = {}
+
+    n_items = 2
+    low_threshold = 0
+    high_threshold = 20
+    cnt = 0
+    
+    for line in range(len(df)):
+        market_dict = {}
+        location_dict = {}
+        location_dict['lat'] = df.iloc[line,0]
+        location_dict['long'] = df.iloc[line, 1]
+        market_dict['location'] = location_dict
+        demands_dict = {}
+
+        for item in range(n_items):
+            gen_num = random.randint(low_threshold, high_threshold)
+            if gen_num!=0:
+                demand_dict = {'id':item+1, 'demand': gen_num}
+                demands_dict[str(item+1)] = demand_dict
+        market_dict['demand_list'] = demands_dict
+
+        markets_dict[str(cnt)] = market_dict
+        cnt+=1
+    
+    save_data['market'] = markets_dict
+    json.dump(save_data, open(json_file, 'w'), indent = 4)
+
+
+def plotting_data(centers, labels, it):
+    for i in range(it):
+        pass

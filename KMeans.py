@@ -6,7 +6,6 @@ from scipy.spatial import distance
 import sys
 from sklearn import cluster
 
-from torch import zero_
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 from SupportClass import Cluster
 
@@ -112,7 +111,7 @@ class KMeans:
         it: số vòng lặp đến khi hội tụ
         '''
         print('Fit thread')
-        centers = [self.init_centers(city_list)]
+        centers = [np.array(self.init_centers(city_list))]
         labels = []
         cluster_list = []
         for i in range(self.n_clusters):

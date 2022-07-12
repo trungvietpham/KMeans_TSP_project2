@@ -15,3 +15,43 @@ n dòng tiếp theo: dòng thứ i+1 là sức chứa tối đa của xe thứ i
 
 1.4. route_mass.txt
 Bảng chứa độ dài quãng đường đi giữa các điểm
+
+1.5. ...json
+Lưu các node dưới cấu trúc dict 
+JSON:
+    'length': length
+    'market': {
+        number: {
+            'location': {
+                'lat': x
+                'long': y
+            }
+            'demand_list':{
+                number: {
+                    'id': id
+                    'demand': demand
+                }
+            }
+        }
+    }
+
+2. Định dạng các file output:
+2.1. phase2.json
+Output của phase 2: clustering các market thành các cluster, lưu dưới dạng file json với cấu trúc: 
+{
+    cluster_id: {
+        'id':id
+        'center': {
+            'lat':x
+            'long':y
+        }
+        node_list:{
+            node_id:{
+                'id':id
+                'demand':{
+                    'item'i:demand
+                }
+            }
+        }
+    }
+}

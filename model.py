@@ -9,11 +9,13 @@ from utils import *
 
 print('Start model:')
 item_fname = 'input/item.txt'
-city_fname = 'input/node.txt'
+#city_fname = 'input/node.txt'
+city_fname = 'input/30_node_data.json'
 vehicle_fname = 'input/vehicle.txt'
 
 (n_items, item_list) = load_item_from_text(item_fname)
-(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
+#(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
+(n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
 (n_vehicles, vehicle_list) = load_vehicle_from_text(vehicle_fname, n_items=n_items)
 print('\tPrepare for clustering:')
 
@@ -33,6 +35,7 @@ for i in range(n_clusters):
 capacity_array = np.array(capacity_array)
 
 model = KMeans(n_clusters)
+
 (centers, labels, it, cluster_list) = model.fit(optimizer, city_list, capacity_array, alpha=2, penalty_coef=6)
 print('Coverged after {} step'.format(it))
 
@@ -43,5 +46,52 @@ for i in range(len(cluster_list)):
 
 output_to_json_file(cluster_list, city_list, 'output/phase2.json')
 
+'''
+Save centers, labels, it thành dict và dump vào file json
+Dạng file json: 
+{
+    'it': it
+    'center':{
+        it_number:{
+            center_i: {
+                'lat': x
+                'long': y
+            }
+        }
+    }
+    'label':{
+        it_number: {
+            label_i: label
+        }
+    }
+}
+'''
+save_data = {}
+save_data['it'] = it
+centers_dict = {}
+labels_dict = {}
+label_0 = {}
 
+#Centers: 
+for i in range(it+1):
+    center_i = {}
+    for j in range(len(centers[i])):
+        center_i[str(j)] = {'lat':centers[i][j][0], 'long':centers[i][j][1]}
+    centers_dict[str(i)] = center_i
+
+#Label ban đầu đều là -1, tương ứng với nó là chưa được gán giá trị
+for j in range(len(labels[0])): label_0[str(j)] = -1
+labels_dict['0'] = label_0
+
+for i in range(it):
+    label_i = {}
+    for j in range(len(labels[i])):
+        label_i[str(j)] = labels[i][j]
+    labels_dict[str(i+1)] = label_i
+save_data['centers'] = centers_dict
+save_data['labels'] = labels_dict
+
+print('labels: {}\ncenters: {}'.format(labels, centers))
+f = open('output/for_plotting_phase2.json', 'w')
+json.dump(save_data, f, indent=4)
 
