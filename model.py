@@ -4,8 +4,8 @@ import sys
 
 from sklearn.utils import shuffle
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
-from KMeans import KMeans
-from utils import *
+from KMeans.KMeans import KMeans
+from utils.utils import *
 
 print('Start model:')
 item_fname = 'input/item.txt'

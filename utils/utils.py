@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
-from SupportClass import Vehicle, Node, Cluster
+from utils.SupportClass import Vehicle, Node, Cluster
 
 def manhattan_distance(p1, p2):
     '''
