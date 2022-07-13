@@ -202,7 +202,7 @@ def load_node_from_json(file_name, format, n_items):
 
         demand_list_i = np.zeros(n_items)
         for j in demand_i:
-            demand_list_i[demand_i[j]['id'] - 1] = float(demand_i[j]['demand'])
+            demand_list_i[demand_i[j]['item_id'] - 1] = float(demand_i[j]['demand'])
         city_list.append(Node(location_i['lat'], location_i['long'], i, demand_list_i))
     
     return (n_cities, city_list)
@@ -279,7 +279,7 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
     n_city = len(city_list)
     for i in range(n_cluster):
         tmp = {}
-        tmp['id'] = i
+        tmp['cluster_id'] = i
         center_tmp = {}
 
         center_tmp['lat'] = cluster_list[i].x
@@ -289,7 +289,9 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
         cities_tmp = {}
         for city_id in cluster_list[i].city_id_list:
             city_tmp = {}
-            city_tmp['id'] = int(city_id)
+            city_tmp['node_id'] = int(city_id)
+            city_tmp['node_location'] = {'lat': city_list[int(city_id)].x, 'long':city_list[int(city_id)].y}
+
             demand = city_list[int(city_id)].demand_array
             demand_tmp = {}
             for j in range(len(demand)):
@@ -401,7 +403,7 @@ def csv_to_json_file(csv_file, json_file, data_type = 'market', mode = 'w'):
         for item in range(n_items):
             gen_num = random.randint(low_threshold, high_threshold)
             if gen_num!=0:
-                demand_dict = {'id':item+1, 'demand': gen_num}
+                demand_dict = {'item_id':item+1, 'demand': gen_num}
                 demands_dict[str(item+1)] = demand_dict
         market_dict['demand_list'] = demands_dict
 
@@ -413,5 +415,5 @@ def csv_to_json_file(csv_file, json_file, data_type = 'market', mode = 'w'):
 
 
 def plotting_data(centers, labels, it):
-    for i in range(it):
-        pass
+    #for i in range(it):
+    pass

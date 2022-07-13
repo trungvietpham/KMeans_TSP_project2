@@ -10,7 +10,7 @@ from utils.utils import *
 print('Start model:')
 item_fname = 'input/item.txt'
 #city_fname = 'input/node.txt'
-city_fname = 'input/30_node_data.json'
+city_fname = 'input/300_node_data.json'
 vehicle_fname = 'input/vehicle.txt'
 
 (n_items, item_list) = load_item_from_text(item_fname)
@@ -44,7 +44,7 @@ for i in range(len(cluster_list)):
     print('Cluster {}: '.format(i))
     cluster_list[i].print(True, True, True, True,True, '\t')
 
-output_to_json_file(cluster_list, city_list, 'output/phase2.json')
+output_to_json_file(cluster_list, city_list, 'output/phase2_300.json')
 
 '''
 Save centers, labels, it thành dict và dump vào file json
@@ -66,32 +66,32 @@ Dạng file json:
     }
 }
 '''
-save_data = {}
-save_data['it'] = it
-centers_dict = {}
-labels_dict = {}
-label_0 = {}
+# save_data = {}
+# save_data['it'] = it
+# centers_dict = {}
+# labels_dict = {}
+# label_0 = {}
 
-#Centers: 
-for i in range(it+1):
-    center_i = {}
-    for j in range(len(centers[i])):
-        center_i[str(j)] = {'lat':centers[i][j][0], 'long':centers[i][j][1]}
-    centers_dict[str(i)] = center_i
+# #Centers: 
+# for i in range(it+1):
+#     center_i = {}
+#     for j in range(len(centers[i])):
+#         center_i[str(j)] = {'lat':centers[i][j][0], 'long':centers[i][j][1]}
+#     centers_dict[str(i)] = center_i
 
-#Label ban đầu đều là -1, tương ứng với nó là chưa được gán giá trị
-for j in range(len(labels[0])): label_0[str(j)] = -1
-labels_dict['0'] = label_0
+# #Label ban đầu đều là -1, tương ứng với nó là chưa được gán giá trị
+# for j in range(len(labels[0])): label_0[str(j)] = -1
+# labels_dict['0'] = label_0
 
-for i in range(it):
-    label_i = {}
-    for j in range(len(labels[i])):
-        label_i[str(j)] = labels[i][j]
-    labels_dict[str(i+1)] = label_i
-save_data['centers'] = centers_dict
-save_data['labels'] = labels_dict
+# for i in range(it):
+#     label_i = {}
+#     for j in range(len(labels[i])):
+#         label_i[str(j)] = labels[i][j]
+#     labels_dict[str(i+1)] = label_i
+# save_data['centers'] = centers_dict
+# save_data['labels'] = labels_dict
 
-print('labels: {}\ncenters: {}'.format(labels, centers))
-f = open('output/for_plotting_phase2.json', 'w')
-json.dump(save_data, f, indent=4)
+# print('labels: {}\ncenters: {}'.format(labels, centers))
+# f = open('output/for_plotting_phase2.json', 'w')
+# json.dump(save_data, f, indent=4)
 
