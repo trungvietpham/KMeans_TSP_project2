@@ -10,13 +10,16 @@ from utils.utils import *
 print('Start model:')
 item_fname = 'input/item.txt'
 #city_fname = 'input/node.txt'
-city_fname = 'input/300_node_data.json'
-vehicle_fname = 'input/vehicle.txt'
+city_fname = 'input/market.json'
+vehicle_fname = 'input/vehicle.json'
+convert_coef_fname = 'input/latlong_to_meter_coef.txt'
 
 (n_items, item_list) = load_item_from_text(item_fname)
 #(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
 (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
-(n_vehicles, vehicle_list) = load_vehicle_from_text(vehicle_fname, n_items=n_items)
+(n_vehicles, vehicle_list) = load_vehicle_from_json(vehicle_fname, n_items=n_items)
+convert_coef = get_convert_coef_from_file(convert_coef_fname)
+# print(vehicle_list)
 print('\tPrepare for clustering:')
 
 n_clusters = n_vehicles
@@ -36,7 +39,7 @@ capacity_array = np.array(capacity_array)
 
 model = KMeans(n_clusters)
 
-(centers, labels, it, cluster_list) = model.fit(optimizer, city_list, capacity_array, alpha=2, penalty_coef=6)
+(centers, labels, it, cluster_list) = model.fit(optimizer=optimizer, city_list = city_list,capacity_array = capacity_array, distance_coef=convert_coef, normalization_flag=False, alpha=2, penalty_coef=6, shuffle=True, epsilon=1e-3)
 print('Coverged after {} step'.format(it))
 
 #In ra các thông tin trong cụm:
@@ -44,7 +47,7 @@ for i in range(len(cluster_list)):
     print('Cluster {}: '.format(i))
     cluster_list[i].print(True, True, True, True,True, '\t')
 
-output_to_json_file(cluster_list, city_list, 'output/phase2_300.json')
+output_to_json_file(cluster_list, city_list, 'output/phase2_market.json')
 
 '''
 Save centers, labels, it thành dict và dump vào file json

@@ -6,6 +6,7 @@ import json
 import csv
 import random
 import pandas as pd
+import codecs
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
@@ -18,7 +19,7 @@ def manhattan_distance(p1, p2):
     '''
     return np.sum(np.abs(np.array(p1) - np.array(p2)))
 
-def optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty_coef):
+def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_penalty_coef, normalization_flag = True, weight_coef = 2, shuffle_flag = True):
     '''
     Dạng hàm: L1(city_i, center_j) - alpha*(chuyên chở - trọng số)
 
@@ -45,29 +46,32 @@ def optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty_coef):
     n_clusters  = len(cluster_list)
 
     #Shuffle cities:
-    shuffle_index = [i for i in range(n_cities)]
-    shuffle_index = shuffle(shuffle_index)
-    print(shuffle_index)
-    city_list_shuffle = [city_list[i] for i in shuffle_index]
+    if shuffle_flag == True: 
+        shuffle_index = [i for i in range(n_cities)]
+        shuffle_index = shuffle(shuffle_index)
+        # print(shuffle_index)
+        city_list_shuffle = [city_list[i] for i in shuffle_index]
     # for i in range(n_cities): city_list_shuffle[i].print(id_flag = True)
+    else: city_list_shuffle = city_list
 
     labels = np.zeros(n_cities)
     result_array = np.zeros((n_cities, n_clusters))
     for i in range(n_cities):
         city_id = city_list_shuffle[i].id
         for j in range(n_clusters):
-            result_array[i,j] = manhattan_distance(city_list_shuffle[i].get_location(), cluster_list[j].get_center()) 
+            result_array[i,j] = distance_coef * manhattan_distance(city_list_shuffle[i].get_location(), cluster_list[j].get_center()) 
 
             remain_capa = np.array(cluster_list[j].capacity_list) - np.array(cluster_list[j].current_mass) - city_list_shuffle[i].demand_array
+            if normalization_flag: remain_capa = remain_capa/cluster_list[j].capacity_list
             tmp = 0.0
             for k in range(len(remain_capa)): 
-                if remain_capa[k]>0: tmp+=remain_capa[k]
+                if remain_capa[k]>0: tmp+=weight_coef*remain_capa[k]
                 elif cluster_list[j].capacity_list[k] == 0: tmp+=zero_penalty_coef*remain_capa[k]
-                else: tmp+=penalty_coef*remain_capa[k]
+                else: tmp+=penalty_coef*weight_coef*remain_capa[k]
 
             tmp = tmp/np.sum(np.array(cluster_list[j].capacity_list))
             result_array[i,j] -= alpha*tmp
-            print('Res[{}, {}] = {}'.format(i,j,result_array[i,j]))
+            # print('Res[{}, {}] = {}'.format(i,j,result_array[i,j]))
 
         labels[city_id] = np.argmin(result_array[i])
         # print('Assign to cluster {}'.format(labels[-1]))
@@ -76,13 +80,13 @@ def optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty_coef):
         #     print('Cluster {}: '.format(k))
         #     cluster_list[k].print()
         (cluster_list[int(labels[city_id])]).update_mass(city_list_shuffle[i].demand_array, city_list_shuffle[i].id)
-        city_list_shuffle[i].print(id_flag = True)
+        # city_list_shuffle[i].print(id_flag = True)
         city_list_shuffle[i].cluster_id = labels[city_id]
 
-        print('After assign: ')
-        for k in range(n_clusters): 
-            print('Cluster {}: '.format(k))
-            cluster_list[k].print()
+        # print('After assign: ')
+        # for k in range(n_clusters): 
+        #     print('Cluster {}: '.format(k))
+        #     cluster_list[k].print(current_mass_flag=True, get_n_cities_flag = True)
     
     return (result_array, np.array(labels))
 
@@ -109,6 +113,22 @@ def load_vehicle_from_text(file_name, n_items):
             data_array_i[int(item_i[j])-1] = float(data_i[j])
         vehicle_list.append(Vehicle(i, data_array_i))
 
+    
+    return (n_vehicles, vehicle_list)
+
+def load_vehicle_from_json(file_name, n_items):
+    data = json.load(open(file_name, 'r'))
+    n_vehicles = 0
+    vehicle_list = []
+    id = 0
+    for key in data:
+        n_vehicles+=1
+        data_i = np.zeros(n_items)
+        for j in data[key]:
+            data_i[int(j)-1] = data[key][j]['demand']
+        
+        vehicle_list.append(Vehicle(id = id, capacity_list= data_i))
+        id+=1
     
     return (n_vehicles, vehicle_list)
 
@@ -188,22 +208,25 @@ def load_node_from_json(file_name, format, n_items):
     if format not in ['market', 'vendor', 'depot']: 
         raise Exception("format must be in list 'market', 'vendor', 'depot'. Found {}".format(format))
     
-    f = open(file_name, 'r')
+    f = codecs.open(file_name, 'r', 'utf-8-sig')
     data = json.load(f)
 
-    n_cities = int(data['length'])
+    n_cities = len(data[format])
     city_list = []
-    for i in range(n_cities):
+    for node in data[format]:
 
-        location_i = data[format][str(i)]['location']
-        demand_i = data[format][str(i)]['demand_list']
+        id_i = data[format][node]['id']
+        code_i = data[format][node]['code']
+        name_i = data[format][node]['name']
+        location_i = data[format][node]['location']
+        demand_i = data[format][node]['demand_list']
         # index_i = np.array(re.split(re.compile(' +'), data[3*i+2 + offset]))
         # demand_i = np.array(re.split(re.compile(' +'), data[3*i+3 + offset]))
 
         demand_list_i = np.zeros(n_items)
         for j in demand_i:
             demand_list_i[demand_i[j]['item_id'] - 1] = float(demand_i[j]['demand'])
-        city_list.append(Node(location_i['lat'], location_i['long'], i, demand_list_i))
+        city_list.append(Node(location_i['lat'], location_i['long'], id = id_i, code=code_i, name=name_i, type='CUSTOMER', demand_array = demand_list_i))
     
     return (n_cities, city_list)
 
@@ -417,3 +440,34 @@ def csv_to_json_file(csv_file, json_file, data_type = 'market', mode = 'w'):
 def plotting_data(centers, labels, it):
     #for i in range(it):
     pass
+
+def get_mean_latlong_to_meter():
+    correlations = json.load(open('input/correlation.json', 'r'))
+    depots = json.load(codecs.open('input/depot.json', 'r', 'utf-8-sig'))
+    customers = json.load(codecs.open('input/market.json', 'r', 'utf-8-sig'))
+
+    all_values = []
+    for key in correlations:
+        correlations_key = correlations[key]
+        latlong1 = float(0)
+        if key[0] == 'C': latlong1 = customers['market'][key[1:]]['location']
+        elif key[0] == 'D': latlong1 = depots['depot'][key[1:]]['location']
+        for key2 in correlations_key:
+            if key2[0] == 'C': latlong2 = customers['market'][key2[1:]]['location']
+            elif key2[0] == 'D': latlong2 = depots['depot'][key2[1:]]['location']
+            distance = correlations_key[key2]
+            manhattan = manhattan_distance((latlong1['lat'], latlong1['long']), (latlong2['lat'], latlong2['long']))
+            # print('Distance = {}, manhattan = {}'.format(distance, manhattan))
+            if manhattan!=0: all_values.append(distance/manhattan)
+    
+    mean = np.mean(np.array(all_values))
+    with open('input/latlong_to_meter_coef.txt','w') as f:
+        f.write(str(mean))
+    
+    return mean
+
+def get_convert_coef_from_file(fname):
+    with open(fname, 'r') as f:
+            data = f.read()
+    data = data.split('\n')
+    return float(data[0])

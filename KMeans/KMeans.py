@@ -34,7 +34,7 @@ class KMeans:
             clusters_list.append([rand_city_list[i].x, rand_city_list[i].y])
         return clusters_list
 
-    def assign_labels(self, optimizer, city_list, cluster_list, alpha, penalty_coef, zero_penalty):
+    def assign_labels(self, optimizer, city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_penalty, normalization_flag, shuffle = False):
         '''
         Params: 
         optimizer: hàm tối ưu (tự build) - cần trả về dạng 1 mảng city_array hàng, centers cột
@@ -42,7 +42,7 @@ class KMeans:
         cluster_list: list class Cluster
         Return: Vector cột mà gồm id của từng điểm dữ liệu thuộc về
         '''
-        (_, labels) = optimizer(city_list, cluster_list, alpha, penalty_coef, zero_penalty)
+        (_, labels) = optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_penalty, normalization_flag=normalization_flag, shuffle_flag = shuffle)
         # return index of the closest center
         return labels
 
@@ -55,8 +55,8 @@ class KMeans:
         # collect all points assigned to the k-th cluster 
             cities.append(city_list[i].get_location())
         
-        print(cities)
-        print(labels)
+        # print(cities)
+        # print(labels)
         for k in range(self.n_clusters):
             cities_k = []
             for i in range(len(labels)):
@@ -90,7 +90,7 @@ class KMeans:
         return diff<epsilon
 
 
-    def fit(self, optimizer, city_list, capacity_array, epsilon = 1e-6, alpha = 100, penalty_coef = 300, zeros_penalty = 100000):
+    def fit(self, optimizer, city_list, capacity_array, distance_coef, epsilon = 1e-6, normalization_flag=True, alpha = 100, penalty_coef = 300, zeros_penalty = 100000, shuffle = False):
         '''
         Hàm fit để thực hiện quá trình học của thuật toán.
 
@@ -121,7 +121,7 @@ class KMeans:
         it = 0 
         while True:
             print('Loop thread')
-            labels.append(self.assign_labels(optimizer, city_list, cluster_list, alpha, penalty_coef, zeros_penalty))
+            labels.append(self.assign_labels(optimizer, city_list, cluster_list, distance_coef, alpha, penalty_coef, zeros_penalty, shuffle=shuffle, normalization_flag=True))
             print('Assign done')
             new_centers = self.update_centers(city_list, labels[-1])
             print('Update done')
@@ -135,6 +135,7 @@ class KMeans:
                 print('\tTâm cụm {} mới: {}'.format(i, cluster_list[i].get_center()))
                 cluster_list[i].clear_mass()
                 #cluster_list[i].clear_city()
+                print('it = {}'.format(it))
             it += 1
         return (centers, labels, it, cluster_list)
 

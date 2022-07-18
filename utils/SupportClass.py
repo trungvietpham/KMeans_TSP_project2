@@ -5,7 +5,7 @@ class Node:
     """
         Lớp chứa thông tin về 1 điểm, gồm: tọa độ, id, mảng chứa demand
     """
-    def __init__(self, x, y, id, demand_array, cluster_id = None):
+    def __init__(self, x, y, id, code, name, type, demand_array, cluster_id = None):
         """
         Get the number of city in this cluster
         
@@ -25,6 +25,9 @@ class Node:
         self.x = x
         self.y = y
         self.id = id
+        self.code = code
+        self.name = name
+        self.type = type
         self.demand_array = demand_array
         self.cluster_id = None
         if cluster_id is not None: self.cluster_id = cluster_id

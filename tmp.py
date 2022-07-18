@@ -1,10 +1,6 @@
-from sklearn.utils import shuffle
-import json
+from lib2to3.pytree import convert
+from utils.utils import *
 
-import sys
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
-from utils.utils import load_node_from_text, load_vehicle_from_text, total_capacity, total_demand
-
-f = open('output/phase2.json', 'r')
-data = json.load(f)
-
+# print(get_mean_latlong_to_meter())
+convert_coef = get_convert_coef_from_file('input/latlong_to_meter_coef.txt')
+print(convert_coef)
