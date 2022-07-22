@@ -55,3 +55,9 @@ Output của phase 2: clustering các market thành các cluster, lưu dưới d
         }
     }
 }
+
+TSP: trong mỗi cụm cần được chia ra thành các cụm nhỏ để xe có thể giao hàng trong 1 lượt, phù hợp với sức chứa của từng xe. Số cụm nằm trong khoảng [max(ceil(tổng/demand)), n_xe/(max(demand/mean))]
+
+3. Pipeline
+Gồm các file chạy để thực hiện các quá trình của KMeans và TSP
+gendata --> model --> plotting_data --> pre_TSP_phase --> check_pre_TSP

@@ -2,251 +2,151 @@
     "0": {
         "1": {
             "item_id": 1,
-            "demand": 1469
+            "demand": 4646
         },
         "2": {
             "item_id": 2,
-            "demand": 8767
+            "demand": 6639
         }
     },
     "1": {
         "1": {
             "item_id": 1,
-            "demand": 5429
+            "demand": 3550
         },
         "2": {
             "item_id": 2,
-            "demand": 4997
+            "demand": 5836
         }
     },
     "2": {
         "1": {
             "item_id": 1,
-            "demand": 1910
+            "demand": 7823
         },
         "2": {
             "item_id": 2,
-            "demand": 1395
+            "demand": 9887
         }
     },
     "3": {
         "1": {
             "item_id": 1,
-            "demand": 4896
+            "demand": 3346
         },
         "2": {
             "item_id": 2,
-            "demand": 3307
+            "demand": 6794
         }
     },
     "4": {
         "1": {
             "item_id": 1,
-            "demand": 2543
+            "demand": 5559
         },
         "2": {
             "item_id": 2,
-            "demand": 895
+            "demand": 4379
         }
     },
     "5": {
         "1": {
             "item_id": 1,
-            "demand": 9951
+            "demand": 5640
         },
         "2": {
             "item_id": 2,
-            "demand": 940
+            "demand": 8254
         }
     },
     "6": {
         "1": {
             "item_id": 1,
-            "demand": 3657
+            "demand": 6709
         },
         "2": {
             "item_id": 2,
-            "demand": 9082
+            "demand": 9080
         }
     },
     "7": {
         "1": {
             "item_id": 1,
-            "demand": 8956
+            "demand": 3209
         },
         "2": {
             "item_id": 2,
-            "demand": 4282
+            "demand": 3869
         }
     },
     "8": {
         "1": {
             "item_id": 1,
-            "demand": 3670
+            "demand": 7535
         },
         "2": {
             "item_id": 2,
-            "demand": 1134
+            "demand": 3337
         }
     },
     "9": {
         "1": {
             "item_id": 1,
-            "demand": 7124
+            "demand": 8298
         },
         "2": {
             "item_id": 2,
-            "demand": 6615
+            "demand": 4892
         }
     },
     "10": {
         "1": {
             "item_id": 1,
-            "demand": 4673
+            "demand": 3065
         },
         "2": {
             "item_id": 2,
-            "demand": 4701
+            "demand": 5846
         }
     },
     "11": {
         "1": {
             "item_id": 1,
-            "demand": 2515
+            "demand": 8358
         },
         "2": {
             "item_id": 2,
-            "demand": 1519
+            "demand": 8954
         }
     },
     "12": {
         "1": {
             "item_id": 1,
-            "demand": 4491
+            "demand": 6129
         },
         "2": {
             "item_id": 2,
-            "demand": 6372
+            "demand": 9952
         }
     },
     "13": {
         "1": {
             "item_id": 1,
-            "demand": 8123
+            "demand": 9282
         },
         "2": {
             "item_id": 2,
-            "demand": 4191
+            "demand": 5975
         }
     },
     "14": {
         "1": {
             "item_id": 1,
-            "demand": 274
+            "demand": 4762
         },
         "2": {
             "item_id": 2,
-            "demand": 5093
-        }
-    },
-    "15": {
-        "1": {
-            "item_id": 1,
-            "demand": 8211
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 1073
-        }
-    },
-    "16": {
-        "1": {
-            "item_id": 1,
-            "demand": 9143
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 1824
-        }
-    },
-    "17": {
-        "1": {
-            "item_id": 1,
-            "demand": 9056
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 7975
-        }
-    },
-    "18": {
-        "1": {
-            "item_id": 1,
-            "demand": 9831
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 320
-        }
-    },
-    "19": {
-        "1": {
-            "item_id": 1,
-            "demand": 1214
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 993
-        }
-    },
-    "20": {
-        "1": {
-            "item_id": 1,
-            "demand": 4543
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 8368
-        }
-    },
-    "21": {
-        "1": {
-            "item_id": 1,
-            "demand": 1752
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 5059
-        }
-    },
-    "22": {
-        "1": {
-            "item_id": 1,
-            "demand": 9382
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 8846
-        }
-    },
-    "23": {
-        "1": {
-            "item_id": 1,
-            "demand": 1047
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 1746
-        }
-    },
-    "24": {
-        "1": {
-            "item_id": 1,
-            "demand": 4441
-        },
-        "2": {
-            "item_id": 2,
-            "demand": 5111
+            "demand": 8051
         }
     }
 }

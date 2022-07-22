@@ -1,0 +1,3830 @@
+{
+    "0": {
+        "cluster_id": 0,
+        "center": {
+            "lat": 20.97392727545834,
+            "long": 105.77109729224999
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 20.97352993943751,
+                    "long": 105.76063795237499
+                },
+                "node_list": {
+                    "295": {
+                        "node_id": 295,
+                        "node_location": {
+                            "lat": 20.9645764,
+                            "long": 105.7645865
+                        },
+                        "demand": {
+                            "Item 0": 229.0,
+                            "Item 1": 340.0
+                        }
+                    },
+                    "303": {
+                        "node_id": 303,
+                        "node_location": {
+                            "lat": 20.98198382,
+                            "long": 105.770937659
+                        },
+                        "demand": {
+                            "Item 0": 69.0,
+                            "Item 1": 311.0
+                        }
+                    },
+                    "307": {
+                        "node_id": 307,
+                        "node_location": {
+                            "lat": 20.970206,
+                            "long": 105.768813
+                        },
+                        "demand": {
+                            "Item 0": 25.0,
+                            "Item 1": 265.0
+                        }
+                    },
+                    "301": {
+                        "node_id": 301,
+                        "node_location": {
+                            "lat": 20.9604598,
+                            "long": 105.7644895
+                        },
+                        "demand": {
+                            "Item 0": 193.0,
+                            "Item 1": 3.0
+                        }
+                    },
+                    "308": {
+                        "node_id": 308,
+                        "node_location": {
+                            "lat": 20.959860334,
+                            "long": 105.761526542
+                        },
+                        "demand": {
+                            "Item 0": 156.0,
+                            "Item 1": 227.0
+                        }
+                    },
+                    "306": {
+                        "node_id": 306,
+                        "node_location": {
+                            "lat": 20.956039446,
+                            "long": 105.757361418
+                        },
+                        "demand": {
+                            "Item 0": 477.0,
+                            "Item 1": 272.0
+                        }
+                    },
+                    "276": {
+                        "node_id": 276,
+                        "node_location": {
+                            "lat": 21.001785,
+                            "long": 105.750634
+                        },
+                        "demand": {
+                            "Item 0": 463.0,
+                            "Item 1": 174.0
+                        }
+                    },
+                    "299": {
+                        "node_id": 299,
+                        "node_location": {
+                            "lat": 20.974254,
+                            "long": 105.745423
+                        },
+                        "demand": {
+                            "Item 0": 211.0,
+                            "Item 1": 30.0
+                        }
+                    },
+                    "297": {
+                        "node_id": 297,
+                        "node_location": {
+                            "lat": 20.9688898640001,
+                            "long": 105.772130742
+                        },
+                        "demand": {
+                            "Item 0": 226.0,
+                            "Item 1": 375.0
+                        }
+                    },
+                    "273": {
+                        "node_id": 273,
+                        "node_location": {
+                            "lat": 21.001785,
+                            "long": 105.750634
+                        },
+                        "demand": {
+                            "Item 0": 483.0,
+                            "Item 1": 403.0
+                        }
+                    },
+                    "309": {
+                        "node_id": 309,
+                        "node_location": {
+                            "lat": 20.968753,
+                            "long": 105.769232
+                        },
+                        "demand": {
+                            "Item 0": 255.0,
+                            "Item 1": 458.0
+                        }
+                    },
+                    "305": {
+                        "node_id": 305,
+                        "node_location": {
+                            "lat": 20.965389627,
+                            "long": 105.769538772
+                        },
+                        "demand": {
+                            "Item 0": 246.0,
+                            "Item 1": 452.0
+                        }
+                    },
+                    "78": {
+                        "node_id": 78,
+                        "node_location": {
+                            "lat": 20.90967204,
+                            "long": 105.760817605
+                        },
+                        "demand": {
+                            "Item 0": 167.0,
+                            "Item 1": 129.0
+                        }
+                    },
+                    "32": {
+                        "node_id": 32,
+                        "node_location": {
+                            "lat": 21.005133,
+                            "long": 105.728168
+                        },
+                        "demand": {
+                            "Item 0": 388.0,
+                            "Item 1": 254.0
+                        }
+                    },
+                    "288": {
+                        "node_id": 288,
+                        "node_location": {
+                            "lat": 21.0213777,
+                            "long": 105.7603575
+                        },
+                        "demand": {
+                            "Item 0": 311.0,
+                            "Item 1": 85.0
+                        }
+                    },
+                    "304": {
+                        "node_id": 304,
+                        "node_location": {
+                            "lat": 20.966314,
+                            "long": 105.775557
+                        },
+                        "demand": {
+                            "Item 0": 335.0,
+                            "Item 1": 148.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 20.974606185000013,
+                    "long": 105.79023778450001
+                },
+                "node_list": {
+                    "20": {
+                        "node_id": 20,
+                        "node_location": {
+                            "lat": 20.9633654,
+                            "long": 105.7915689
+                        },
+                        "demand": {
+                            "Item 0": 156.0,
+                            "Item 1": 144.0
+                        }
+                    },
+                    "30": {
+                        "node_id": 30,
+                        "node_location": {
+                            "lat": 20.9633654,
+                            "long": 105.7915689
+                        },
+                        "demand": {
+                            "Item 0": 401.0,
+                            "Item 1": 444.0
+                        }
+                    },
+                    "38": {
+                        "node_id": 38,
+                        "node_location": {
+                            "lat": 20.9743358,
+                            "long": 105.7892777
+                        },
+                        "demand": {
+                            "Item 0": 284.0,
+                            "Item 1": 251.0
+                        }
+                    },
+                    "272": {
+                        "node_id": 272,
+                        "node_location": {
+                            "lat": 20.9905471,
+                            "long": 105.7877691
+                        },
+                        "demand": {
+                            "Item 0": 415.0,
+                            "Item 1": 232.0
+                        }
+                    },
+                    "302": {
+                        "node_id": 302,
+                        "node_location": {
+                            "lat": 20.980817696,
+                            "long": 105.785836698
+                        },
+                        "demand": {
+                            "Item 0": 349.0,
+                            "Item 1": 325.0
+                        }
+                    },
+                    "298": {
+                        "node_id": 298,
+                        "node_location": {
+                            "lat": 20.9779625840001,
+                            "long": 105.784732078
+                        },
+                        "demand": {
+                            "Item 0": 334.0,
+                            "Item 1": 192.0
+                        }
+                    },
+                    "270": {
+                        "node_id": 270,
+                        "node_location": {
+                            "lat": 20.9880287,
+                            "long": 105.7966083
+                        },
+                        "demand": {
+                            "Item 0": 376.0,
+                            "Item 1": 190.0
+                        }
+                    },
+                    "300": {
+                        "node_id": 300,
+                        "node_location": {
+                            "lat": 20.9584268,
+                            "long": 105.7945406
+                        },
+                        "demand": {
+                            "Item 0": 123.0,
+                            "Item 1": 309.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "1": {
+        "cluster_id": 1,
+        "center": {
+            "lat": 21.25665873100001,
+            "long": 105.91953788166666
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.25665873100001,
+                    "long": 105.91953788166666
+                },
+                "node_list": {
+                    "74": {
+                        "node_id": 74,
+                        "node_location": {
+                            "lat": 21.198365385,
+                            "long": 105.838731172
+                        },
+                        "demand": {
+                            "Item 0": 325.0,
+                            "Item 1": 16.0
+                        }
+                    },
+                    "47": {
+                        "node_id": 47,
+                        "node_location": {
+                            "lat": 21.5907848,
+                            "long": 105.8260997
+                        },
+                        "demand": {
+                            "Item 0": 259.0,
+                            "Item 1": 74.0
+                        }
+                    },
+                    "75": {
+                        "node_id": 75,
+                        "node_location": {
+                            "lat": 21.198050423,
+                            "long": 105.832074083
+                        },
+                        "demand": {
+                            "Item 0": 488.0,
+                            "Item 1": 325.0
+                        }
+                    },
+                    "77": {
+                        "node_id": 77,
+                        "node_location": {
+                            "lat": 21.199197842,
+                            "long": 105.848694211
+                        },
+                        "demand": {
+                            "Item 0": 381.0,
+                            "Item 1": 345.0
+                        }
+                    },
+                    "3": {
+                        "node_id": 3,
+                        "node_location": {
+                            "lat": 21.1910429,
+                            "long": 106.0771852
+                        },
+                        "demand": {
+                            "Item 0": 483.0,
+                            "Item 1": 467.0
+                        }
+                    },
+                    "45": {
+                        "node_id": 45,
+                        "node_location": {
+                            "lat": 21.173225083,
+                            "long": 106.053477045
+                        },
+                        "demand": {
+                            "Item 0": 357.0,
+                            "Item 1": 230.0
+                        }
+                    },
+                    "73": {
+                        "node_id": 73,
+                        "node_location": {
+                            "lat": 21.315208548,
+                            "long": 105.867661502
+                        },
+                        "demand": {
+                            "Item 0": 201.0,
+                            "Item 1": 323.0
+                        }
+                    },
+                    "76": {
+                        "node_id": 76,
+                        "node_location": {
+                            "lat": 21.2684358980001,
+                            "long": 105.854444722
+                        },
+                        "demand": {
+                            "Item 0": 209.0,
+                            "Item 1": 400.0
+                        }
+                    },
+                    "46": {
+                        "node_id": 46,
+                        "node_location": {
+                            "lat": 21.1756177,
+                            "long": 106.0774733
+                        },
+                        "demand": {
+                            "Item 0": 35.0,
+                            "Item 1": 103.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "cluster_id": 2,
+        "center": {
+            "lat": 20.759858126941,
+            "long": 105.75016386246267
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 20.759858126941,
+                    "long": 105.75016386246267
+                },
+                "node_list": {
+                    "226": {
+                        "node_id": 226,
+                        "node_location": {
+                            "lat": 20.7355246,
+                            "long": 105.7707965
+                        },
+                        "demand": {
+                            "Item 0": 76.0,
+                            "Item 1": 430.0
+                        }
+                    },
+                    "80": {
+                        "node_id": 80,
+                        "node_location": {
+                            "lat": 20.737121880823,
+                            "long": 105.770560587388
+                        },
+                        "demand": {
+                            "Item 0": 28.0,
+                            "Item 1": 414.0
+                        }
+                    },
+                    "79": {
+                        "node_id": 79,
+                        "node_location": {
+                            "lat": 20.8069279,
+                            "long": 105.7091345
+                        },
+                        "demand": {
+                            "Item 0": 28.0,
+                            "Item 1": 237.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "cluster_id": 3,
+        "center": {
+            "lat": 10.848401866666668,
+            "long": 106.72235383333333
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 10.848401866666668,
+                    "long": 106.72235383333333
+                },
+                "node_list": {
+                    "177": {
+                        "node_id": 177,
+                        "node_location": {
+                            "lat": 10.9595291,
+                            "long": 106.8483612
+                        },
+                        "demand": {
+                            "Item 0": 59.0,
+                            "Item 1": 143.0
+                        }
+                    },
+                    "253": {
+                        "node_id": 253,
+                        "node_location": {
+                            "lat": 10.7725367,
+                            "long": 106.6958684
+                        },
+                        "demand": {
+                            "Item 0": 361.0,
+                            "Item 1": 88.0
+                        }
+                    },
+                    "43": {
+                        "node_id": 43,
+                        "node_location": {
+                            "lat": 10.8131398,
+                            "long": 106.6228319
+                        },
+                        "demand": {
+                            "Item 0": 168.0,
+                            "Item 1": 380.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "4": {
+        "cluster_id": 4,
+        "center": {
+            "lat": 21.7629917,
+            "long": 105.04418229999999
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.7629917,
+                    "long": 105.04418229999999
+                },
+                "node_list": {
+                    "10": {
+                        "node_id": 10,
+                        "node_location": {
+                            "lat": 21.8195634,
+                            "long": 105.2059996
+                        },
+                        "demand": {
+                            "Item 0": 500.0,
+                            "Item 1": 99.0
+                        }
+                    },
+                    "107": {
+                        "node_id": 107,
+                        "node_location": {
+                            "lat": 21.70642,
+                            "long": 104.882365
+                        },
+                        "demand": {
+                            "Item 0": 387.0,
+                            "Item 1": 254.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "5": {
+        "cluster_id": 5,
+        "center": {
+            "lat": 21.052346202703706,
+            "long": 105.88990058118517
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.06039884666666,
+                    "long": 105.87086080666667
+                },
+                "node_list": {
+                    "208": {
+                        "node_id": 208,
+                        "node_location": {
+                            "lat": 21.0588582,
+                            "long": 105.8583873
+                        },
+                        "demand": {
+                            "Item 0": 344.0,
+                            "Item 1": 467.0
+                        }
+                    },
+                    "221": {
+                        "node_id": 221,
+                        "node_location": {
+                            "lat": 21.0636394,
+                            "long": 105.8954898
+                        },
+                        "demand": {
+                            "Item 0": 281.0,
+                            "Item 1": 493.0
+                        }
+                    },
+                    "215": {
+                        "node_id": 215,
+                        "node_location": {
+                            "lat": 21.057372,
+                            "long": 105.869028
+                        },
+                        "demand": {
+                            "Item 0": 489.0,
+                            "Item 1": 208.0
+                        }
+                    },
+                    "55": {
+                        "node_id": 55,
+                        "node_location": {
+                            "lat": 21.03494,
+                            "long": 105.84788
+                        },
+                        "demand": {
+                            "Item 0": 57.0,
+                            "Item 1": 111.0
+                        }
+                    },
+                    "54": {
+                        "node_id": 54,
+                        "node_location": {
+                            "lat": 21.0329576,
+                            "long": 105.8527041
+                        },
+                        "demand": {
+                            "Item 0": 164.0,
+                            "Item 1": 124.0
+                        }
+                    },
+                    "204": {
+                        "node_id": 204,
+                        "node_location": {
+                            "lat": 21.047304,
+                            "long": 105.877084
+                        },
+                        "demand": {
+                            "Item 0": 341.0,
+                            "Item 1": 92.0
+                        }
+                    },
+                    "212": {
+                        "node_id": 212,
+                        "node_location": {
+                            "lat": 21.047304,
+                            "long": 105.877084
+                        },
+                        "demand": {
+                            "Item 0": 304.0,
+                            "Item 1": 419.0
+                        }
+                    },
+                    "65": {
+                        "node_id": 65,
+                        "node_location": {
+                            "lat": 21.1412079,
+                            "long": 105.8684613
+                        },
+                        "demand": {
+                            "Item 0": 325.0,
+                            "Item 1": 63.0
+                        }
+                    },
+                    "18": {
+                        "node_id": 18,
+                        "node_location": {
+                            "lat": 21.0424112,
+                            "long": 105.8703906
+                        },
+                        "demand": {
+                            "Item 0": 350.0,
+                            "Item 1": 411.0
+                        }
+                    },
+                    "66": {
+                        "node_id": 66,
+                        "node_location": {
+                            "lat": 21.1380095,
+                            "long": 105.8594202
+                        },
+                        "demand": {
+                            "Item 0": 140.0,
+                            "Item 1": 340.0
+                        }
+                    },
+                    "214": {
+                        "node_id": 214,
+                        "node_location": {
+                            "lat": 21.0503702,
+                            "long": 105.8663224
+                        },
+                        "demand": {
+                            "Item 0": 355.0,
+                            "Item 1": 99.0
+                        }
+                    },
+                    "205": {
+                        "node_id": 205,
+                        "node_location": {
+                            "lat": 21.048673,
+                            "long": 105.8811986
+                        },
+                        "demand": {
+                            "Item 0": 267.0,
+                            "Item 1": 221.0
+                        }
+                    },
+                    "213": {
+                        "node_id": 213,
+                        "node_location": {
+                            "lat": 21.0387567,
+                            "long": 105.8709758
+                        },
+                        "demand": {
+                            "Item 0": 205.0,
+                            "Item 1": 60.0
+                        }
+                    },
+                    "210": {
+                        "node_id": 210,
+                        "node_location": {
+                            "lat": 21.060497,
+                            "long": 105.895171
+                        },
+                        "demand": {
+                            "Item 0": 4.0,
+                            "Item 1": 186.0
+                        }
+                    },
+                    "207": {
+                        "node_id": 207,
+                        "node_location": {
+                            "lat": 21.043682,
+                            "long": 105.873315
+                        },
+                        "demand": {
+                            "Item 0": 306.0,
+                            "Item 1": 3.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 21.042395697750003,
+                    "long": 105.91179109933336
+                },
+                "node_list": {
+                    "34": {
+                        "node_id": 34,
+                        "node_location": {
+                            "lat": 21.0511214,
+                            "long": 105.9162845
+                        },
+                        "demand": {
+                            "Item 0": 19.0,
+                            "Item 1": 384.0
+                        }
+                    },
+                    "223": {
+                        "node_id": 223,
+                        "node_location": {
+                            "lat": 21.027147,
+                            "long": 105.910858
+                        },
+                        "demand": {
+                            "Item 0": 327.0,
+                            "Item 1": 112.0
+                        }
+                    },
+                    "206": {
+                        "node_id": 206,
+                        "node_location": {
+                            "lat": 21.053532,
+                            "long": 105.900618
+                        },
+                        "demand": {
+                            "Item 0": 94.0,
+                            "Item 1": 6.0
+                        }
+                    },
+                    "216": {
+                        "node_id": 216,
+                        "node_location": {
+                            "lat": 21.0553424,
+                            "long": 105.8966805
+                        },
+                        "demand": {
+                            "Item 0": 397.0,
+                            "Item 1": 93.0
+                        }
+                    },
+                    "220": {
+                        "node_id": 220,
+                        "node_location": {
+                            "lat": 21.0543504,
+                            "long": 105.903124
+                        },
+                        "demand": {
+                            "Item 0": 78.0,
+                            "Item 1": 23.0
+                        }
+                    },
+                    "68": {
+                        "node_id": 68,
+                        "node_location": {
+                            "lat": 21.012279773,
+                            "long": 105.938632092
+                        },
+                        "demand": {
+                            "Item 0": 142.0,
+                            "Item 1": 390.0
+                        }
+                    },
+                    "209": {
+                        "node_id": 209,
+                        "node_location": {
+                            "lat": 21.0293784,
+                            "long": 105.9187682
+                        },
+                        "demand": {
+                            "Item 0": 374.0,
+                            "Item 1": 310.0
+                        }
+                    },
+                    "211": {
+                        "node_id": 211,
+                        "node_location": {
+                            "lat": 21.0590047,
+                            "long": 105.9147471
+                        },
+                        "demand": {
+                            "Item 0": 369.0,
+                            "Item 1": 268.0
+                        }
+                    },
+                    "227": {
+                        "node_id": 227,
+                        "node_location": {
+                            "lat": 21.0332395,
+                            "long": 105.9095571
+                        },
+                        "demand": {
+                            "Item 0": 131.0,
+                            "Item 1": 245.0
+                        }
+                    },
+                    "51": {
+                        "node_id": 51,
+                        "node_location": {
+                            "lat": 21.0649738,
+                            "long": 105.9082105
+                        },
+                        "demand": {
+                            "Item 0": 484.0,
+                            "Item 1": 153.0
+                        }
+                    },
+                    "217": {
+                        "node_id": 217,
+                        "node_location": {
+                            "lat": 21.0325032,
+                            "long": 105.9131525
+                        },
+                        "demand": {
+                            "Item 0": 271.0,
+                            "Item 1": 262.0
+                        }
+                    },
+                    "224": {
+                        "node_id": 224,
+                        "node_location": {
+                            "lat": 21.0358758,
+                            "long": 105.9108607
+                        },
+                        "demand": {
+                            "Item 0": 53.0,
+                            "Item 1": 196.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "6": {
+        "cluster_id": 6,
+        "center": {
+            "lat": 21.091010646333338,
+            "long": 105.76847846995834
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.097960814857146,
+                    "long": 105.76631921328573
+                },
+                "node_list": {
+                    "284": {
+                        "node_id": 284,
+                        "node_location": {
+                            "lat": 21.0721563,
+                            "long": 105.7986169
+                        },
+                        "demand": {
+                            "Item 0": 15.0,
+                            "Item 1": 267.0
+                        }
+                    },
+                    "82": {
+                        "node_id": 82,
+                        "node_location": {
+                            "lat": 21.201033512,
+                            "long": 105.770278879
+                        },
+                        "demand": {
+                            "Item 0": 338.0,
+                            "Item 1": 94.0
+                        }
+                    },
+                    "98": {
+                        "node_id": 98,
+                        "node_location": {
+                            "lat": 21.0856876,
+                            "long": 105.813209
+                        },
+                        "demand": {
+                            "Item 0": 347.0,
+                            "Item 1": 410.0
+                        }
+                    },
+                    "84": {
+                        "node_id": 84,
+                        "node_location": {
+                            "lat": 21.1753605000001,
+                            "long": 105.6756576
+                        },
+                        "demand": {
+                            "Item 0": 86.0,
+                            "Item 1": 340.0
+                        }
+                    },
+                    "280": {
+                        "node_id": 280,
+                        "node_location": {
+                            "lat": 21.0716302,
+                            "long": 105.7902016
+                        },
+                        "demand": {
+                            "Item 0": 257.0,
+                            "Item 1": 104.0
+                        }
+                    },
+                    "287": {
+                        "node_id": 287,
+                        "node_location": {
+                            "lat": 21.0479537,
+                            "long": 105.745557
+                        },
+                        "demand": {
+                            "Item 0": 78.0,
+                            "Item 1": 220.0
+                        }
+                    },
+                    "290": {
+                        "node_id": 290,
+                        "node_location": {
+                            "lat": 21.048515,
+                            "long": 105.748805
+                        },
+                        "demand": {
+                            "Item 0": 23.0,
+                            "Item 1": 247.0
+                        }
+                    },
+                    "283": {
+                        "node_id": 283,
+                        "node_location": {
+                            "lat": 21.0876049,
+                            "long": 105.7868275
+                        },
+                        "demand": {
+                            "Item 0": 254.0,
+                            "Item 1": 137.0
+                        }
+                    },
+                    "97": {
+                        "node_id": 97,
+                        "node_location": {
+                            "lat": 21.0715453,
+                            "long": 105.8063906
+                        },
+                        "demand": {
+                            "Item 0": 120.0,
+                            "Item 1": 453.0
+                        }
+                    },
+                    "291": {
+                        "node_id": 291,
+                        "node_location": {
+                            "lat": 21.069774,
+                            "long": 105.801282
+                        },
+                        "demand": {
+                            "Item 0": 398.0,
+                            "Item 1": 479.0
+                        }
+                    },
+                    "83": {
+                        "node_id": 83,
+                        "node_location": {
+                            "lat": 21.1528538,
+                            "long": 105.7597532
+                        },
+                        "demand": {
+                            "Item 0": 499.0,
+                            "Item 1": 67.0
+                        }
+                    },
+                    "85": {
+                        "node_id": 85,
+                        "node_location": {
+                            "lat": 21.1743947,
+                            "long": 105.7327763
+                        },
+                        "demand": {
+                            "Item 0": 17.0,
+                            "Item 1": 144.0
+                        }
+                    },
+                    "31": {
+                        "node_id": 31,
+                        "node_location": {
+                            "lat": 21.0836139,
+                            "long": 105.6725021
+                        },
+                        "demand": {
+                            "Item 0": 162.0,
+                            "Item 1": 365.0
+                        }
+                    },
+                    "293": {
+                        "node_id": 293,
+                        "node_location": {
+                            "lat": 21.092775,
+                            "long": 105.7777473
+                        },
+                        "demand": {
+                            "Item 0": 248.0,
+                            "Item 1": 327.0
+                        }
+                    },
+                    "131": {
+                        "node_id": 131,
+                        "node_location": {
+                            "lat": 21.1958948,
+                            "long": 105.7343686
+                        },
+                        "demand": {
+                            "Item 0": 35.0,
+                            "Item 1": 281.0
+                        }
+                    },
+                    "282": {
+                        "node_id": 282,
+                        "node_location": {
+                            "lat": 21.0912884,
+                            "long": 105.7852628
+                        },
+                        "demand": {
+                            "Item 0": 228.0,
+                            "Item 1": 56.0
+                        }
+                    },
+                    "285": {
+                        "node_id": 285,
+                        "node_location": {
+                            "lat": 21.042045,
+                            "long": 105.759034
+                        },
+                        "demand": {
+                            "Item 0": 199.0,
+                            "Item 1": 195.0
+                        }
+                    },
+                    "279": {
+                        "node_id": 279,
+                        "node_location": {
+                            "lat": 21.0511321,
+                            "long": 105.785991
+                        },
+                        "demand": {
+                            "Item 0": 144.0,
+                            "Item 1": 121.0
+                        }
+                    },
+                    "52": {
+                        "node_id": 52,
+                        "node_location": {
+                            "lat": 21.1407545,
+                            "long": 105.8482196
+                        },
+                        "demand": {
+                            "Item 0": 367.0,
+                            "Item 1": 364.0
+                        }
+                    },
+                    "269": {
+                        "node_id": 269,
+                        "node_location": {
+                            "lat": 21.0527279,
+                            "long": 105.7309005
+                        },
+                        "demand": {
+                            "Item 0": 346.0,
+                            "Item 1": 84.0
+                        }
+                    },
+                    "281": {
+                        "node_id": 281,
+                        "node_location": {
+                            "lat": 21.048436,
+                            "long": 105.769322
+                        },
+                        "demand": {
+                            "Item 0": 236.0,
+                            "Item 1": 346.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "7": {
+        "cluster_id": 7,
+        "center": {
+            "lat": 21.04105047989655,
+            "long": 105.83915455
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.040841738461538,
+                    "long": 105.84372013846153
+                },
+                "node_list": {
+                    "100": {
+                        "node_id": 100,
+                        "node_location": {
+                            "lat": 21.0415698,
+                            "long": 105.8399794
+                        },
+                        "demand": {
+                            "Item 0": 199.0,
+                            "Item 1": 120.0
+                        }
+                    },
+                    "111": {
+                        "node_id": 111,
+                        "node_location": {
+                            "lat": 21.0367977,
+                            "long": 105.8309496
+                        },
+                        "demand": {
+                            "Item 0": 122.0,
+                            "Item 1": 257.0
+                        }
+                    },
+                    "115": {
+                        "node_id": 115,
+                        "node_location": {
+                            "lat": 21.041231,
+                            "long": 105.846309
+                        },
+                        "demand": {
+                            "Item 0": 412.0,
+                            "Item 1": 350.0
+                        }
+                    },
+                    "105": {
+                        "node_id": 105,
+                        "node_location": {
+                            "lat": 21.0408675,
+                            "long": 105.8490202
+                        },
+                        "demand": {
+                            "Item 0": 38.0,
+                            "Item 1": 85.0
+                        }
+                    },
+                    "109": {
+                        "node_id": 109,
+                        "node_location": {
+                            "lat": 21.0460677,
+                            "long": 105.8462736
+                        },
+                        "demand": {
+                            "Item 0": 268.0,
+                            "Item 1": 185.0
+                        }
+                    },
+                    "106": {
+                        "node_id": 106,
+                        "node_location": {
+                            "lat": 21.0435916,
+                            "long": 105.8449674
+                        },
+                        "demand": {
+                            "Item 0": 238.0,
+                            "Item 1": 356.0
+                        }
+                    },
+                    "102": {
+                        "node_id": 102,
+                        "node_location": {
+                            "lat": 21.0415698,
+                            "long": 105.8399794
+                        },
+                        "demand": {
+                            "Item 0": 458.0,
+                            "Item 1": 250.0
+                        }
+                    },
+                    "64": {
+                        "node_id": 64,
+                        "node_location": {
+                            "lat": 21.037291,
+                            "long": 105.852077
+                        },
+                        "demand": {
+                            "Item 0": 11.0,
+                            "Item 1": 326.0
+                        }
+                    },
+                    "219": {
+                        "node_id": 219,
+                        "node_location": {
+                            "lat": 21.040653,
+                            "long": 105.8694847
+                        },
+                        "demand": {
+                            "Item 0": 309.0,
+                            "Item 1": 351.0
+                        }
+                    },
+                    "218": {
+                        "node_id": 218,
+                        "node_location": {
+                            "lat": 21.0386515,
+                            "long": 105.8661235
+                        },
+                        "demand": {
+                            "Item 0": 111.0,
+                            "Item 1": 27.0
+                        }
+                    },
+                    "95": {
+                        "node_id": 95,
+                        "node_location": {
+                            "lat": 21.040894,
+                            "long": 105.827731
+                        },
+                        "demand": {
+                            "Item 0": 35.0,
+                            "Item 1": 328.0
+                        }
+                    },
+                    "90": {
+                        "node_id": 90,
+                        "node_location": {
+                            "lat": 21.040864,
+                            "long": 105.827736
+                        },
+                        "demand": {
+                            "Item 0": 326.0,
+                            "Item 1": 0.0
+                        }
+                    },
+                    "96": {
+                        "node_id": 96,
+                        "node_location": {
+                            "lat": 21.040894,
+                            "long": 105.827731
+                        },
+                        "demand": {
+                            "Item 0": 133.0,
+                            "Item 1": 289.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 21.0712767,
+                    "long": 105.824255075
+                },
+                "node_list": {
+                    "21": {
+                        "node_id": 21,
+                        "node_location": {
+                            "lat": 21.0787431,
+                            "long": 105.8185461
+                        },
+                        "demand": {
+                            "Item 0": 193.0,
+                            "Item 1": 56.0
+                        }
+                    },
+                    "93": {
+                        "node_id": 93,
+                        "node_location": {
+                            "lat": 21.0636404,
+                            "long": 105.8317726
+                        },
+                        "demand": {
+                            "Item 0": 16.0,
+                            "Item 1": 454.0
+                        }
+                    },
+                    "12": {
+                        "node_id": 12,
+                        "node_location": {
+                            "lat": 21.0639802,
+                            "long": 105.8281555
+                        },
+                        "demand": {
+                            "Item 0": 442.0,
+                            "Item 1": 368.0
+                        }
+                    },
+                    "91": {
+                        "node_id": 91,
+                        "node_location": {
+                            "lat": 21.0787431,
+                            "long": 105.8185461
+                        },
+                        "demand": {
+                            "Item 0": 55.0,
+                            "Item 1": 308.0
+                        }
+                    }
+                }
+            },
+            "2": {
+                "cluster_id": 2,
+                "center": {
+                    "lat": 21.02547841063637,
+                    "long": 105.84061918636363
+                },
+                "node_list": {
+                    "134": {
+                        "node_id": 134,
+                        "node_location": {
+                            "lat": 21.0293882,
+                            "long": 105.8351318
+                        },
+                        "demand": {
+                            "Item 0": 40.0,
+                            "Item 1": 57.0
+                        }
+                    },
+                    "251": {
+                        "node_id": 251,
+                        "node_location": {
+                            "lat": 21.018794,
+                            "long": 105.8426206
+                        },
+                        "demand": {
+                            "Item 0": 24.0,
+                            "Item 1": 329.0
+                        }
+                    },
+                    "128": {
+                        "node_id": 128,
+                        "node_location": {
+                            "lat": 21.0210718,
+                            "long": 105.8349856
+                        },
+                        "demand": {
+                            "Item 0": 470.0,
+                            "Item 1": 266.0
+                        }
+                    },
+                    "59": {
+                        "node_id": 59,
+                        "node_location": {
+                            "lat": 21.030789,
+                            "long": 105.844163
+                        },
+                        "demand": {
+                            "Item 0": 128.0,
+                            "Item 1": 220.0
+                        }
+                    },
+                    "53": {
+                        "node_id": 53,
+                        "node_location": {
+                            "lat": 21.0268012,
+                            "long": 105.8416255
+                        },
+                        "demand": {
+                            "Item 0": 298.0,
+                            "Item 1": 127.0
+                        }
+                    },
+                    "61": {
+                        "node_id": 61,
+                        "node_location": {
+                            "lat": 21.029594,
+                            "long": 105.848585
+                        },
+                        "demand": {
+                            "Item 0": 355.0,
+                            "Item 1": 424.0
+                        }
+                    },
+                    "60": {
+                        "node_id": 60,
+                        "node_location": {
+                            "lat": 21.030789,
+                            "long": 105.844163
+                        },
+                        "demand": {
+                            "Item 0": 443.0,
+                            "Item 1": 330.0
+                        }
+                    },
+                    "57": {
+                        "node_id": 57,
+                        "node_location": {
+                            "lat": 21.0236778170001,
+                            "long": 105.84141835
+                        },
+                        "demand": {
+                            "Item 0": 335.0,
+                            "Item 1": 467.0
+                        }
+                    },
+                    "63": {
+                        "node_id": 63,
+                        "node_location": {
+                            "lat": 21.024309,
+                            "long": 105.841095
+                        },
+                        "demand": {
+                            "Item 0": 206.0,
+                            "Item 1": 225.0
+                        }
+                    },
+                    "112": {
+                        "node_id": 112,
+                        "node_location": {
+                            "lat": 21.0303635,
+                            "long": 105.8245742
+                        },
+                        "demand": {
+                            "Item 0": 224.0,
+                            "Item 1": 197.0
+                        }
+                    },
+                    "257": {
+                        "node_id": 257,
+                        "node_location": {
+                            "lat": 21.014685,
+                            "long": 105.848449
+                        },
+                        "demand": {
+                            "Item 0": 195.0,
+                            "Item 1": 199.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "8": {
+        "cluster_id": 8,
+        "center": {
+            "lat": 21.27312284100003,
+            "long": 105.4999508015
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.27312284100003,
+                    "long": 105.4999508015
+                },
+                "node_list": {
+                    "49": {
+                        "node_id": 49,
+                        "node_location": {
+                            "lat": 21.34254,
+                            "long": 105.371668
+                        },
+                        "demand": {
+                            "Item 0": 153.0,
+                            "Item 1": 233.0
+                        }
+                    },
+                    "277": {
+                        "node_id": 277,
+                        "node_location": {
+                            "lat": 21.3905016,
+                            "long": 105.6137626
+                        },
+                        "demand": {
+                            "Item 0": 257.0,
+                            "Item 1": 451.0
+                        }
+                    },
+                    "69": {
+                        "node_id": 69,
+                        "node_location": {
+                            "lat": 21.142971732,
+                            "long": 105.502959003
+                        },
+                        "demand": {
+                            "Item 0": 291.0,
+                            "Item 1": 230.0
+                        }
+                    },
+                    "50": {
+                        "node_id": 50,
+                        "node_location": {
+                            "lat": 21.314276303,
+                            "long": 105.608941988
+                        },
+                        "demand": {
+                            "Item 0": 428.0,
+                            "Item 1": 498.0
+                        }
+                    },
+                    "70": {
+                        "node_id": 70,
+                        "node_location": {
+                            "lat": 21.1358893990001,
+                            "long": 105.506367873
+                        },
+                        "demand": {
+                            "Item 0": 291.0,
+                            "Item 1": 43.0
+                        }
+                    },
+                    "48": {
+                        "node_id": 48,
+                        "node_location": {
+                            "lat": 21.3125580120001,
+                            "long": 105.396005345
+                        },
+                        "demand": {
+                            "Item 0": 35.0,
+                            "Item 1": 441.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "9": {
+        "cluster_id": 9,
+        "center": {
+            "lat": 21.032068993617028,
+            "long": 105.79924665106383
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.029793237499998,
+                    "long": 105.77310196250001
+                },
+                "node_list": {
+                    "275": {
+                        "node_id": 275,
+                        "node_location": {
+                            "lat": 21.0223038,
+                            "long": 105.774583
+                        },
+                        "demand": {
+                            "Item 0": 344.0,
+                            "Item 1": 86.0
+                        }
+                    },
+                    "274": {
+                        "node_id": 274,
+                        "node_location": {
+                            "lat": 21.028823,
+                            "long": 105.7752222
+                        },
+                        "demand": {
+                            "Item 0": 123.0,
+                            "Item 1": 364.0
+                        }
+                    },
+                    "23": {
+                        "node_id": 23,
+                        "node_location": {
+                            "lat": 21.0203561,
+                            "long": 105.7804201
+                        },
+                        "demand": {
+                            "Item 0": 202.0,
+                            "Item 1": 98.0
+                        }
+                    },
+                    "149": {
+                        "node_id": 149,
+                        "node_location": {
+                            "lat": 21.0406795,
+                            "long": 105.7755897
+                        },
+                        "demand": {
+                            "Item 0": 240.0,
+                            "Item 1": 194.0
+                        }
+                    },
+                    "29": {
+                        "node_id": 29,
+                        "node_location": {
+                            "lat": 21.0359019,
+                            "long": 105.7597892
+                        },
+                        "demand": {
+                            "Item 0": 436.0,
+                            "Item 1": 439.0
+                        }
+                    },
+                    "278": {
+                        "node_id": 278,
+                        "node_location": {
+                            "lat": 21.030462,
+                            "long": 105.775947
+                        },
+                        "demand": {
+                            "Item 0": 295.0,
+                            "Item 1": 242.0
+                        }
+                    },
+                    "14": {
+                        "node_id": 14,
+                        "node_location": {
+                            "lat": 21.028386,
+                            "long": 105.7687765
+                        },
+                        "demand": {
+                            "Item 0": 274.0,
+                            "Item 1": 416.0
+                        }
+                    },
+                    "271": {
+                        "node_id": 271,
+                        "node_location": {
+                            "lat": 21.0314336,
+                            "long": 105.774488
+                        },
+                        "demand": {
+                            "Item 0": 382.0,
+                            "Item 1": 332.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 21.05517335,
+                    "long": 105.7809536
+                },
+                "node_list": {
+                    "286": {
+                        "node_id": 286,
+                        "node_location": {
+                            "lat": 21.057464,
+                            "long": 105.780936
+                        },
+                        "demand": {
+                            "Item 0": 406.0,
+                            "Item 1": 356.0
+                        }
+                    },
+                    "27": {
+                        "node_id": 27,
+                        "node_location": {
+                            "lat": 21.0528827,
+                            "long": 105.7809712
+                        },
+                        "demand": {
+                            "Item 0": 372.0,
+                            "Item 1": 379.0
+                        }
+                    }
+                }
+            },
+            "2": {
+                "cluster_id": 2,
+                "center": {
+                    "lat": 21.018706612500004,
+                    "long": 105.80523514375
+                },
+                "node_list": {
+                    "116": {
+                        "node_id": 116,
+                        "node_location": {
+                            "lat": 21.0165329,
+                            "long": 105.805732
+                        },
+                        "demand": {
+                            "Item 0": 70.0,
+                            "Item 1": 497.0
+                        }
+                    },
+                    "136": {
+                        "node_id": 136,
+                        "node_location": {
+                            "lat": 21.0131619,
+                            "long": 105.8006807
+                        },
+                        "demand": {
+                            "Item 0": 177.0,
+                            "Item 1": 206.0
+                        }
+                    },
+                    "37": {
+                        "node_id": 37,
+                        "node_location": {
+                            "lat": 21.0073081,
+                            "long": 105.8015488
+                        },
+                        "demand": {
+                            "Item 0": 472.0,
+                            "Item 1": 398.0
+                        }
+                    },
+                    "133": {
+                        "node_id": 133,
+                        "node_location": {
+                            "lat": 21.0147765,
+                            "long": 105.8096531
+                        },
+                        "demand": {
+                            "Item 0": 401.0,
+                            "Item 1": 7.0
+                        }
+                    },
+                    "114": {
+                        "node_id": 114,
+                        "node_location": {
+                            "lat": 21.027158,
+                            "long": 105.814507
+                        },
+                        "demand": {
+                            "Item 0": 323.0,
+                            "Item 1": 28.0
+                        }
+                    },
+                    "6": {
+                        "node_id": 6,
+                        "node_location": {
+                            "lat": 21.023803,
+                            "long": 105.817121
+                        },
+                        "demand": {
+                            "Item 0": 57.0,
+                            "Item 1": 344.0
+                        }
+                    },
+                    "24": {
+                        "node_id": 24,
+                        "node_location": {
+                            "lat": 21.0062226,
+                            "long": 105.7952365
+                        },
+                        "demand": {
+                            "Item 0": 281.0,
+                            "Item 1": 134.0
+                        }
+                    },
+                    "120": {
+                        "node_id": 120,
+                        "node_location": {
+                            "lat": 21.026228,
+                            "long": 105.798591
+                        },
+                        "demand": {
+                            "Item 0": 436.0,
+                            "Item 1": 485.0
+                        }
+                    },
+                    "151": {
+                        "node_id": 151,
+                        "node_location": {
+                            "lat": 21.0131619,
+                            "long": 105.8006807
+                        },
+                        "demand": {
+                            "Item 0": 446.0,
+                            "Item 1": 378.0
+                        }
+                    },
+                    "155": {
+                        "node_id": 155,
+                        "node_location": {
+                            "lat": 21.0189401,
+                            "long": 105.7930724
+                        },
+                        "demand": {
+                            "Item 0": 199.0,
+                            "Item 1": 217.0
+                        }
+                    },
+                    "19": {
+                        "node_id": 19,
+                        "node_location": {
+                            "lat": 21.0158942,
+                            "long": 105.8082791
+                        },
+                        "demand": {
+                            "Item 0": 458.0,
+                            "Item 1": 439.0
+                        }
+                    },
+                    "152": {
+                        "node_id": 152,
+                        "node_location": {
+                            "lat": 21.0127158,
+                            "long": 105.8069456
+                        },
+                        "demand": {
+                            "Item 0": 437.0,
+                            "Item 1": 376.0
+                        }
+                    },
+                    "132": {
+                        "node_id": 132,
+                        "node_location": {
+                            "lat": 21.0188113,
+                            "long": 105.8046338
+                        },
+                        "demand": {
+                            "Item 0": 249.0,
+                            "Item 1": 361.0
+                        }
+                    },
+                    "108": {
+                        "node_id": 108,
+                        "node_location": {
+                            "lat": 21.0276788,
+                            "long": 105.8090508
+                        },
+                        "demand": {
+                            "Item 0": 206.0,
+                            "Item 1": 169.0
+                        }
+                    },
+                    "4": {
+                        "node_id": 4,
+                        "node_location": {
+                            "lat": 21.0228337,
+                            "long": 105.8141028
+                        },
+                        "demand": {
+                            "Item 0": 95.0,
+                            "Item 1": 437.0
+                        }
+                    }
+                }
+            },
+            "3": {
+                "cluster_id": 3,
+                "center": {
+                    "lat": 21.04686203125,
+                    "long": 105.81116023749998
+                },
+                "node_list": {
+                    "92": {
+                        "node_id": 92,
+                        "node_location": {
+                            "lat": 21.0558118,
+                            "long": 105.8049551
+                        },
+                        "demand": {
+                            "Item 0": 419.0,
+                            "Item 1": 468.0
+                        }
+                    },
+                    "113": {
+                        "node_id": 113,
+                        "node_location": {
+                            "lat": 21.0355429,
+                            "long": 105.8091011
+                        },
+                        "demand": {
+                            "Item 0": 3.0,
+                            "Item 1": 317.0
+                        }
+                    },
+                    "89": {
+                        "node_id": 89,
+                        "node_location": {
+                            "lat": 21.0543829,
+                            "long": 105.8090127
+                        },
+                        "demand": {
+                            "Item 0": 122.0,
+                            "Item 1": 106.0
+                        }
+                    },
+                    "103": {
+                        "node_id": 103,
+                        "node_location": {
+                            "lat": 21.040581,
+                            "long": 105.813015
+                        },
+                        "demand": {
+                            "Item 0": 20.0,
+                            "Item 1": 274.0
+                        }
+                    },
+                    "0": {
+                        "node_id": 0,
+                        "node_location": {
+                            "lat": 21.0315036,
+                            "long": 105.8150125
+                        },
+                        "demand": {
+                            "Item 0": 353.0,
+                            "Item 1": 275.0
+                        }
+                    },
+                    "135": {
+                        "node_id": 135,
+                        "node_location": {
+                            "lat": 21.0303635,
+                            "long": 105.8245742
+                        },
+                        "demand": {
+                            "Item 0": 443.0,
+                            "Item 1": 357.0
+                        }
+                    },
+                    "39": {
+                        "node_id": 39,
+                        "node_location": {
+                            "lat": 21.0435284,
+                            "long": 105.8196104
+                        },
+                        "demand": {
+                            "Item 0": 44.0,
+                            "Item 1": 142.0
+                        }
+                    },
+                    "294": {
+                        "node_id": 294,
+                        "node_location": {
+                            "lat": 21.0475009,
+                            "long": 105.7969377
+                        },
+                        "demand": {
+                            "Item 0": 447.0,
+                            "Item 1": 164.0
+                        }
+                    },
+                    "292": {
+                        "node_id": 292,
+                        "node_location": {
+                            "lat": 21.0715453,
+                            "long": 105.8063906
+                        },
+                        "demand": {
+                            "Item 0": 393.0,
+                            "Item 1": 423.0
+                        }
+                    },
+                    "25": {
+                        "node_id": 25,
+                        "node_location": {
+                            "lat": 21.0657904,
+                            "long": 105.8069229
+                        },
+                        "demand": {
+                            "Item 0": 341.0,
+                            "Item 1": 346.0
+                        }
+                    },
+                    "87": {
+                        "node_id": 87,
+                        "node_location": {
+                            "lat": 21.0435284,
+                            "long": 105.8196104
+                        },
+                        "demand": {
+                            "Item 0": 20.0,
+                            "Item 1": 191.0
+                        }
+                    },
+                    "101": {
+                        "node_id": 101,
+                        "node_location": {
+                            "lat": 21.0351327,
+                            "long": 105.8211892
+                        },
+                        "demand": {
+                            "Item 0": 197.0,
+                            "Item 1": 112.0
+                        }
+                    },
+                    "94": {
+                        "node_id": 94,
+                        "node_location": {
+                            "lat": 21.0618164,
+                            "long": 105.8079881
+                        },
+                        "demand": {
+                            "Item 0": 467.0,
+                            "Item 1": 436.0
+                        }
+                    },
+                    "99": {
+                        "node_id": 99,
+                        "node_location": {
+                            "lat": 21.0511641,
+                            "long": 105.8130113
+                        },
+                        "demand": {
+                            "Item 0": 10.0,
+                            "Item 1": 142.0
+                        }
+                    },
+                    "8": {
+                        "node_id": 8,
+                        "node_location": {
+                            "lat": 21.0439357,
+                            "long": 105.8026558
+                        },
+                        "demand": {
+                            "Item 0": 359.0,
+                            "Item 1": 242.0
+                        }
+                    },
+                    "7": {
+                        "node_id": 7,
+                        "node_location": {
+                            "lat": 21.0376645,
+                            "long": 105.8085768
+                        },
+                        "demand": {
+                            "Item 0": 114.0,
+                            "Item 1": 206.0
+                        }
+                    }
+                }
+            },
+            "4": {
+                "cluster_id": 4,
+                "center": {
+                    "lat": 21.036184225,
+                    "long": 105.79314067499999
+                },
+                "node_list": {
+                    "42": {
+                        "node_id": 42,
+                        "node_location": {
+                            "lat": 21.0380993,
+                            "long": 105.7939839
+                        },
+                        "demand": {
+                            "Item 0": 460.0,
+                            "Item 1": 434.0
+                        }
+                    },
+                    "153": {
+                        "node_id": 153,
+                        "node_location": {
+                            "lat": 21.034079,
+                            "long": 105.803927
+                        },
+                        "demand": {
+                            "Item 0": 309.0,
+                            "Item 1": 408.0
+                        }
+                    },
+                    "146": {
+                        "node_id": 146,
+                        "node_location": {
+                            "lat": 21.0417502,
+                            "long": 105.7870719
+                        },
+                        "demand": {
+                            "Item 0": 336.0,
+                            "Item 1": 56.0
+                        }
+                    },
+                    "147": {
+                        "node_id": 147,
+                        "node_location": {
+                            "lat": 21.0353002,
+                            "long": 105.8003601
+                        },
+                        "demand": {
+                            "Item 0": 269.0,
+                            "Item 1": 102.0
+                        }
+                    },
+                    "5": {
+                        "node_id": 5,
+                        "node_location": {
+                            "lat": 21.0380993,
+                            "long": 105.7939839
+                        },
+                        "demand": {
+                            "Item 0": 122.0,
+                            "Item 1": 270.0
+                        }
+                    },
+                    "150": {
+                        "node_id": 150,
+                        "node_location": {
+                            "lat": 21.0414694,
+                            "long": 105.7943415
+                        },
+                        "demand": {
+                            "Item 0": 10.0,
+                            "Item 1": 116.0
+                        }
+                    },
+                    "145": {
+                        "node_id": 145,
+                        "node_location": {
+                            "lat": 21.028929,
+                            "long": 105.794734
+                        },
+                        "demand": {
+                            "Item 0": 18.0,
+                            "Item 1": 358.0
+                        }
+                    },
+                    "148": {
+                        "node_id": 148,
+                        "node_location": {
+                            "lat": 21.0234101,
+                            "long": 105.7943758
+                        },
+                        "demand": {
+                            "Item 0": 294.0,
+                            "Item 1": 488.0
+                        }
+                    },
+                    "154": {
+                        "node_id": 154,
+                        "node_location": {
+                            "lat": 21.0424163,
+                            "long": 105.7862743
+                        },
+                        "demand": {
+                            "Item 0": 243.0,
+                            "Item 1": 325.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "10": {
+        "cluster_id": 10,
+        "center": {
+            "lat": 20.830179775,
+            "long": 106.47587841250001
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 20.830179775,
+                    "long": 106.47587841250001
+                },
+                "node_list": {
+                    "258": {
+                        "node_id": 258,
+                        "node_location": {
+                            "lat": 20.9241327,
+                            "long": 106.3282576
+                        },
+                        "demand": {
+                            "Item 0": 193.0,
+                            "Item 1": 163.0
+                        }
+                    },
+                    "88": {
+                        "node_id": 88,
+                        "node_location": {
+                            "lat": 20.86741,
+                            "long": 106.616496
+                        },
+                        "demand": {
+                            "Item 0": 308.0,
+                            "Item 1": 132.0
+                        }
+                    },
+                    "222": {
+                        "node_id": 222,
+                        "node_location": {
+                            "lat": 20.9338069,
+                            "long": 106.3155665
+                        },
+                        "demand": {
+                            "Item 0": 410.0,
+                            "Item 1": 118.0
+                        }
+                    },
+                    "189": {
+                        "node_id": 189,
+                        "node_location": {
+                            "lat": 20.8543902,
+                            "long": 106.6844221
+                        },
+                        "demand": {
+                            "Item 0": 149.0,
+                            "Item 1": 412.0
+                        }
+                    },
+                    "311": {
+                        "node_id": 311,
+                        "node_location": {
+                            "lat": 20.852364,
+                            "long": 106.689462
+                        },
+                        "demand": {
+                            "Item 0": 61.0,
+                            "Item 1": 365.0
+                        }
+                    },
+                    "310": {
+                        "node_id": 310,
+                        "node_location": {
+                            "lat": 20.852364,
+                            "long": 106.689462
+                        },
+                        "demand": {
+                            "Item 0": 397.0,
+                            "Item 1": 155.0
+                        }
+                    },
+                    "264": {
+                        "node_id": 264,
+                        "node_location": {
+                            "lat": 20.9241327,
+                            "long": 106.3282576
+                        },
+                        "demand": {
+                            "Item 0": 261.0,
+                            "Item 1": 448.0
+                        }
+                    },
+                    "238": {
+                        "node_id": 238,
+                        "node_location": {
+                            "lat": 20.4328377,
+                            "long": 106.1551035
+                        },
+                        "demand": {
+                            "Item 0": 286.0,
+                            "Item 1": 214.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "11": {
+        "cluster_id": 11,
+        "center": {
+            "lat": 20.994108675610395,
+            "long": 105.8622822599221
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 20.994761766666667,
+                    "long": 105.84875006296296
+                },
+                "node_list": {
+                    "171": {
+                        "node_id": 171,
+                        "node_location": {
+                            "lat": 20.978387,
+                            "long": 105.84276
+                        },
+                        "demand": {
+                            "Item 0": 458.0,
+                            "Item 1": 24.0
+                        }
+                    },
+                    "262": {
+                        "node_id": 262,
+                        "node_location": {
+                            "lat": 21.000588,
+                            "long": 105.8508824
+                        },
+                        "demand": {
+                            "Item 0": 375.0,
+                            "Item 1": 188.0
+                        }
+                    },
+                    "198": {
+                        "node_id": 198,
+                        "node_location": {
+                            "lat": 20.9873542,
+                            "long": 105.8506232
+                        },
+                        "demand": {
+                            "Item 0": 457.0,
+                            "Item 1": 302.0
+                        }
+                    },
+                    "175": {
+                        "node_id": 175,
+                        "node_location": {
+                            "lat": 20.9914297,
+                            "long": 105.8445979
+                        },
+                        "demand": {
+                            "Item 0": 488.0,
+                            "Item 1": 425.0
+                        }
+                    },
+                    "254": {
+                        "node_id": 254,
+                        "node_location": {
+                            "lat": 20.9939887,
+                            "long": 105.8421536
+                        },
+                        "demand": {
+                            "Item 0": 289.0,
+                            "Item 1": 460.0
+                        }
+                    },
+                    "2": {
+                        "node_id": 2,
+                        "node_location": {
+                            "lat": 20.9791833,
+                            "long": 105.8452311
+                        },
+                        "demand": {
+                            "Item 0": 288.0,
+                            "Item 1": 123.0
+                        }
+                    },
+                    "62": {
+                        "node_id": 62,
+                        "node_location": {
+                            "lat": 21.014685,
+                            "long": 105.848449
+                        },
+                        "demand": {
+                            "Item 0": 464.0,
+                            "Item 1": 139.0
+                        }
+                    },
+                    "1": {
+                        "node_id": 1,
+                        "node_location": {
+                            "lat": 20.9966624,
+                            "long": 105.8446147
+                        },
+                        "demand": {
+                            "Item 0": 338.0,
+                            "Item 1": 353.0
+                        }
+                    },
+                    "243": {
+                        "node_id": 243,
+                        "node_location": {
+                            "lat": 21.0020514,
+                            "long": 105.8463485
+                        },
+                        "demand": {
+                            "Item 0": 361.0,
+                            "Item 1": 39.0
+                        }
+                    },
+                    "139": {
+                        "node_id": 139,
+                        "node_location": {
+                            "lat": 20.996905,
+                            "long": 105.8427279
+                        },
+                        "demand": {
+                            "Item 0": 165.0,
+                            "Item 1": 448.0
+                        }
+                    },
+                    "252": {
+                        "node_id": 252,
+                        "node_location": {
+                            "lat": 20.996799,
+                            "long": 105.8459277
+                        },
+                        "demand": {
+                            "Item 0": 110.0,
+                            "Item 1": 3.0
+                        }
+                    },
+                    "249": {
+                        "node_id": 249,
+                        "node_location": {
+                            "lat": 20.998553,
+                            "long": 105.852251
+                        },
+                        "demand": {
+                            "Item 0": 10.0,
+                            "Item 1": 84.0
+                        }
+                    },
+                    "26": {
+                        "node_id": 26,
+                        "node_location": {
+                            "lat": 21.0115493,
+                            "long": 105.8494199
+                        },
+                        "demand": {
+                            "Item 0": 242.0,
+                            "Item 1": 7.0
+                        }
+                    },
+                    "231": {
+                        "node_id": 231,
+                        "node_location": {
+                            "lat": 20.994943,
+                            "long": 105.857299
+                        },
+                        "demand": {
+                            "Item 0": 388.0,
+                            "Item 1": 181.0
+                        }
+                    },
+                    "127": {
+                        "node_id": 127,
+                        "node_location": {
+                            "lat": 21.000123,
+                            "long": 105.841519
+                        },
+                        "demand": {
+                            "Item 0": 50.0,
+                            "Item 1": 258.0
+                        }
+                    },
+                    "181": {
+                        "node_id": 181,
+                        "node_location": {
+                            "lat": 20.974047,
+                            "long": 105.843781
+                        },
+                        "demand": {
+                            "Item 0": 456.0,
+                            "Item 1": 138.0
+                        }
+                    },
+                    "255": {
+                        "node_id": 255,
+                        "node_location": {
+                            "lat": 21.0084179,
+                            "long": 105.8474426
+                        },
+                        "demand": {
+                            "Item 0": 267.0,
+                            "Item 1": 167.0
+                        }
+                    },
+                    "260": {
+                        "node_id": 260,
+                        "node_location": {
+                            "lat": 20.995239,
+                            "long": 105.854304
+                        },
+                        "demand": {
+                            "Item 0": 78.0,
+                            "Item 1": 190.0
+                        }
+                    },
+                    "167": {
+                        "node_id": 167,
+                        "node_location": {
+                            "lat": 20.9801873,
+                            "long": 105.8506197
+                        },
+                        "demand": {
+                            "Item 0": 34.0,
+                            "Item 1": 443.0
+                        }
+                    },
+                    "174": {
+                        "node_id": 174,
+                        "node_location": {
+                            "lat": 20.9898377,
+                            "long": 105.8544194
+                        },
+                        "demand": {
+                            "Item 0": 211.0,
+                            "Item 1": 202.0
+                        }
+                    },
+                    "190": {
+                        "node_id": 190,
+                        "node_location": {
+                            "lat": 20.981216,
+                            "long": 105.845363
+                        },
+                        "demand": {
+                            "Item 0": 235.0,
+                            "Item 1": 42.0
+                        }
+                    },
+                    "169": {
+                        "node_id": 169,
+                        "node_location": {
+                            "lat": 20.9879558,
+                            "long": 105.851642
+                        },
+                        "demand": {
+                            "Item 0": 482.0,
+                            "Item 1": 456.0
+                        }
+                    },
+                    "234": {
+                        "node_id": 234,
+                        "node_location": {
+                            "lat": 21.001268,
+                            "long": 105.850713
+                        },
+                        "demand": {
+                            "Item 0": 154.0,
+                            "Item 1": 348.0
+                        }
+                    },
+                    "256": {
+                        "node_id": 256,
+                        "node_location": {
+                            "lat": 20.991539,
+                            "long": 105.848858
+                        },
+                        "demand": {
+                            "Item 0": 125.0,
+                            "Item 1": 209.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 20.98585050508333,
+                    "long": 105.89620233558334
+                },
+                "node_list": {
+                    "194": {
+                        "node_id": 194,
+                        "node_location": {
+                            "lat": 20.9938443,
+                            "long": 105.8877189
+                        },
+                        "demand": {
+                            "Item 0": 439.0,
+                            "Item 1": 334.0
+                        }
+                    },
+                    "86": {
+                        "node_id": 86,
+                        "node_location": {
+                            "lat": 20.986106561,
+                            "long": 105.930843127
+                        },
+                        "demand": {
+                            "Item 0": 189.0,
+                            "Item 1": 432.0
+                        }
+                    },
+                    "67": {
+                        "node_id": 67,
+                        "node_location": {
+                            "lat": 20.978968,
+                            "long": 105.9159823
+                        },
+                        "demand": {
+                            "Item 0": 264.0,
+                            "Item 1": 99.0
+                        }
+                    },
+                    "170": {
+                        "node_id": 170,
+                        "node_location": {
+                            "lat": 20.9925072,
+                            "long": 105.8801036
+                        },
+                        "demand": {
+                            "Item 0": 278.0,
+                            "Item 1": 105.0
+                        }
+                    },
+                    "191": {
+                        "node_id": 191,
+                        "node_location": {
+                            "lat": 20.9836752,
+                            "long": 105.8873658
+                        },
+                        "demand": {
+                            "Item 0": 304.0,
+                            "Item 1": 407.0
+                        }
+                    },
+                    "176": {
+                        "node_id": 176,
+                        "node_location": {
+                            "lat": 20.9899103,
+                            "long": 105.8884617
+                        },
+                        "demand": {
+                            "Item 0": 410.0,
+                            "Item 1": 109.0
+                        }
+                    },
+                    "185": {
+                        "node_id": 185,
+                        "node_location": {
+                            "lat": 20.9769687,
+                            "long": 105.8925233
+                        },
+                        "demand": {
+                            "Item 0": 142.0,
+                            "Item 1": 192.0
+                        }
+                    },
+                    "179": {
+                        "node_id": 179,
+                        "node_location": {
+                            "lat": 20.9824723,
+                            "long": 105.8817384
+                        },
+                        "demand": {
+                            "Item 0": 319.0,
+                            "Item 1": 412.0
+                        }
+                    },
+                    "196": {
+                        "node_id": 196,
+                        "node_location": {
+                            "lat": 20.9836752,
+                            "long": 105.8873658
+                        },
+                        "demand": {
+                            "Item 0": 61.0,
+                            "Item 1": 263.0
+                        }
+                    },
+                    "183": {
+                        "node_id": 183,
+                        "node_location": {
+                            "lat": 20.9821857,
+                            "long": 105.8789812
+                        },
+                        "demand": {
+                            "Item 0": 200.0,
+                            "Item 1": 261.0
+                        }
+                    },
+                    "199": {
+                        "node_id": 199,
+                        "node_location": {
+                            "lat": 20.9863632,
+                            "long": 105.8763119
+                        },
+                        "demand": {
+                            "Item 0": 368.0,
+                            "Item 1": 312.0
+                        }
+                    },
+                    "28": {
+                        "node_id": 28,
+                        "node_location": {
+                            "lat": 20.9935294,
+                            "long": 105.947032
+                        },
+                        "demand": {
+                            "Item 0": 17.0,
+                            "Item 1": 414.0
+                        }
+                    }
+                }
+            },
+            "2": {
+                "cluster_id": 2,
+                "center": {
+                    "lat": 21.00470990475,
+                    "long": 105.86166754496877
+                },
+                "node_list": {
+                    "263": {
+                        "node_id": 263,
+                        "node_location": {
+                            "lat": 21.0026915,
+                            "long": 105.8547871
+                        },
+                        "demand": {
+                            "Item 0": 245.0,
+                            "Item 1": 177.0
+                        }
+                    },
+                    "58": {
+                        "node_id": 58,
+                        "node_location": {
+                            "lat": 21.0224069,
+                            "long": 105.862575
+                        },
+                        "demand": {
+                            "Item 0": 415.0,
+                            "Item 1": 80.0
+                        }
+                    },
+                    "36": {
+                        "node_id": 36,
+                        "node_location": {
+                            "lat": 20.9940169,
+                            "long": 105.8696715
+                        },
+                        "demand": {
+                            "Item 0": 446.0,
+                            "Item 1": 173.0
+                        }
+                    },
+                    "232": {
+                        "node_id": 232,
+                        "node_location": {
+                            "lat": 21.0145224,
+                            "long": 105.8511623
+                        },
+                        "demand": {
+                            "Item 0": 37.0,
+                            "Item 1": 141.0
+                        }
+                    },
+                    "241": {
+                        "node_id": 241,
+                        "node_location": {
+                            "lat": 21.003153,
+                            "long": 105.86886
+                        },
+                        "demand": {
+                            "Item 0": 200.0,
+                            "Item 1": 343.0
+                        }
+                    },
+                    "242": {
+                        "node_id": 242,
+                        "node_location": {
+                            "lat": 20.997405,
+                            "long": 105.8580317
+                        },
+                        "demand": {
+                            "Item 0": 139.0,
+                            "Item 1": 328.0
+                        }
+                    },
+                    "261": {
+                        "node_id": 261,
+                        "node_location": {
+                            "lat": 21.018625,
+                            "long": 105.856795
+                        },
+                        "demand": {
+                            "Item 0": 249.0,
+                            "Item 1": 385.0
+                        }
+                    },
+                    "268": {
+                        "node_id": 268,
+                        "node_location": {
+                            "lat": 21.0038282,
+                            "long": 105.8661158
+                        },
+                        "demand": {
+                            "Item 0": 338.0,
+                            "Item 1": 416.0
+                        }
+                    },
+                    "250": {
+                        "node_id": 250,
+                        "node_location": {
+                            "lat": 21.0111713,
+                            "long": 105.8595886
+                        },
+                        "demand": {
+                            "Item 0": 46.0,
+                            "Item 1": 89.0
+                        }
+                    },
+                    "228": {
+                        "node_id": 228,
+                        "node_location": {
+                            "lat": 21.017131,
+                            "long": 105.85305
+                        },
+                        "demand": {
+                            "Item 0": 100.0,
+                            "Item 1": 58.0
+                        }
+                    },
+                    "259": {
+                        "node_id": 259,
+                        "node_location": {
+                            "lat": 20.9978548,
+                            "long": 105.8624011
+                        },
+                        "demand": {
+                            "Item 0": 391.0,
+                            "Item 1": 183.0
+                        }
+                    },
+                    "266": {
+                        "node_id": 266,
+                        "node_location": {
+                            "lat": 20.9919203,
+                            "long": 105.8660426
+                        },
+                        "demand": {
+                            "Item 0": 221.0,
+                            "Item 1": 232.0
+                        }
+                    },
+                    "239": {
+                        "node_id": 239,
+                        "node_location": {
+                            "lat": 20.9940169,
+                            "long": 105.8696715
+                        },
+                        "demand": {
+                            "Item 0": 169.0,
+                            "Item 1": 83.0
+                        }
+                    },
+                    "267": {
+                        "node_id": 267,
+                        "node_location": {
+                            "lat": 20.9919203,
+                            "long": 105.8660426
+                        },
+                        "demand": {
+                            "Item 0": 449.0,
+                            "Item 1": 341.0
+                        }
+                    },
+                    "236": {
+                        "node_id": 236,
+                        "node_location": {
+                            "lat": 21.0032022,
+                            "long": 105.8667205
+                        },
+                        "demand": {
+                            "Item 0": 444.0,
+                            "Item 1": 417.0
+                        }
+                    },
+                    "235": {
+                        "node_id": 235,
+                        "node_location": {
+                            "lat": 21.002678152,
+                            "long": 105.866729039
+                        },
+                        "demand": {
+                            "Item 0": 361.0,
+                            "Item 1": 4.0
+                        }
+                    },
+                    "201": {
+                        "node_id": 201,
+                        "node_location": {
+                            "lat": 20.9812249,
+                            "long": 105.863915
+                        },
+                        "demand": {
+                            "Item 0": 85.0,
+                            "Item 1": 242.0
+                        }
+                    },
+                    "182": {
+                        "node_id": 182,
+                        "node_location": {
+                            "lat": 20.9852892,
+                            "long": 105.8611304
+                        },
+                        "demand": {
+                            "Item 0": 205.0,
+                            "Item 1": 498.0
+                        }
+                    },
+                    "296": {
+                        "node_id": 296,
+                        "node_location": {
+                            "lat": 21.0166103,
+                            "long": 105.8532494
+                        },
+                        "demand": {
+                            "Item 0": 96.0,
+                            "Item 1": 123.0
+                        }
+                    },
+                    "244": {
+                        "node_id": 244,
+                        "node_location": {
+                            "lat": 20.9940169,
+                            "long": 105.8696715
+                        },
+                        "demand": {
+                            "Item 0": 122.0,
+                            "Item 1": 120.0
+                        }
+                    },
+                    "230": {
+                        "node_id": 230,
+                        "node_location": {
+                            "lat": 21.0003442,
+                            "long": 105.8556307
+                        },
+                        "demand": {
+                            "Item 0": 221.0,
+                            "Item 1": 127.0
+                        }
+                    },
+                    "248": {
+                        "node_id": 248,
+                        "node_location": {
+                            "lat": 21.0121,
+                            "long": 105.86046
+                        },
+                        "demand": {
+                            "Item 0": 381.0,
+                            "Item 1": 53.0
+                        }
+                    },
+                    "233": {
+                        "node_id": 233,
+                        "node_location": {
+                            "lat": 20.995835,
+                            "long": 105.861182
+                        },
+                        "demand": {
+                            "Item 0": 80.0,
+                            "Item 1": 270.0
+                        }
+                    },
+                    "246": {
+                        "node_id": 246,
+                        "node_location": {
+                            "lat": 21.0006527,
+                            "long": 105.8691705
+                        },
+                        "demand": {
+                            "Item 0": 355.0,
+                            "Item 1": 32.0
+                        }
+                    },
+                    "247": {
+                        "node_id": 247,
+                        "node_location": {
+                            "lat": 21.0188751,
+                            "long": 105.8638139
+                        },
+                        "demand": {
+                            "Item 0": 306.0,
+                            "Item 1": 219.0
+                        }
+                    },
+                    "237": {
+                        "node_id": 237,
+                        "node_location": {
+                            "lat": 21.0079088,
+                            "long": 105.8506417
+                        },
+                        "demand": {
+                            "Item 0": 444.0,
+                            "Item 1": 228.0
+                        }
+                    },
+                    "265": {
+                        "node_id": 265,
+                        "node_location": {
+                            "lat": 21.0026658,
+                            "long": 105.8586096
+                        },
+                        "demand": {
+                            "Item 0": 271.0,
+                            "Item 1": 477.0
+                        }
+                    },
+                    "56": {
+                        "node_id": 56,
+                        "node_location": {
+                            "lat": 21.0180159,
+                            "long": 105.8644714
+                        },
+                        "demand": {
+                            "Item 0": 94.0,
+                            "Item 1": 63.0
+                        }
+                    },
+                    "245": {
+                        "node_id": 245,
+                        "node_location": {
+                            "lat": 21.0115119,
+                            "long": 105.8565208
+                        },
+                        "demand": {
+                            "Item 0": 201.0,
+                            "Item 1": 435.0
+                        }
+                    },
+                    "203": {
+                        "node_id": 203,
+                        "node_location": {
+                            "lat": 20.98077,
+                            "long": 105.8640209
+                        },
+                        "demand": {
+                            "Item 0": 42.0,
+                            "Item 1": 391.0
+                        }
+                    },
+                    "13": {
+                        "node_id": 13,
+                        "node_location": {
+                            "lat": 21.0300813,
+                            "long": 105.85532
+                        },
+                        "demand": {
+                            "Item 0": 61.0,
+                            "Item 1": 182.0
+                        }
+                    },
+                    "40": {
+                        "node_id": 40,
+                        "node_location": {
+                            "lat": 21.011456,
+                            "long": 105.86299
+                        },
+                        "demand": {
+                            "Item 0": 385.0,
+                            "Item 1": 203.0
+                        }
+                    },
+                    "11": {
+                        "node_id": 11,
+                        "node_location": {
+                            "lat": 21.0036596,
+                            "long": 105.8553755
+                        },
+                        "demand": {
+                            "Item 0": 116.0,
+                            "Item 1": 197.0
+                        }
+                    },
+                    "240": {
+                        "node_id": 240,
+                        "node_location": {
+                            "lat": 21.0131938,
+                            "long": 105.8621605
+                        },
+                        "demand": {
+                            "Item 0": 118.0,
+                            "Item 1": 86.0
+                        }
+                    },
+                    "229": {
+                        "node_id": 229,
+                        "node_location": {
+                            "lat": 21.0056197,
+                            "long": 105.8510874
+                        },
+                        "demand": {
+                            "Item 0": 237.0,
+                            "Item 1": 489.0
+                        }
+                    }
+                }
+            },
+            "3": {
+                "cluster_id": 3,
+                "center": {
+                    "lat": 20.944677381800016,
+                    "long": 105.86336918960001
+                },
+                "node_list": {
+                    "192": {
+                        "node_id": 192,
+                        "node_location": {
+                            "lat": 20.9724033,
+                            "long": 105.8681474
+                        },
+                        "demand": {
+                            "Item 0": 122.0,
+                            "Item 1": 101.0
+                        }
+                    },
+                    "41": {
+                        "node_id": 41,
+                        "node_location": {
+                            "lat": 20.967042,
+                            "long": 105.870371
+                        },
+                        "demand": {
+                            "Item 0": 45.0,
+                            "Item 1": 49.0
+                        }
+                    },
+                    "81": {
+                        "node_id": 81,
+                        "node_location": {
+                            "lat": 20.8681947,
+                            "long": 105.8622667
+                        },
+                        "demand": {
+                            "Item 0": 303.0,
+                            "Item 1": 396.0
+                        }
+                    },
+                    "71": {
+                        "node_id": 71,
+                        "node_location": {
+                            "lat": 20.9487049090001,
+                            "long": 105.845689848
+                        },
+                        "demand": {
+                            "Item 0": 37.0,
+                            "Item 1": 197.0
+                        }
+                    },
+                    "173": {
+                        "node_id": 173,
+                        "node_location": {
+                            "lat": 20.967042,
+                            "long": 105.870371
+                        },
+                        "demand": {
+                            "Item 0": 320.0,
+                            "Item 1": 317.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "12": {
+        "cluster_id": 12,
+        "center": {
+            "lat": 19.949050999999997,
+            "long": 105.81660049999999
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 19.949050999999997,
+                    "long": 105.81660049999999
+                },
+                "node_list": {
+                    "225": {
+                        "node_id": 225,
+                        "node_location": {
+                            "lat": 19.81235,
+                            "long": 105.778144
+                        },
+                        "demand": {
+                            "Item 0": 478.0,
+                            "Item 1": 349.0
+                        }
+                    },
+                    "104": {
+                        "node_id": 104,
+                        "node_location": {
+                            "lat": 20.085752,
+                            "long": 105.855057
+                        },
+                        "demand": {
+                            "Item 0": 406.0,
+                            "Item 1": 313.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "13": {
+        "cluster_id": 13,
+        "center": {
+            "lat": 16.157012633333334,
+            "long": 107.88419816666668
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 16.157012633333334,
+                    "long": 107.88419816666668
+                },
+                "node_list": {
+                    "166": {
+                        "node_id": 166,
+                        "node_location": {
+                            "lat": 15.8895518,
+                            "long": 108.2466488
+                        },
+                        "demand": {
+                            "Item 0": 177.0,
+                            "Item 1": 226.0
+                        }
+                    },
+                    "289": {
+                        "node_id": 289,
+                        "node_location": {
+                            "lat": 17.4674878,
+                            "long": 106.5978879
+                        },
+                        "demand": {
+                            "Item 0": 82.0,
+                            "Item 1": 425.0
+                        }
+                    },
+                    "110": {
+                        "node_id": 110,
+                        "node_location": {
+                            "lat": 15.1139983,
+                            "long": 108.8080578
+                        },
+                        "demand": {
+                            "Item 0": 133.0,
+                            "Item 1": 101.0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "14": {
+        "cluster_id": 14,
+        "center": {
+            "lat": 20.99551630366667,
+            "long": 105.82280625829166
+        },
+        "child_cluster_list": {
+            "0": {
+                "cluster_id": 0,
+                "center": {
+                    "lat": 21.017055399999997,
+                    "long": 105.82371427999999
+                },
+                "node_list": {
+                    "16": {
+                        "node_id": 16,
+                        "node_location": {
+                            "lat": 21.0077027,
+                            "long": 105.8215081
+                        },
+                        "demand": {
+                            "Item 0": 233.0,
+                            "Item 1": 68.0
+                        }
+                    },
+                    "118": {
+                        "node_id": 118,
+                        "node_location": {
+                            "lat": 21.0230768,
+                            "long": 105.8223867
+                        },
+                        "demand": {
+                            "Item 0": 441.0,
+                            "Item 1": 468.0
+                        }
+                    },
+                    "33": {
+                        "node_id": 33,
+                        "node_location": {
+                            "lat": 21.0195112,
+                            "long": 105.8225407
+                        },
+                        "demand": {
+                            "Item 0": 185.0,
+                            "Item 1": 287.0
+                        }
+                    },
+                    "122": {
+                        "node_id": 122,
+                        "node_location": {
+                            "lat": 21.016382,
+                            "long": 105.819278
+                        },
+                        "demand": {
+                            "Item 0": 374.0,
+                            "Item 1": 418.0
+                        }
+                    },
+                    "123": {
+                        "node_id": 123,
+                        "node_location": {
+                            "lat": 21.012307,
+                            "long": 105.816945
+                        },
+                        "demand": {
+                            "Item 0": 401.0,
+                            "Item 1": 154.0
+                        }
+                    },
+                    "117": {
+                        "node_id": 117,
+                        "node_location": {
+                            "lat": 21.0210718,
+                            "long": 105.8349856
+                        },
+                        "demand": {
+                            "Item 0": 354.0,
+                            "Item 1": 45.0
+                        }
+                    },
+                    "124": {
+                        "node_id": 124,
+                        "node_location": {
+                            "lat": 21.0209267,
+                            "long": 105.8277881
+                        },
+                        "demand": {
+                            "Item 0": 121.0,
+                            "Item 1": 25.0
+                        }
+                    },
+                    "119": {
+                        "node_id": 119,
+                        "node_location": {
+                            "lat": 21.020194,
+                            "long": 105.82145
+                        },
+                        "demand": {
+                            "Item 0": 103.0,
+                            "Item 1": 79.0
+                        }
+                    },
+                    "121": {
+                        "node_id": 121,
+                        "node_location": {
+                            "lat": 21.0137428,
+                            "long": 105.8221906
+                        },
+                        "demand": {
+                            "Item 0": 424.0,
+                            "Item 1": 91.0
+                        }
+                    },
+                    "129": {
+                        "node_id": 129,
+                        "node_location": {
+                            "lat": 21.015639,
+                            "long": 105.82807
+                        },
+                        "demand": {
+                            "Item 0": 219.0,
+                            "Item 1": 427.0
+                        }
+                    }
+                }
+            },
+            "1": {
+                "cluster_id": 1,
+                "center": {
+                    "lat": 20.97594248276923,
+                    "long": 105.82611449984614
+                },
+                "node_list": {
+                    "184": {
+                        "node_id": 184,
+                        "node_location": {
+                            "lat": 20.9728763,
+                            "long": 105.8390655
+                        },
+                        "demand": {
+                            "Item 0": 77.0,
+                            "Item 1": 172.0
+                        }
+                    },
+                    "200": {
+                        "node_id": 200,
+                        "node_location": {
+                            "lat": 20.9808851,
+                            "long": 105.8175585
+                        },
+                        "demand": {
+                            "Item 0": 62.0,
+                            "Item 1": 370.0
+                        }
+                    },
+                    "172": {
+                        "node_id": 172,
+                        "node_location": {
+                            "lat": 20.9713643,
+                            "long": 105.8280009
+                        },
+                        "demand": {
+                            "Item 0": 65.0,
+                            "Item 1": 317.0
+                        }
+                    },
+                    "180": {
+                        "node_id": 180,
+                        "node_location": {
+                            "lat": 20.979184,
+                            "long": 105.815658
+                        },
+                        "demand": {
+                            "Item 0": 104.0,
+                            "Item 1": 44.0
+                        }
+                    },
+                    "72": {
+                        "node_id": 72,
+                        "node_location": {
+                            "lat": 20.952959176,
+                            "long": 105.833870298
+                        },
+                        "demand": {
+                            "Item 0": 146.0,
+                            "Item 1": 287.0
+                        }
+                    },
+                    "178": {
+                        "node_id": 178,
+                        "node_location": {
+                            "lat": 20.9808851,
+                            "long": 105.8175585
+                        },
+                        "demand": {
+                            "Item 0": 444.0,
+                            "Item 1": 354.0
+                        }
+                    },
+                    "202": {
+                        "node_id": 202,
+                        "node_location": {
+                            "lat": 20.9800772,
+                            "long": 105.8339628
+                        },
+                        "demand": {
+                            "Item 0": 17.0,
+                            "Item 1": 185.0
+                        }
+                    },
+                    "186": {
+                        "node_id": 186,
+                        "node_location": {
+                            "lat": 20.9740814,
+                            "long": 105.8412509
+                        },
+                        "demand": {
+                            "Item 0": 243.0,
+                            "Item 1": 223.0
+                        }
+                    },
+                    "195": {
+                        "node_id": 195,
+                        "node_location": {
+                            "lat": 20.9791362,
+                            "long": 105.8206641
+                        },
+                        "demand": {
+                            "Item 0": 398.0,
+                            "Item 1": 451.0
+                        }
+                    },
+                    "197": {
+                        "node_id": 197,
+                        "node_location": {
+                            "lat": 20.983288,
+                            "long": 105.820876
+                        },
+                        "demand": {
+                            "Item 0": 373.0,
+                            "Item 1": 490.0
+                        }
+                    },
+                    "22": {
+                        "node_id": 22,
+                        "node_location": {
+                            "lat": 20.9643351,
+                            "long": 105.825192
+                        },
+                        "demand": {
+                            "Item 0": 297.0,
+                            "Item 1": 141.0
+                        }
+                    },
+                    "141": {
+                        "node_id": 141,
+                        "node_location": {
+                            "lat": 20.982587,
+                            "long": 105.8167085
+                        },
+                        "demand": {
+                            "Item 0": 1.0,
+                            "Item 1": 247.0
+                        }
+                    }
+                }
+            },
+            "2": {
+                "cluster_id": 2,
+                "center": {
+                    "lat": 20.997590920000004,
+                    "long": 105.82957786000001
+                },
+                "node_list": {
+                    "130": {
+                        "node_id": 130,
+                        "node_location": {
+                            "lat": 21.0062934,
+                            "long": 105.8355421
+                        },
+                        "demand": {
+                            "Item 0": 477.0,
+                            "Item 1": 410.0
+                        }
+                    },
+                    "126": {
+                        "node_id": 126,
+                        "node_location": {
+                            "lat": 21.00274,
+                            "long": 105.824134
+                        },
+                        "demand": {
+                            "Item 0": 261.0,
+                            "Item 1": 150.0
+                        }
+                    },
+                    "161": {
+                        "node_id": 161,
+                        "node_location": {
+                            "lat": 20.9979717,
+                            "long": 105.8273353
+                        },
+                        "demand": {
+                            "Item 0": 279.0,
+                            "Item 1": 405.0
+                        }
+                    },
+                    "165": {
+                        "node_id": 165,
+                        "node_location": {
+                            "lat": 20.9972911,
+                            "long": 105.8235856
+                        },
+                        "demand": {
+                            "Item 0": 81.0,
+                            "Item 1": 7.0
+                        }
+                    },
+                    "35": {
+                        "node_id": 35,
+                        "node_location": {
+                            "lat": 21.0060414,
+                            "long": 105.8322544
+                        },
+                        "demand": {
+                            "Item 0": 469.0,
+                            "Item 1": 38.0
+                        }
+                    },
+                    "156": {
+                        "node_id": 156,
+                        "node_location": {
+                            "lat": 20.9977705,
+                            "long": 105.839121
+                        },
+                        "demand": {
+                            "Item 0": 36.0,
+                            "Item 1": 433.0
+                        }
+                    },
+                    "188": {
+                        "node_id": 188,
+                        "node_location": {
+                            "lat": 20.9914504,
+                            "long": 105.8325043
+                        },
+                        "demand": {
+                            "Item 0": 290.0,
+                            "Item 1": 56.0
+                        }
+                    },
+                    "187": {
+                        "node_id": 187,
+                        "node_location": {
+                            "lat": 20.9855934,
+                            "long": 105.8291225
+                        },
+                        "demand": {
+                            "Item 0": 345.0,
+                            "Item 1": 93.0
+                        }
+                    },
+                    "164": {
+                        "node_id": 164,
+                        "node_location": {
+                            "lat": 20.9972911,
+                            "long": 105.8235856
+                        },
+                        "demand": {
+                            "Item 0": 38.0,
+                            "Item 1": 122.0
+                        }
+                    },
+                    "163": {
+                        "node_id": 163,
+                        "node_location": {
+                            "lat": 20.9979634,
+                            "long": 105.8261287
+                        },
+                        "demand": {
+                            "Item 0": 364.0,
+                            "Item 1": 151.0
+                        }
+                    },
+                    "168": {
+                        "node_id": 168,
+                        "node_location": {
+                            "lat": 20.9914504,
+                            "long": 105.8325043
+                        },
+                        "demand": {
+                            "Item 0": 118.0,
+                            "Item 1": 69.0
+                        }
+                    },
+                    "138": {
+                        "node_id": 138,
+                        "node_location": {
+                            "lat": 20.9972911,
+                            "long": 105.8235856
+                        },
+                        "demand": {
+                            "Item 0": 10.0,
+                            "Item 1": 461.0
+                        }
+                    },
+                    "162": {
+                        "node_id": 162,
+                        "node_location": {
+                            "lat": 20.9903456,
+                            "long": 105.8335762
+                        },
+                        "demand": {
+                            "Item 0": 362.0,
+                            "Item 1": 32.0
+                        }
+                    },
+                    "193": {
+                        "node_id": 193,
+                        "node_location": {
+                            "lat": 20.992893,
+                            "long": 105.8292186
+                        },
+                        "demand": {
+                            "Item 0": 35.0,
+                            "Item 1": 186.0
+                        }
+                    },
+                    "17": {
+                        "node_id": 17,
+                        "node_location": {
+                            "lat": 20.9997796,
+                            "long": 105.8370066
+                        },
+                        "demand": {
+                            "Item 0": 393.0,
+                            "Item 1": 198.0
+                        }
+                    },
+                    "44": {
+                        "node_id": 44,
+                        "node_location": {
+                            "lat": 20.9972911,
+                            "long": 105.8235856
+                        },
+                        "demand": {
+                            "Item 0": 399.0,
+                            "Item 1": 27.0
+                        }
+                    }
+                }
+            },
+            "3": {
+                "cluster_id": 3,
+                "center": {
+                    "lat": 20.99894615,
+                    "long": 105.81090590000001
+                },
+                "node_list": {
+                    "140": {
+                        "node_id": 140,
+                        "node_location": {
+                            "lat": 21.0066857,
+                            "long": 105.8126327
+                        },
+                        "demand": {
+                            "Item 0": 221.0,
+                            "Item 1": 389.0
+                        }
+                    },
+                    "15": {
+                        "node_id": 15,
+                        "node_location": {
+                            "lat": 21.0001666,
+                            "long": 105.8072169
+                        },
+                        "demand": {
+                            "Item 0": 46.0,
+                            "Item 1": 54.0
+                        }
+                    },
+                    "144": {
+                        "node_id": 144,
+                        "node_location": {
+                            "lat": 20.9925999,
+                            "long": 105.8016058
+                        },
+                        "demand": {
+                            "Item 0": 430.0,
+                            "Item 1": 120.0
+                        }
+                    },
+                    "157": {
+                        "node_id": 157,
+                        "node_location": {
+                            "lat": 21.000805,
+                            "long": 105.813684
+                        },
+                        "demand": {
+                            "Item 0": 497.0,
+                            "Item 1": 37.0
+                        }
+                    },
+                    "137": {
+                        "node_id": 137,
+                        "node_location": {
+                            "lat": 20.991906,
+                            "long": 105.805909
+                        },
+                        "demand": {
+                            "Item 0": 162.0,
+                            "Item 1": 399.0
+                        }
+                    },
+                    "160": {
+                        "node_id": 160,
+                        "node_location": {
+                            "lat": 20.9990441,
+                            "long": 105.8118864
+                        },
+                        "demand": {
+                            "Item 0": 165.0,
+                            "Item 1": 99.0
+                        }
+                    },
+                    "142": {
+                        "node_id": 142,
+                        "node_location": {
+                            "lat": 21.0031985,
+                            "long": 105.8071449
+                        },
+                        "demand": {
+                            "Item 0": 271.0,
+                            "Item 1": 180.0
+                        }
+                    },
+                    "9": {
+                        "node_id": 9,
+                        "node_location": {
+                            "lat": 21.0033786,
+                            "long": 105.8162011
+                        },
+                        "demand": {
+                            "Item 0": 233.0,
+                            "Item 1": 365.0
+                        }
+                    },
+                    "158": {
+                        "node_id": 158,
+                        "node_location": {
+                            "lat": 20.9916094,
+                            "long": 105.8172299
+                        },
+                        "demand": {
+                            "Item 0": 163.0,
+                            "Item 1": 373.0
+                        }
+                    },
+                    "159": {
+                        "node_id": 159,
+                        "node_location": {
+                            "lat": 21.0031985,
+                            "long": 105.8071449
+                        },
+                        "demand": {
+                            "Item 0": 468.0,
+                            "Item 1": 16.0
+                        }
+                    },
+                    "143": {
+                        "node_id": 143,
+                        "node_location": {
+                            "lat": 20.9913829,
+                            "long": 105.8140141
+                        },
+                        "demand": {
+                            "Item 0": 132.0,
+                            "Item 1": 114.0
+                        }
+                    },
+                    "125": {
+                        "node_id": 125,
+                        "node_location": {
+                            "lat": 21.0033786,
+                            "long": 105.8162011
+                        },
+                        "demand": {
+                            "Item 0": 294.0,
+                            "Item 1": 428.0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

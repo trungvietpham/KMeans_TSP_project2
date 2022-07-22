@@ -99,14 +99,14 @@ def get_length_path(csv_file, dump_file):
     depot_map = mapping_id_code('test_data/depots.csv')
     # print(customer_map)
     node_map = {**customer_map, **depot_map}
-    print(node_map)
+    # print(node_map)
     save_data = {}
     for line in range(len(df)):
         from_node_code = str(df['from_node_code'][line])
         to_node_code = str(df['to_node_code'][line])
         distance = float(df['distance'][line])
-        print('from: {}, to: {}'.format(from_node_code, to_node_code))
-        print(node_map[to_node_code])
+        # print('from: {}, to: {}'.format(from_node_code, to_node_code))
+        # print(node_map[to_node_code])
         head = from_node_code[0] + str(node_map[from_node_code])
         tail = to_node_code[0] + str(node_map[to_node_code])
         if head not in save_data: 

@@ -62,7 +62,7 @@ class Cluster:
     """
         Lớp chứa thông tin về 1 cụm, gồm: mảng sức chứa, mảng class City, số lượng items, mảng chứa trọng số hiện tại của cụm
     """
-    def __init__(self, x, y, capacity_list, n_items = 2, n_cities = 0, city_id_list = []):
+    def __init__(self, x, y, capacity_list, n_items = 2, n_cities = 0, city_id_list = [], current_mass = None):
         """
         Get the number of city in this cluster
         
@@ -78,7 +78,9 @@ class Cluster:
         self.y = y
         self.capacity_list = capacity_list
         self.n_items = n_items
-        self.current_mass = np.array(np.zeros((n_items))) # np.array chứa khối lượng hiện tại của cluster đối với từng loại mặt hàng
+        if current_mass is None:
+            self.current_mass = np.array(np.zeros((n_items))) # np.array chứa khối lượng hiện tại của cluster đối với từng loại mặt hàng
+        else: self.current_mass = np.array(current_mass)
         # self.city_list = []
         # if (city_list != None):
         #     self.city_list = city_list
@@ -86,6 +88,10 @@ class Cluster:
         #         self.current_mass += city.demand_array
         self.n_cities = n_cities
         self.city_id_list = city_id_list
+    
+    def __del__(self):
+        self.__del__
+        # print('Destruction called')
         
     def get_center(self):
         return [self.x, self.y]

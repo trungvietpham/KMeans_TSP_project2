@@ -1,3 +1,4 @@
+from ast import Raise
 import numpy as np
 from scipy.spatial import distance
 import re
@@ -54,7 +55,7 @@ def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_
     # for i in range(n_cities): city_list_shuffle[i].print(id_flag = True)
     else: city_list_shuffle = city_list
 
-    labels = np.zeros(n_cities)
+    labels = {}
     result_array = np.zeros((n_cities, n_clusters))
     for i in range(n_cities):
         city_id = city_list_shuffle[i].id
@@ -74,21 +75,18 @@ def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_
             # print('Res[{}, {}] = {}'.format(i,j,result_array[i,j]))
 
         labels[city_id] = np.argmin(result_array[i])
-        # print('Assign to cluster {}'.format(labels[-1]))
-        # print('Before assign: ')
-        # for k in range(n_clusters):
-        #     print('Cluster {}: '.format(k))
-        #     cluster_list[k].print()
+
         (cluster_list[int(labels[city_id])]).update_mass(city_list_shuffle[i].demand_array, city_list_shuffle[i].id)
-        # city_list_shuffle[i].print(id_flag = True)
+
         city_list_shuffle[i].cluster_id = labels[city_id]
 
-        # print('After assign: ')
-        # for k in range(n_clusters): 
-        #     print('Cluster {}: '.format(k))
-        #     cluster_list[k].print(current_mass_flag=True, get_n_cities_flag = True)
+    #Sort lại labels theo key
+    ret_labels = {}
+    for i in sorted(labels):
+        ret_labels[i] = labels[i]
     
-    return (result_array, np.array(labels))
+    # return (result_array, np.array(labels))
+    return (result_array, np.array(list(ret_labels.items())))
 
 def load_vehicle_from_text(file_name, n_items):
     '''
@@ -274,7 +272,7 @@ def total_demand(city_list):
     
     return total
 
-def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json'):
+def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json', output_flag = True):
     '''
     dạng json: 
     "": {
@@ -300,6 +298,13 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
     save_data = {}
     n_cluster = len(cluster_list)
     n_city = len(city_list)
+    # Mapping city_id ra chỉ số của mảng city_list:
+    mapping = {}
+    for j in range(n_city):
+        mapping[int(city_list[j].id)] = j
+    
+    # print('Mapping: ')
+    # print(mapping)
     for i in range(n_cluster):
         tmp = {}
         tmp['cluster_id'] = i
@@ -313,9 +318,11 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
         for city_id in cluster_list[i].city_id_list:
             city_tmp = {}
             city_tmp['node_id'] = int(city_id)
-            city_tmp['node_location'] = {'lat': city_list[int(city_id)].x, 'long':city_list[int(city_id)].y}
+            # print('City id = {}'.format(city_id))
+            # print('Mapping = {}'.format(mapping[city_id]))
+            city_tmp['node_location'] = {'lat': city_list[mapping[int(city_id)]].x, 'long':city_list[mapping[int(city_id)]].y}
 
-            demand = city_list[int(city_id)].demand_array
+            demand = city_list[mapping[int(city_id)]].demand_array
             demand_tmp = {}
             for j in range(len(demand)):
                 demand_tmp['Item ' + str(j)] = demand[j]
@@ -325,8 +332,11 @@ def output_to_json_file(cluster_list, city_list, dump_file = 'output/phase2.json
         tmp['node_list'] = cities_tmp
         save_data[str(i)] = tmp
     
-    with open(dump_file, 'w', encoding='utf-8') as json_file:
-        json.dump(save_data, json_file, ensure_ascii=False, indent=4)
+    if output_flag:
+        with open(dump_file, 'w', encoding='utf-8') as json_file:
+            json.dump(save_data, json_file, ensure_ascii=False, indent=4)
+    
+    return save_data
 
 def csv_to_txt(csv_file, txt_file = 'input/node.txt', data_type = 'market', mode = 'w'):
     '''
@@ -471,3 +481,21 @@ def get_convert_coef_from_file(fname):
             data = f.read()
     data = data.split('\n')
     return float(data[0])
+
+def is_bigger_than(array1, array2):
+    '''
+    Kiểm tra xem array1 có lớn hơn array2 hay không, định nghĩa a1>a2 khi và chỉ khi a1[i]>=a2[i] với mọi i
+    '''
+    array1 = np.array(array1)
+    array2 = np.array(array2)
+
+    #Kiểm tra có cùng shape hay không, nếu không thì raise lỗi 
+    if array1.shape != array2.shape: 
+        raise Exception('2 array do not have the same shape')
+    
+    length = len(array1)
+
+    for i in range(length):
+        if array1[i] < array2[i]: return False
+    
+    return True

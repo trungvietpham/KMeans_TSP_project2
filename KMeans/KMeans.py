@@ -60,7 +60,7 @@ class KMeans:
         for k in range(self.n_clusters):
             cities_k = []
             for i in range(len(labels)):
-                if labels[i] == k: cities_k.append(cities[i])
+                if labels[i][1] == k: cities_k.append(cities[i])
                 # take average
                 #Note: Sửa lại để cập nhật theo hàm optimizer
             if len(cities_k) != 0: 
@@ -82,7 +82,7 @@ class KMeans:
         diff = 0.0
         length = len(centers)
         for i in range(length): 
-            print('Cluster {}: Old center: {}, new center: {}'.format(i, centers[i], new_centers[i]))
+            # print('Cluster {}: Old center: {}, new center: {}'.format(i, centers[i], new_centers[i]))
             diff += distance.euclidean(centers[i], new_centers[i])
         
         diff/=self.n_clusters
@@ -114,19 +114,25 @@ class KMeans:
         centers = [np.array(self.init_centers(city_list))]
         labels = []
         cluster_list = []
+        # print('On start')
         for i in range(self.n_clusters):
             location = centers[-1][i]
             capacity_list = np.array(capacity_array[i])
-            cluster_list.append(Cluster(location[0], location[1], capacity_list))
+            cluster_list.append(Cluster(location[0], location[1], capacity_list, city_id_list=[]))
+            # print('Cluster {}, city list: {}'.format(i, cluster_list[-1].city_id_list))
         it = 0 
-        while True:
-            print('Loop thread')
+        continue_flag = True
+        while continue_flag:
+            # print('Loop thread')
             labels.append(self.assign_labels(optimizer, city_list, cluster_list, distance_coef, alpha, penalty_coef, zeros_penalty, shuffle=shuffle, normalization_flag=True))
-            print('Assign done')
+            # print('Assign done')
             new_centers = self.update_centers(city_list, labels[-1])
-            print('Update done')
+            # print('Update done')
+            # for cluster_id in range(len(cluster_list)):
+                # print('\tCluster {}: City list = {}'.format(cluster_id, cluster_list[cluster_id].city_id_list))
             if self.has_converged(centers[-1], new_centers, epsilon):
                 print('Coverged!!!!')
+                continue_flag = False
                 break
             centers.append(new_centers)
             for i in range(self.n_clusters):
@@ -135,7 +141,9 @@ class KMeans:
                 print('\tTâm cụm {} mới: {}'.format(i, cluster_list[i].get_center()))
                 cluster_list[i].clear_mass()
                 #cluster_list[i].clear_city()
-                print('it = {}'.format(it))
+                # print('it = {}'.format(it))
+            
+            print('it = {}'.format(it))
             it += 1
         return (centers, labels, it, cluster_list)
 
