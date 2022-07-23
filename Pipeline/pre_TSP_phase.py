@@ -1,4 +1,5 @@
 '''
+Cắt cụm to ra thành các cụm con để sử dụng thuật toán TSP
 1. Đọc các dữ liệu từ output phase 1 vào và các dữ liệu về xe, items, ...
 2. KMeans để chia ra 1 cụm thành các cụm con có thể di chuyển trong 1 route
 3. Dump lại các cụm con ra 1 file json
@@ -19,7 +20,7 @@ item_fname = 'input/item.txt'
 city_fname = 'input/market.json'
 vehicle_fname = 'input/vehicle.json'
 convert_coef_fname = 'input/latlong_to_meter_coef.txt'
-output_phase1_fname = 'output/phase2_market.json'
+output_phase1_fname = 'output/KMeans_phase.json'
 
 (n_items, item_list) = load_item_from_text(item_fname)
 (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
@@ -50,6 +51,7 @@ for cluster_id in cluster_data:
 
 '''
 2. Với mỗi cụm ta chia thành các cụm nhỏ, số lượng cụm nằm trong khoảng [max(ceil(tổng/capa)), n_node/(floor(min(capa/mean)))]
+Số node trong cụm được giới hạn bởi 1 biến, đặt = 15
 '''
 
 low_n_cluster = []
@@ -57,7 +59,7 @@ for i in range(n_clusters):
 
     #Lấy ra chặn dưới sổ lượng cụm
     low_n_cluster.append(int(np.ceil(np.max(cluster_list[i].current_mass/np.array(vehicle_list[i].capacity_list)))))
-
+    n_node_threshold = 15
 #Với cụm thứ i, low_n_cluster[i] là chặn dưới số cụm con được phân ra từ cụm cha đó
 #Tiến hành chia cụm và sau đó lưu vào 1 dict để dump vào file
 save_data = {}
@@ -83,10 +85,16 @@ for cluster_id in range(n_clusters):
         
         continue_flag = False
         for child in child_cluster_list:
+            #Kiểm tra nếu current_mass của cụm lớn hơn capacity của xe thì set flag thành true
             if not is_bigger_than(child.capacity_list, child.current_mass): 
                 continue_flag = True
                 # print('capa = {}, current mass = {}'.format(child.capacity_list, child.current_mass))
                 # input("Press Enter to continue...")
+                break
+
+            #Kiểm tra nếu số node lớn hơn n_node_threshold thì set flag thành true
+            if child.n_cities > n_node_threshold:
+                continue_flag = True
                 break
         
         if continue_flag == True: 

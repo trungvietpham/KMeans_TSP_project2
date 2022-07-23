@@ -47,7 +47,7 @@ for i in range(len(cluster_list)):
     print('Cluster {}: '.format(i))
     cluster_list[i].print(True, True, True, True,True, '\t')
 
-output_to_json_file(cluster_list, city_list, 'output/phase2_market.json')
+output_to_json_file(cluster_list, city_list, 'output/KMeans_phase.json')
 
 '''
 Save centers, labels, it thành dict và dump vào file json

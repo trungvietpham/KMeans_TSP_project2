@@ -9,7 +9,7 @@ sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 
 def plotting_for_phase1():
     #Read data from phase2.json
-    fname = 'output/phase2_market.json'
+    fname = 'output/KMeans_phase.json'
     f = open(fname, 'r')
     data = json.load(f)
 

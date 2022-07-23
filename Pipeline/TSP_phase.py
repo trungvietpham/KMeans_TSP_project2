@@ -35,12 +35,20 @@ for depot_key in depot_data['depot']:
     depot_list.append([depot_data['depot'][depot_key]['location']['lat'], depot_data['depot'][depot_key]['location']['long']])
 del depot_key
 
+# Dict lưu lại các thông tin để lưu trữ
+save_data = {}
+
 #Lặp qua các cụm con và tsp 
 for cluster_parent_key in cluster_data:
     center_parent = cluster_data[cluster_parent_key]['center']
     n_cluster_child = len(cluster_data[cluster_parent_key]["child_cluster_list"])
+    cluster_info = {}
+    cluster_info['cluster_id'] = cluster_parent_key
+    cluster_info['center'] = cluster_data[cluster_parent_key]['center']
+    cluster_info["child_cluster_list"] ={}
 
     for cluster_child_key in cluster_data[cluster_parent_key]["child_cluster_list"]:
+        
         cluster_child = cluster_data[cluster_parent_key]["child_cluster_list"][cluster_child_key]
         (index, dis) = get_nearest_depot(point=(cluster_child["center"]['lat'], cluster_child["center"]['long']), depot_list=depot_list)
         n_node_child = len(cluster_child["node_list"])
@@ -69,8 +77,20 @@ for cluster_parent_key in cluster_data:
         reverse_permutation = []
         for i in range(n_node_child+1):
             reverse_permutation.append(mapping[int(permutation[i])])
-        print('permutation: {}'.format('-->'.join(reverse_permutation)))
+        reverse_permutation.append(mapping[int(permutation[0])])
+        print('Cluster cha = {}, cluster con = {}'.format(cluster_parent_key, cluster_child_key))
+        print('Permutation: {}'.format(' -> '.join(reverse_permutation)))
         print('Distance = {}'.format(dist_res))
-        exit(0)
+        cluster_info["child_cluster_list"][cluster_child_key] = ' -> '.join(reverse_permutation)
+
+        #Xóa bộ nhớ
+        del cluster_child, mapping, reverse
+
+
+
+    save_data[cluster_parent_key] = cluster_info
+
+#Dump ra file 'output/TSP_phase.json'
+json.dump(save_data, open('output/TSP_phase.json', 'w'), indent=4)
 
 
