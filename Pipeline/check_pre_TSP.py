@@ -1,6 +1,7 @@
 import json
 import sys
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+import os
+sys.path.append(os.getcwd())
 from utils.utils import *
 
 n_items = 2

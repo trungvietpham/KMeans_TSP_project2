@@ -1,5 +1,6 @@
 import sys
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+import os
+sys.path.append(os.getcwd())
 from utils.get_data import *
 
 #csv_to_txt('test_data/test_data_30.csv', 'input/tmp.txt')

@@ -4,7 +4,8 @@ import json
 from python_tsp.exact import solve_tsp_dynamic_programming
 
 import sys
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+import os
+sys.path.append(os.getcwd())
 from utils.utils import *
 
 def get_nearest_depot(point, depot_list):

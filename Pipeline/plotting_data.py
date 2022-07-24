@@ -5,7 +5,8 @@ import json
 import random
 
 import sys
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+import os
+sys.path.append(os.getcwd())
 
 def plotting_for_phase1():
     #Read data from phase2.json
@@ -101,5 +102,5 @@ b = plotting_for_phase1()
 
 plt.show()
 a.show()
-b.show()
-input()
+# b.show()
+# input()

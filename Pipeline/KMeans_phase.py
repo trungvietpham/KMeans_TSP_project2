@@ -3,7 +3,8 @@ import numpy as np
 import sys
 
 from sklearn.utils import shuffle
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+import os
+sys.path.append(os.getcwd())
 from KMeans.KMeans import KMeans
 from utils.utils import *
 
