@@ -1,0 +1,5928 @@
+{
+    "market": {
+        "0": {
+            "id": 0,
+            "code": "C0",
+            "name": "VinMart Liễu Giai",
+            "location": {
+                "lat": 21.0315036,
+                "long": 105.8150125
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 253
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 359
+                }
+            }
+        },
+        "1": {
+            "id": 1,
+            "code": "C1",
+            "name": "VinMart Đại La",
+            "location": {
+                "lat": 20.9966624,
+                "long": 105.8446147
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 383
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 153
+                }
+            }
+        },
+        "2": {
+            "id": 2,
+            "code": "C2",
+            "name": "VinMart Trương Định",
+            "location": {
+                "lat": 20.9791833,
+                "long": 105.8452311
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 33
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 168
+                }
+            }
+        },
+        "3": {
+            "id": 3,
+            "code": "C3",
+            "name": "VINMART+ BNH SUỐI HOA - Bắc Ninh",
+            "location": {
+                "lat": 21.1910429,
+                "long": 106.0771852
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 147
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 18
+                }
+            }
+        },
+        "4": {
+            "id": 4,
+            "code": "C4",
+            "name": "VinMart Nguyễn Chí Thanh",
+            "location": {
+                "lat": 21.0228337,
+                "long": 105.8141028
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 103
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 212
+                }
+            }
+        },
+        "5": {
+            "id": 5,
+            "code": "C5",
+            "name": "VinMart Thăng Long",
+            "location": {
+                "lat": 21.0380993,
+                "long": 105.7939839
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 372
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 369
+                }
+            }
+        },
+        "6": {
+            "id": 6,
+            "code": "C6",
+            "name": "VinMart La Thành",
+            "location": {
+                "lat": 21.023803,
+                "long": 105.817121
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 141
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 113
+                }
+            }
+        },
+        "7": {
+            "id": 7,
+            "code": "C7",
+            "name": "VinMart Đội Cấn",
+            "location": {
+                "lat": 21.0376645,
+                "long": 105.8085768
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 201
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 28
+                }
+            }
+        },
+        "8": {
+            "id": 8,
+            "code": "C8",
+            "name": "VinMart Tràng An",
+            "location": {
+                "lat": 21.0439357,
+                "long": 105.8026558
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 343
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 460
+                }
+            }
+        },
+        "9": {
+            "id": 9,
+            "code": "C9",
+            "name": "VinMart Royal City",
+            "location": {
+                "lat": 21.0033786,
+                "long": 105.8162011
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 313
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 242
+                }
+            }
+        },
+        "10": {
+            "id": 10,
+            "code": "C10",
+            "name": "VinMart Trung Yên",
+            "location": {
+                "lat": 21.8195634,
+                "long": 105.2059996
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 10
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 27
+                }
+            }
+        },
+        "11": {
+            "id": 11,
+            "code": "C11",
+            "name": "VinMart Võ Thị Sáu",
+            "location": {
+                "lat": 21.0036596,
+                "long": 105.8553755
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 448
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 165
+                }
+            }
+        },
+        "12": {
+            "id": 12,
+            "code": "C12",
+            "name": "VinMart Xuân Diệu",
+            "location": {
+                "lat": 21.0639802,
+                "long": 105.8281555
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 342
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 349
+                }
+            }
+        },
+        "13": {
+            "id": 13,
+            "code": "C13",
+            "name": "VinMart Lý Thái Tổ",
+            "location": {
+                "lat": 21.0300813,
+                "long": 105.85532
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 5
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 396
+                }
+            }
+        },
+        "14": {
+            "id": 14,
+            "code": "C14",
+            "name": "VinMart Lê Đức Thọ",
+            "location": {
+                "lat": 21.028386,
+                "long": 105.7687765
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 306
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 295
+                }
+            }
+        },
+        "15": {
+            "id": 15,
+            "code": "C15",
+            "name": "VinMart Vũ Trọng Phùng",
+            "location": {
+                "lat": 21.0001666,
+                "long": 105.8072169
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 202
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 463
+                }
+            }
+        },
+        "16": {
+            "id": 16,
+            "code": "C16",
+            "name": "VinMart Thái Thịnh",
+            "location": {
+                "lat": 21.0077027,
+                "long": 105.8215081
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 348
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 458
+                }
+            }
+        },
+        "17": {
+            "id": 17,
+            "code": "C17",
+            "name": "VinMart Trường Chinh",
+            "location": {
+                "lat": 20.9997796,
+                "long": 105.8370066
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 358
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3
+                }
+            }
+        },
+        "18": {
+            "id": 18,
+            "code": "C18",
+            "name": "VinMart Nguyễn Văn Cừ II",
+            "location": {
+                "lat": 21.0424112,
+                "long": 105.8703906
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 281
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 147
+                }
+            }
+        },
+        "19": {
+            "id": 19,
+            "code": "C19",
+            "name": "VinMart Trúc Khê",
+            "location": {
+                "lat": 21.0158942,
+                "long": 105.8082791
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 6
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 346
+                }
+            }
+        },
+        "20": {
+            "id": 20,
+            "code": "C20",
+            "name": "VinMart Hà Đông 2",
+            "location": {
+                "lat": 20.9633654,
+                "long": 105.7915689
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 172
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 209
+                }
+            }
+        },
+        "21": {
+            "id": 21,
+            "code": "C21",
+            "name": "VinMart Nhật Tân",
+            "location": {
+                "lat": 21.0787431,
+                "long": 105.8185461
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 410
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 56
+                }
+            }
+        },
+        "22": {
+            "id": 22,
+            "code": "C22",
+            "name": "VinMart Linh Đàm",
+            "location": {
+                "lat": 20.9643351,
+                "long": 105.825192
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 57
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 408
+                }
+            }
+        },
+        "23": {
+            "id": 23,
+            "code": "C23",
+            "name": "VinMart VCPLZ HNI Skylake",
+            "location": {
+                "lat": 21.0203561,
+                "long": 105.7804201
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 492
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 478
+                }
+            }
+        },
+        "24": {
+            "id": 24,
+            "code": "C24",
+            "name": "VinMart VCC HNI Trần Duy Hưng",
+            "location": {
+                "lat": 21.0062226,
+                "long": 105.7952365
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 440
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 233
+                }
+            }
+        },
+        "25": {
+            "id": 25,
+            "code": "C25",
+            "name": "VinMart Xuân La",
+            "location": {
+                "lat": 21.0657904,
+                "long": 105.8069229
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 169
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 59
+                }
+            }
+        },
+        "26": {
+            "id": 26,
+            "code": "C26",
+            "name": "VinMart Bà Triệu",
+            "location": {
+                "lat": 21.0115493,
+                "long": 105.8494199
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 69
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 123
+                }
+            }
+        },
+        "27": {
+            "id": 27,
+            "code": "C27",
+            "name": "VinMart Bắc Từ Liêm",
+            "location": {
+                "lat": 21.0528827,
+                "long": 105.7809712
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 419
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 236
+                }
+            }
+        },
+        "28": {
+            "id": 28,
+            "code": "C28",
+            "name": "VinMart Ocean Park",
+            "location": {
+                "lat": 20.9935294,
+                "long": 105.947032
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 205
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 180
+                }
+            }
+        },
+        "29": {
+            "id": 29,
+            "code": "C29",
+            "name": "VinMart Gardenia",
+            "location": {
+                "lat": 21.0359019,
+                "long": 105.7597892
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 284
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 429
+                }
+            }
+        },
+        "30": {
+            "id": 30,
+            "code": "C30",
+            "name": "VinMart Hà Đông",
+            "location": {
+                "lat": 20.9633654,
+                "long": 105.7915689
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 468
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 329
+                }
+            }
+        },
+        "31": {
+            "id": 31,
+            "code": "C31",
+            "name": "VinMart Đan Phượng",
+            "location": {
+                "lat": 21.0836139,
+                "long": 105.6725021
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 179
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 228
+                }
+            }
+        },
+        "32": {
+            "id": 32,
+            "code": "C32",
+            "name": "VinMart Hoài Đức",
+            "location": {
+                "lat": 21.005133,
+                "long": 105.728168
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 47
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 459
+                }
+            }
+        },
+        "33": {
+            "id": 33,
+            "code": "C33",
+            "name": "VinMart Hoàng Cầu",
+            "location": {
+                "lat": 21.0195112,
+                "long": 105.8225407
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 222
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 215
+                }
+            }
+        },
+        "34": {
+            "id": 34,
+            "code": "C34",
+            "name": "VinMart Long Biên",
+            "location": {
+                "lat": 21.0511214,
+                "long": 105.9162845
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 205
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 326
+                }
+            }
+        },
+        "35": {
+            "id": 35,
+            "code": "C35",
+            "name": "VinMart Phạm Ngọc Thạch",
+            "location": {
+                "lat": 21.0060414,
+                "long": 105.8322544
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 98
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 358
+                }
+            }
+        },
+        "36": {
+            "id": 36,
+            "code": "C36",
+            "name": "VinMart Times City",
+            "location": {
+                "lat": 20.9940169,
+                "long": 105.8696715
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 371
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 238
+                }
+            }
+        },
+        "37": {
+            "id": 37,
+            "code": "C37",
+            "name": "VinMart Trung Hòa",
+            "location": {
+                "lat": 21.0073081,
+                "long": 105.8015488
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 277
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 45
+                }
+            }
+        },
+        "38": {
+            "id": 38,
+            "code": "C38",
+            "name": "VinMart Văn Quán",
+            "location": {
+                "lat": 20.9743358,
+                "long": 105.7892777
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 121
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 46
+                }
+            }
+        },
+        "39": {
+            "id": 39,
+            "code": "C39",
+            "name": "VinMart Thụy Khuê",
+            "location": {
+                "lat": 21.0435284,
+                "long": 105.8196104
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 422
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 265
+                }
+            }
+        },
+        "40": {
+            "id": 40,
+            "code": "C40",
+            "name": "VinMart Lương Yên",
+            "location": {
+                "lat": 21.011456,
+                "long": 105.86299
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 183
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 231
+                }
+            }
+        },
+        "41": {
+            "id": 41,
+            "code": "C41",
+            "name": "VinMart Yên Sở",
+            "location": {
+                "lat": 20.967042,
+                "long": 105.870371
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 326
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 169
+                }
+            }
+        },
+        "42": {
+            "id": 42,
+            "code": "C42",
+            "name": "VinMart HNI Cầu Giấy",
+            "location": {
+                "lat": 21.0380993,
+                "long": 105.7939839
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 170
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 189
+                }
+            }
+        },
+        "43": {
+            "id": 43,
+            "code": "C43",
+            "name": "VinMart+ 208L Lê Trọng Tấn",
+            "location": {
+                "lat": 10.8131398,
+                "long": 106.6228319
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 152
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 111
+                }
+            }
+        },
+        "44": {
+            "id": 44,
+            "code": "C44",
+            "name": "VinMart+ Hoàng Văn Thái",
+            "location": {
+                "lat": 20.9972911,
+                "long": 105.8235856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 287
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 244
+                }
+            }
+        },
+        "45": {
+            "id": 45,
+            "code": "C45",
+            "name": " VinMart+ 203 Nguyễn Văn Cừ - Bắc Ninh",
+            "location": {
+                "lat": 21.173225083,
+                "long": 106.053477045
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 454
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 394
+                }
+            }
+        },
+        "46": {
+            "id": 46,
+            "code": "C46",
+            "name": "VinMart+ 73 Phố Vũ - Bắc Ninh",
+            "location": {
+                "lat": 21.1756177,
+                "long": 106.0774733
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 17
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 124
+                }
+            }
+        },
+        "47": {
+            "id": 47,
+            "code": "C47",
+            "name": "Siêu thị VinMart Thái Nguyên",
+            "location": {
+                "lat": 21.5907848,
+                "long": 105.8260997
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 137
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 60
+                }
+            }
+        },
+        "48": {
+            "id": 48,
+            "code": "C48",
+            "name": "VinMart Việt Trì - Phú Thọ",
+            "location": {
+                "lat": 21.3125580120001,
+                "long": 105.396005345
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 15
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 430
+                }
+            }
+        },
+        "49": {
+            "id": 49,
+            "code": "C49",
+            "name": "VM VC+ PTO Phú Thọ",
+            "location": {
+                "lat": 21.34254,
+                "long": 105.371668
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 103
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 285
+                }
+            }
+        },
+        "50": {
+            "id": 50,
+            "code": "C50",
+            "name": "Vinmart+ 291 Mê Linh Liên Bảo Vĩnh Yên Vĩnh Phúc",
+            "location": {
+                "lat": 21.314276303,
+                "long": 105.608941988
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 161
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 102
+                }
+            }
+        },
+        "51": {
+            "id": 51,
+            "code": "C51",
+            "name": "VinMart+ 207 Đức Giang",
+            "location": {
+                "lat": 21.0649738,
+                "long": 105.9082105
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 400
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 464
+                }
+            }
+        },
+        "52": {
+            "id": 52,
+            "code": "C52",
+            "name": "VinMart+ 53 Cao Lỗ",
+            "location": {
+                "lat": 21.1407545,
+                "long": 105.8482196
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 442
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 498
+                }
+            }
+        },
+        "53": {
+            "id": 53,
+            "code": "C53",
+            "name": "VinMart+ 30 Cửa Nam",
+            "location": {
+                "lat": 21.0268012,
+                "long": 105.8416255
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 180
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 405
+                }
+            }
+        },
+        "54": {
+            "id": 54,
+            "code": "C54",
+            "name": "VinMart+ 23 Gia Ngư",
+            "location": {
+                "lat": 21.0329576,
+                "long": 105.8527041
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 43
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 500
+                }
+            }
+        },
+        "55": {
+            "id": 55,
+            "code": "C55",
+            "name": "VinMart+ 3 Hàng Bút",
+            "location": {
+                "lat": 21.03494,
+                "long": 105.84788
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 18
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 417
+                }
+            }
+        },
+        "56": {
+            "id": 56,
+            "code": "C56",
+            "name": "VinMart+ 453 Bạch Đằng",
+            "location": {
+                "lat": 21.0180159,
+                "long": 105.8644714
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 161
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 336
+                }
+            }
+        },
+        "57": {
+            "id": 57,
+            "code": "C57",
+            "name": "VinMart+ 120 Lê Duẩn (Ga Hà Nội)",
+            "location": {
+                "lat": 21.0236778170001,
+                "long": 105.84141835
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 318
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 394
+                }
+            }
+        },
+        "58": {
+            "id": 58,
+            "code": "C58",
+            "name": "VinMart+ 384 Bạch Đằng",
+            "location": {
+                "lat": 21.0224069,
+                "long": 105.862575
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 34
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 132
+                }
+            }
+        },
+        "59": {
+            "id": 59,
+            "code": "C59",
+            "name": "VinMart+ 95 Lý Nam Đế",
+            "location": {
+                "lat": 21.030789,
+                "long": 105.844163
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 368
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 105
+                }
+            }
+        },
+        "60": {
+            "id": 60,
+            "code": "C60",
+            "name": "VinMart+ 95 Lý Nam Đế",
+            "location": {
+                "lat": 21.030789,
+                "long": 105.844163
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 273
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 322
+                }
+            }
+        },
+        "61": {
+            "id": 61,
+            "code": "C61",
+            "name": "VinMart+ 20 Ngõ Huyện",
+            "location": {
+                "lat": 21.029594,
+                "long": 105.848585
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 366
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 287
+                }
+            }
+        },
+        "62": {
+            "id": 62,
+            "code": "C62",
+            "name": "VinMart+ Số 8 Lê Văn Linh",
+            "location": {
+                "lat": 21.014685,
+                "long": 105.848449
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 330
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 338
+                }
+            }
+        },
+        "63": {
+            "id": 63,
+            "code": "C63",
+            "name": "VinMart+ 49 Lê Duẩn",
+            "location": {
+                "lat": 21.024309,
+                "long": 105.841095
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 215
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 489
+                }
+            }
+        },
+        "64": {
+            "id": 64,
+            "code": "C64",
+            "name": "VinMart+ 4A Hàng Chiếu",
+            "location": {
+                "lat": 21.037291,
+                "long": 105.852077
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 338
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 96
+                }
+            }
+        },
+        "65": {
+            "id": 65,
+            "code": "C65",
+            "name": "VinMart+ 266 Đào Cam Mộc",
+            "location": {
+                "lat": 21.1412079,
+                "long": 105.8684613
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 345
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 178
+                }
+            }
+        },
+        "66": {
+            "id": 66,
+            "code": "C66",
+            "name": "VinMart+ 371 Cao Lỗ,",
+            "location": {
+                "lat": 21.1380095,
+                "long": 105.8594202
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 451
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 42
+                }
+            }
+        },
+        "67": {
+            "id": 67,
+            "code": "C67",
+            "name": "Vinmart + Bát Tràng",
+            "location": {
+                "lat": 20.978968,
+                "long": 105.9159823
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 83
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 257
+                }
+            }
+        },
+        "68": {
+            "id": 68,
+            "code": "C68",
+            "name": "Vinmart+ Khu đô thị mới, Gia Lâm",
+            "location": {
+                "lat": 21.012279773,
+                "long": 105.938632092
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 83
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 224
+                }
+            }
+        },
+        "69": {
+            "id": 69,
+            "code": "C69",
+            "name": "VinMart+ Đinh Tiên Hoàng, Sơn Tây",
+            "location": {
+                "lat": 21.142971732,
+                "long": 105.502959003
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 442
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 126
+                }
+            }
+        },
+        "70": {
+            "id": 70,
+            "code": "C70",
+            "name": "VinMart+ Hoàng Diệu, Sơn Tây",
+            "location": {
+                "lat": 21.1358893990001,
+                "long": 105.506367873
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 370
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 312
+                }
+            }
+        },
+        "71": {
+            "id": 71,
+            "code": "C71",
+            "name": "VinMart+ - 60 Tứ Hiệp, Thanh Trì",
+            "location": {
+                "lat": 20.9487049090001,
+                "long": 105.845689848
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 496
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 229
+                }
+            }
+        },
+        "72": {
+            "id": 72,
+            "code": "C72",
+            "name": "VinMart+ - 284 Tựu Liệt, Tam Hiệp, Thanh Trì",
+            "location": {
+                "lat": 20.952959176,
+                "long": 105.833870298
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 294
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 463
+                }
+            }
+        },
+        "73": {
+            "id": 73,
+            "code": "C73",
+            "name": "VinMart+ Phố Nỉ, Sóc Sơn",
+            "location": {
+                "lat": 21.315208548,
+                "long": 105.867661502
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 497
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 499
+                }
+            }
+        },
+        "74": {
+            "id": 74,
+            "code": "C74",
+            "name": "Vinmart+ 47 QL 2 Phủ Lỗ, Sóc Sơn",
+            "location": {
+                "lat": 21.198365385,
+                "long": 105.838731172
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 96
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 389
+                }
+            }
+        },
+        "75": {
+            "id": 75,
+            "code": "C75",
+            "name": "VinMart+ 121 Phú Minh, Sóc Sơn",
+            "location": {
+                "lat": 21.198050423,
+                "long": 105.832074083
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 245
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 381
+                }
+            }
+        },
+        "76": {
+            "id": 76,
+            "code": "C76",
+            "name": "VinMart+ Phố Mã, Sóc Sơn",
+            "location": {
+                "lat": 21.2684358980001,
+                "long": 105.854444722
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 19
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 443
+                }
+            }
+        },
+        "77": {
+            "id": 77,
+            "code": "C77",
+            "name": "VinMart+ 78 Quốc lộ 3 Phủ Lỗ",
+            "location": {
+                "lat": 21.199197842,
+                "long": 105.848694211
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 471
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 246
+                }
+            }
+        },
+        "78": {
+            "id": 78,
+            "code": "C78",
+            "name": "VinMart+ - 543 Thanh Lương, Bích Hòa, Thanh Oai",
+            "location": {
+                "lat": 20.90967204,
+                "long": 105.760817605
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 365
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 200
+                }
+            }
+        },
+        "79": {
+            "id": 79,
+            "code": "C79",
+            "name": "VinMart+ 95 Ba Thá",
+            "location": {
+                "lat": 20.8069279,
+                "long": 105.7091345
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 33
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 258
+                }
+            }
+        },
+        "80": {
+            "id": 80,
+            "code": "C80",
+            "name": " Vimart+ 85 Lê Lợi, Vân Đình, Ứng Hòa",
+            "location": {
+                "lat": 20.737121880823,
+                "long": 105.770560587388
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 430
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 276
+                }
+            }
+        },
+        "81": {
+            "id": 81,
+            "code": "C81",
+            "name": "Vinmart+ 132 P. Nguyễn Phi Khanh, TT. Thường Tín",
+            "location": {
+                "lat": 20.8681947,
+                "long": 105.8622667
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 407
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 353
+                }
+            }
+        },
+        "82": {
+            "id": 82,
+            "code": "C82",
+            "name": "VinMart+ Tổ 1 TT Quang Minh, Mê Linh",
+            "location": {
+                "lat": 21.201033512,
+                "long": 105.770278879
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 117
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 159
+                }
+            }
+        },
+        "83": {
+            "id": 83,
+            "code": "C83",
+            "name": "VinMart+ Phố Yên, Mê Linh",
+            "location": {
+                "lat": 21.1528538,
+                "long": 105.7597532
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 427
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 66
+                }
+            }
+        },
+        "84": {
+            "id": 84,
+            "code": "C84",
+            "name": "VinMart+ Thạch Đà, Mê Linh, Hà Nội",
+            "location": {
+                "lat": 21.1753605000001,
+                "long": 105.6756576
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 81
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 459
+                }
+            }
+        },
+        "85": {
+            "id": 85,
+            "code": "C85",
+            "name": "VinMart+ Thường Lệ, Mê Linh, Hà Nội",
+            "location": {
+                "lat": 21.1743947,
+                "long": 105.7327763
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 156
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2
+                }
+            }
+        },
+        "86": {
+            "id": 86,
+            "code": "C86",
+            "name": "VinMart+ Đào Xuyên, Đa Tốn, Gia Lâm",
+            "location": {
+                "lat": 20.986106561,
+                "long": 105.930843127
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 399
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 35
+                }
+            }
+        },
+        "87": {
+            "id": 87,
+            "code": "C87",
+            "name": "VinMart+ 426 Hoàng Hoa Thám",
+            "location": {
+                "lat": 21.0435284,
+                "long": 105.8196104
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 391
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 376
+                }
+            }
+        },
+        "88": {
+            "id": 88,
+            "code": "C88",
+            "name": "VinMart+ 175 An Dương",
+            "location": {
+                "lat": 20.86741,
+                "long": 106.616496
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 138
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 122
+                }
+            }
+        },
+        "89": {
+            "id": 89,
+            "code": "C89",
+            "name": "VinMart+ 612A Lạc Long Quân",
+            "location": {
+                "lat": 21.0543829,
+                "long": 105.8090127
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 228
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 127
+                }
+            }
+        },
+        "90": {
+            "id": 90,
+            "code": "C90",
+            "name": "VinMart+ 387 Thụy Khuê",
+            "location": {
+                "lat": 21.040864,
+                "long": 105.827736
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 317
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 460
+                }
+            }
+        },
+        "91": {
+            "id": 91,
+            "code": "C91",
+            "name": "VinMart+ 123 Trịnh Công Sơn",
+            "location": {
+                "lat": 21.0787431,
+                "long": 105.8185461
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 115
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 100
+                }
+            }
+        },
+        "92": {
+            "id": 92,
+            "code": "C92",
+            "name": "VinMart+ Ct2A Xuân La",
+            "location": {
+                "lat": 21.0558118,
+                "long": 105.8049551
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 127
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 179
+                }
+            }
+        },
+        "93": {
+            "id": 93,
+            "code": "C93",
+            "name": "VinMart+ 123 Âu Cơ",
+            "location": {
+                "lat": 21.0636404,
+                "long": 105.8317726
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 118
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 313
+                }
+            }
+        },
+        "94": {
+            "id": 94,
+            "code": "C94",
+            "name": "VinMart+ 35B Xuân La",
+            "location": {
+                "lat": 21.0618164,
+                "long": 105.8079881
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 340
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 484
+                }
+            }
+        },
+        "95": {
+            "id": 95,
+            "code": "C95",
+            "name": "VinMart+ 133 Thụy Khuê",
+            "location": {
+                "lat": 21.040894,
+                "long": 105.827731
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 84
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 73
+                }
+            }
+        },
+        "96": {
+            "id": 96,
+            "code": "C96",
+            "name": "VinMart+ 55 Thụy Khuê",
+            "location": {
+                "lat": 21.040894,
+                "long": 105.827731
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 416
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 217
+                }
+            }
+        },
+        "97": {
+            "id": 97,
+            "code": "C97",
+            "name": "VinMart+ 50 Nguyễn Hoàng Tôn",
+            "location": {
+                "lat": 21.0715453,
+                "long": 105.8063906
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 254
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 188
+                }
+            }
+        },
+        "98": {
+            "id": 98,
+            "code": "C98",
+            "name": "VinMart+ Packexim",
+            "location": {
+                "lat": 21.0856876,
+                "long": 105.813209
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 487
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 100
+                }
+            }
+        },
+        "99": {
+            "id": 99,
+            "code": "C99",
+            "name": "VinMart+ 151 Trích Sài",
+            "location": {
+                "lat": 21.0511641,
+                "long": 105.8130113
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 97
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 154
+                }
+            }
+        },
+        "100": {
+            "id": 100,
+            "code": "C100",
+            "name": "VinMart+ 47 Phó Đức Chính",
+            "location": {
+                "lat": 21.0415698,
+                "long": 105.8399794
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 367
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 75
+                }
+            }
+        },
+        "101": {
+            "id": 101,
+            "code": "C101",
+            "name": "VinMart+ - 210Bis Đội Cấn",
+            "location": {
+                "lat": 21.0351327,
+                "long": 105.8211892
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 193
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 11
+                }
+            }
+        },
+        "102": {
+            "id": 102,
+            "code": "C102",
+            "name": "VinMart+ 18B Nguyễn Biểu",
+            "location": {
+                "lat": 21.0415698,
+                "long": 105.8399794
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 401
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 294
+                }
+            }
+        },
+        "103": {
+            "id": 103,
+            "code": "C103",
+            "name": "VinMart+ 140 Đốc Ngữ",
+            "location": {
+                "lat": 21.040581,
+                "long": 105.813015
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 351
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 103
+                }
+            }
+        },
+        "104": {
+            "id": 104,
+            "code": "C104",
+            "name": "VinMart+ 69 Vạn Bảo",
+            "location": {
+                "lat": 20.085752,
+                "long": 105.855057
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 59
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 148
+                }
+            }
+        },
+        "105": {
+            "id": 105,
+            "code": "C105",
+            "name": "VinMart+ 20 Nguyễn Thiếp",
+            "location": {
+                "lat": 21.0408675,
+                "long": 105.8490202
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 83
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 164
+                }
+            }
+        },
+        "106": {
+            "id": 106,
+            "code": "C106",
+            "name": "VinMart+ 27 Phạm Hồng Thái",
+            "location": {
+                "lat": 21.0435916,
+                "long": 105.8449674
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 37
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 368
+                }
+            }
+        },
+        "107": {
+            "id": 107,
+            "code": "C107",
+            "name": "VinMart+ 28 Nguyễn Thái Học",
+            "location": {
+                "lat": 21.70642,
+                "long": 104.882365
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 212
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 156
+                }
+            }
+        },
+        "108": {
+            "id": 108,
+            "code": "C108",
+            "name": "VinMart+ 575 La Thành",
+            "location": {
+                "lat": 21.0276788,
+                "long": 105.8090508
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 82
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 400
+                }
+            }
+        },
+        "109": {
+            "id": 109,
+            "code": "C109",
+            "name": "VinMart+ 31 Tân Ấp",
+            "location": {
+                "lat": 21.0460677,
+                "long": 105.8462736
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 16
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 289
+                }
+            }
+        },
+        "110": {
+            "id": 110,
+            "code": "C110",
+            "name": "VinMart+ 20 Nghĩa Dũng",
+            "location": {
+                "lat": 15.1139983,
+                "long": 108.8080578
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 245
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 284
+                }
+            }
+        },
+        "111": {
+            "id": 111,
+            "code": "C111",
+            "name": "VinMart+ 104C Ngọc Hà",
+            "location": {
+                "lat": 21.0367977,
+                "long": 105.8309496
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 451
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 418
+                }
+            }
+        },
+        "112": {
+            "id": 112,
+            "code": "C112",
+            "name": "VinMart+ 93 Ngõ Núi Trúc",
+            "location": {
+                "lat": 21.0303635,
+                "long": 105.8245742
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 483
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 44
+                }
+            }
+        },
+        "113": {
+            "id": 113,
+            "code": "C113",
+            "name": "VinMart+ 38 Linh Lang",
+            "location": {
+                "lat": 21.0355429,
+                "long": 105.8091011
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 51
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 122
+                }
+            }
+        },
+        "114": {
+            "id": 114,
+            "code": "C114",
+            "name": "VinMart+ 29A Nguyễn Công Hoan",
+            "location": {
+                "lat": 21.027158,
+                "long": 105.814507
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 74
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 407
+                }
+            }
+        },
+        "115": {
+            "id": 115,
+            "code": "C115",
+            "name": "VinMart+ 26B Hòe Nhai",
+            "location": {
+                "lat": 21.041231,
+                "long": 105.846309
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 343
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 416
+                }
+            }
+        },
+        "116": {
+            "id": 116,
+            "code": "C116",
+            "name": "VinMart+ 102 Nguyễn Chí Thanh",
+            "location": {
+                "lat": 21.0165329,
+                "long": 105.805732
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 24
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 469
+                }
+            }
+        },
+        "117": {
+            "id": 117,
+            "code": "C117",
+            "name": "VinMart+ 224 Khâm Thiên",
+            "location": {
+                "lat": 21.0210718,
+                "long": 105.8349856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 89
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 426
+                }
+            }
+        },
+        "118": {
+            "id": 118,
+            "code": "C118",
+            "name": "VinMart+ 116 Đê La Thành",
+            "location": {
+                "lat": 21.0230768,
+                "long": 105.8223867
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 334
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 349
+                }
+            }
+        },
+        "119": {
+            "id": 119,
+            "code": "C119",
+            "name": "VinMart+ 80 Nguyễn Phúc Lai",
+            "location": {
+                "lat": 21.020194,
+                "long": 105.82145
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 347
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 16
+                }
+            }
+        },
+        "120": {
+            "id": 120,
+            "code": "C120",
+            "name": "VinMart+ 1132 Đường Láng",
+            "location": {
+                "lat": 21.026228,
+                "long": 105.798591
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 233
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 271
+                }
+            }
+        },
+        "121": {
+            "id": 121,
+            "code": "C121",
+            "name": "VinMart+ 169 Đặng Tiến Đông",
+            "location": {
+                "lat": 21.0137428,
+                "long": 105.8221906
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 51
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 210
+                }
+            }
+        },
+        "122": {
+            "id": 122,
+            "code": "C122",
+            "name": "VinMart+ 66 Đặng Tiến Đông",
+            "location": {
+                "lat": 21.016382,
+                "long": 105.819278
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 319
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 161
+                }
+            }
+        },
+        "123": {
+            "id": 123,
+            "code": "C123",
+            "name": "VinMart+ 158 Thái Thịnh",
+            "location": {
+                "lat": 21.012307,
+                "long": 105.816945
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 487
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 346
+                }
+            }
+        },
+        "124": {
+            "id": 124,
+            "code": "C124",
+            "name": "VinMart+ 11 Ngô Sĩ Liên, Hà Nội",
+            "location": {
+                "lat": 21.0209267,
+                "long": 105.8277881
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 449
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 198
+                }
+            }
+        },
+        "125": {
+            "id": 125,
+            "code": "C125",
+            "name": "VinMart+ 17B Đoàn Thị Điểm",
+            "location": {
+                "lat": 21.0033786,
+                "long": 105.8162011
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 419
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 126
+                }
+            }
+        },
+        "126": {
+            "id": 126,
+            "code": "C126",
+            "name": "VinMart+ 71 Khương Thượng",
+            "location": {
+                "lat": 21.00274,
+                "long": 105.824134
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 159
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 262
+                }
+            }
+        },
+        "127": {
+            "id": 127,
+            "code": "C127",
+            "name": "VinMart+ 6-8 Phố Vọng",
+            "location": {
+                "lat": 21.000123,
+                "long": 105.841519
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 150
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 425
+                }
+            }
+        },
+        "128": {
+            "id": 128,
+            "code": "C128",
+            "name": "VinMart+ 281 Khâm Thiên",
+            "location": {
+                "lat": 21.0210718,
+                "long": 105.8349856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 207
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 11
+                }
+            }
+        },
+        "129": {
+            "id": 129,
+            "code": "C129",
+            "name": "VinMart+ 150 Nguyễn Lương Bằng",
+            "location": {
+                "lat": 21.015639,
+                "long": 105.82807
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 151
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 219
+                }
+            }
+        },
+        "130": {
+            "id": 130,
+            "code": "C130",
+            "name": "VinMart+ 19 Lương Đình Của",
+            "location": {
+                "lat": 21.0062934,
+                "long": 105.8355421
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 123
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 251
+                }
+            }
+        },
+        "131": {
+            "id": 131,
+            "code": "C131",
+            "name": "VinMart+ 166 Kim Hoa",
+            "location": {
+                "lat": 21.1958948,
+                "long": 105.7343686
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 225
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 431
+                }
+            }
+        },
+        "132": {
+            "id": 132,
+            "code": "C132",
+            "name": "VinMart+ 129 Pháo Đài Láng",
+            "location": {
+                "lat": 21.0188113,
+                "long": 105.8046338
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 210
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 399
+                }
+            }
+        },
+        "133": {
+            "id": 133,
+            "code": "C133",
+            "name": "VinMart+ 37 Vũ Ngọc Phan",
+            "location": {
+                "lat": 21.0147765,
+                "long": 105.8096531
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 99
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 46
+                }
+            }
+        },
+        "134": {
+            "id": 134,
+            "code": "C134",
+            "name": "VinMart+ 28 Tôn Đức Thắng",
+            "location": {
+                "lat": 21.0293882,
+                "long": 105.8351318
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 280
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 118
+                }
+            }
+        },
+        "135": {
+            "id": 135,
+            "code": "C135",
+            "name": "VinMart+ 43 Giảng Võ",
+            "location": {
+                "lat": 21.0303635,
+                "long": 105.8245742
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 37
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 27
+                }
+            }
+        },
+        "136": {
+            "id": 136,
+            "code": "C136",
+            "name": "VinMart+ 52 Trung Kính",
+            "location": {
+                "lat": 21.0131619,
+                "long": 105.8006807
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 362
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 348
+                }
+            }
+        },
+        "137": {
+            "id": 137,
+            "code": "C137",
+            "name": "VinMart+ 46 Hạ Đình",
+            "location": {
+                "lat": 20.991906,
+                "long": 105.805909
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 441
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 428
+                }
+            }
+        },
+        "138": {
+            "id": 138,
+            "code": "C138",
+            "name": "VinMart+ 208 Khương Trung",
+            "location": {
+                "lat": 20.9972911,
+                "long": 105.8235856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 65
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 476
+                }
+            }
+        },
+        "139": {
+            "id": 139,
+            "code": "C139",
+            "name": "VinMart+ 122 Phố Vọng",
+            "location": {
+                "lat": 20.996905,
+                "long": 105.8427279
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 291
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 140
+                }
+            }
+        },
+        "140": {
+            "id": 140,
+            "code": "C140",
+            "name": "VinMart+ Tòa Nhà 51 Quan Nhân",
+            "location": {
+                "lat": 21.0066857,
+                "long": 105.8126327
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 290
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 66
+                }
+            }
+        },
+        "141": {
+            "id": 141,
+            "code": "C141",
+            "name": "VinMart+ 639 Vũ Tông Phan",
+            "location": {
+                "lat": 20.982587,
+                "long": 105.8167085
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 374
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 259
+                }
+            }
+        },
+        "142": {
+            "id": 142,
+            "code": "C142",
+            "name": "VinMart+ 76 Nhân Hòa",
+            "location": {
+                "lat": 21.0031985,
+                "long": 105.8071449
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 426
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 248
+                }
+            }
+        },
+        "143": {
+            "id": 143,
+            "code": "C143",
+            "name": "VinMart+ 232 Khương Đình",
+            "location": {
+                "lat": 20.9913829,
+                "long": 105.8140141
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 148
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 380
+                }
+            }
+        },
+        "144": {
+            "id": 144,
+            "code": "C144",
+            "name": "VinMart+ 165 Nguyễn Tuân",
+            "location": {
+                "lat": 20.9925999,
+                "long": 105.8016058
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 243
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 306
+                }
+            }
+        },
+        "145": {
+            "id": 145,
+            "code": "C145",
+            "name": "VinMart+ N07B2 Dịch Vọng",
+            "location": {
+                "lat": 21.028929,
+                "long": 105.794734
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 170
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 328
+                }
+            }
+        },
+        "146": {
+            "id": 146,
+            "code": "C146",
+            "name": "VinMart+ 17 Trần Quốc Hoàn",
+            "location": {
+                "lat": 21.0417502,
+                "long": 105.7870719
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 422
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2
+                }
+            }
+        },
+        "147": {
+            "id": 147,
+            "code": "C147",
+            "name": "VinMart+ 90 Dương Quảng Hàm",
+            "location": {
+                "lat": 21.0353002,
+                "long": 105.8003601
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 21
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 321
+                }
+            }
+        },
+        "148": {
+            "id": 148,
+            "code": "C148",
+            "name": "VinMart+ 152 Yên Hòa",
+            "location": {
+                "lat": 21.0234101,
+                "long": 105.7943758
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 57
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 444
+                }
+            }
+        },
+        "149": {
+            "id": 149,
+            "code": "C149",
+            "name": "VinMart+ 38 Ngõ 76 Mai Dịch",
+            "location": {
+                "lat": 21.0406795,
+                "long": 105.7755897
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 289
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 394
+                }
+            }
+        },
+        "150": {
+            "id": 150,
+            "code": "C150",
+            "name": "VinMart+ 165 Tô Hiệu",
+            "location": {
+                "lat": 21.0414694,
+                "long": 105.7943415
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 462
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 480
+                }
+            }
+        },
+        "151": {
+            "id": 151,
+            "code": "C151",
+            "name": "VinMart+ 132 Trung Hòa",
+            "location": {
+                "lat": 21.0131619,
+                "long": 105.8006807
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 110
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 335
+                }
+            }
+        },
+        "152": {
+            "id": 152,
+            "code": "C152",
+            "name": "VinMart+ 41 Nguyễn Ngọc Vũ",
+            "location": {
+                "lat": 21.0127158,
+                "long": 105.8069456
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 177
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 487
+                }
+            }
+        },
+        "153": {
+            "id": 153,
+            "code": "C153",
+            "name": "VinMart+ 121B Quan Hoa",
+            "location": {
+                "lat": 21.034079,
+                "long": 105.803927
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 368
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 201
+                }
+            }
+        },
+        "154": {
+            "id": 154,
+            "code": "C154",
+            "name": "VinMart+ 12 Phạm Tuấn Tài",
+            "location": {
+                "lat": 21.0424163,
+                "long": 105.7862743
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 74
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 83
+                }
+            }
+        },
+        "155": {
+            "id": 155,
+            "code": "C155",
+            "name": "VinMart+ Chelsea Park, Trung Kính",
+            "location": {
+                "lat": 21.0189401,
+                "long": 105.7930724
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 82
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 438
+                }
+            }
+        },
+        "156": {
+            "id": 156,
+            "code": "C156",
+            "name": "VinMart+ 142 Phương Liệt",
+            "location": {
+                "lat": 20.9977705,
+                "long": 105.839121
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 263
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 316
+                }
+            }
+        },
+        "157": {
+            "id": 157,
+            "code": "C157",
+            "name": "VinMart+ 64 Cự Lộc",
+            "location": {
+                "lat": 21.000805,
+                "long": 105.813684
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 378
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 54
+                }
+            }
+        },
+        "158": {
+            "id": 158,
+            "code": "C158",
+            "name": "VinMart+ 22 Bùi Xương Trạch",
+            "location": {
+                "lat": 20.9916094,
+                "long": 105.8172299
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 438
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 243
+                }
+            }
+        },
+        "159": {
+            "id": 159,
+            "code": "C159",
+            "name": "VinMart+ 229 Quan Nhân",
+            "location": {
+                "lat": 21.0031985,
+                "long": 105.8071449
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 190
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 448
+                }
+            }
+        },
+        "160": {
+            "id": 160,
+            "code": "C160",
+            "name": "VinMart+ 77 Chính Kinh",
+            "location": {
+                "lat": 20.9990441,
+                "long": 105.8118864
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 496
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 309
+                }
+            }
+        },
+        "161": {
+            "id": 161,
+            "code": "C161",
+            "name": "VinMart+ 47 Khương Đình",
+            "location": {
+                "lat": 20.9979717,
+                "long": 105.8273353
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 304
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 391
+                }
+            }
+        },
+        "162": {
+            "id": 162,
+            "code": "C162",
+            "name": "VinMart+ 268 Lê Trọng Tấn",
+            "location": {
+                "lat": 20.9903456,
+                "long": 105.8335762
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 77
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 98
+                }
+            }
+        },
+        "163": {
+            "id": 163,
+            "code": "C163",
+            "name": "VinMart+ 160 Nguyễn Ngọc Nại",
+            "location": {
+                "lat": 20.9979634,
+                "long": 105.8261287
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 482
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 248
+                }
+            }
+        },
+        "164": {
+            "id": 164,
+            "code": "C164",
+            "name": "VinMart+ 91 Hoàng Văn Thái",
+            "location": {
+                "lat": 20.9972911,
+                "long": 105.8235856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 302
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 107
+                }
+            }
+        },
+        "165": {
+            "id": 165,
+            "code": "C165",
+            "name": "VinMart+ 147 Hoàng Văn Thái",
+            "location": {
+                "lat": 20.9972911,
+                "long": 105.8235856
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 158
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 188
+                }
+            }
+        },
+        "166": {
+            "id": 166,
+            "code": "C166",
+            "name": "VinMart+ Số 3 Tô Vĩnh Diện",
+            "location": {
+                "lat": 15.8895518,
+                "long": 108.2466488
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 386
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 485
+                }
+            }
+        },
+        "167": {
+            "id": 167,
+            "code": "C167",
+            "name": "VinMart+ 304 Hoàng Mai",
+            "location": {
+                "lat": 20.9801873,
+                "long": 105.8506197
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 450
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 346
+                }
+            }
+        },
+        "168": {
+            "id": 168,
+            "code": "C168",
+            "name": "VinMart+ Trần Điền",
+            "location": {
+                "lat": 20.9914504,
+                "long": 105.8325043
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 154
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 218
+                }
+            }
+        },
+        "169": {
+            "id": 169,
+            "code": "C169",
+            "name": "VinMart+ 62 Nguyễn Đức Cảnh",
+            "location": {
+                "lat": 20.9879558,
+                "long": 105.851642
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 30
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 277
+                }
+            }
+        },
+        "170": {
+            "id": 170,
+            "code": "C170",
+            "name": "VinMart+ Lô 8- 3A Kcn Hoàng Mai",
+            "location": {
+                "lat": 20.9925072,
+                "long": 105.8801036
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 29
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 128
+                }
+            }
+        },
+        "171": {
+            "id": 171,
+            "code": "C171",
+            "name": "VinMart+ 848 Trương Định",
+            "location": {
+                "lat": 20.978387,
+                "long": 105.84276
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 113
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 219
+                }
+            }
+        },
+        "172": {
+            "id": 172,
+            "code": "C172",
+            "name": "VinMart+ Kios 15 Ct3 Linh Đàm",
+            "location": {
+                "lat": 20.9713643,
+                "long": 105.8280009
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 312
+                }
+            }
+        },
+        "173": {
+            "id": 173,
+            "code": "C173",
+            "name": "VinMart+ 85 Yên Sở",
+            "location": {
+                "lat": 20.967042,
+                "long": 105.870371
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 432
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 418
+                }
+            }
+        },
+        "174": {
+            "id": 174,
+            "code": "C174",
+            "name": "VinMart+ 198 Hoàng Mai",
+            "location": {
+                "lat": 20.9898377,
+                "long": 105.8544194
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 284
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 23
+                }
+            }
+        },
+        "175": {
+            "id": 175,
+            "code": "C175",
+            "name": "VinMart+ 120A Nguyễn An Ninh",
+            "location": {
+                "lat": 20.9914297,
+                "long": 105.8445979
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 448
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 407
+                }
+            }
+        },
+        "176": {
+            "id": 176,
+            "code": "C176",
+            "name": "VinMart+ 86 Thanh Lân",
+            "location": {
+                "lat": 20.9899103,
+                "long": 105.8884617
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 17
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 429
+                }
+            }
+        },
+        "177": {
+            "id": 177,
+            "code": "C177",
+            "name": "VinMart+ 261 Tân Mai",
+            "location": {
+                "lat": 10.9595291,
+                "long": 106.8483612
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 181
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 181
+                }
+            }
+        },
+        "178": {
+            "id": 178,
+            "code": "C178",
+            "name": "VinMart+ 402 Kim Giang",
+            "location": {
+                "lat": 20.9808851,
+                "long": 105.8175585
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 76
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 376
+                }
+            }
+        },
+        "179": {
+            "id": 179,
+            "code": "C179",
+            "name": "VinMart+ 53 Ngõ 467 Lĩnh Nam",
+            "location": {
+                "lat": 20.9824723,
+                "long": 105.8817384
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 390
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 448
+                }
+            }
+        },
+        "180": {
+            "id": 180,
+            "code": "C180",
+            "name": "VinMart+ 100B/168 Kim Giang",
+            "location": {
+                "lat": 20.979184,
+                "long": 105.815658
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 103
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 224
+                }
+            }
+        },
+        "181": {
+            "id": 181,
+            "code": "C181",
+            "name": "VinMart+ 179 Thịnh Liệt",
+            "location": {
+                "lat": 20.974047,
+                "long": 105.843781
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 278
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 214
+                }
+            }
+        },
+        "182": {
+            "id": 182,
+            "code": "C182",
+            "name": "VinMart+ 17 Lô 12 Đền Lừ 1",
+            "location": {
+                "lat": 20.9852892,
+                "long": 105.8611304
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 264
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 216
+                }
+            }
+        },
+        "183": {
+            "id": 183,
+            "code": "C183",
+            "name": "VinMart+ 12 Đông Thiên",
+            "location": {
+                "lat": 20.9821857,
+                "long": 105.8789812
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 471
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 191
+                }
+            }
+        },
+        "184": {
+            "id": 184,
+            "code": "C184",
+            "name": "VinMart+ 182 Đại Từ",
+            "location": {
+                "lat": 20.9728763,
+                "long": 105.8390655
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 453
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 88
+                }
+            }
+        },
+        "185": {
+            "id": 185,
+            "code": "C185",
+            "name": "VinMart+ 26 Thúy Lĩnh",
+            "location": {
+                "lat": 20.9769687,
+                "long": 105.8925233
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 134
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 185
+                }
+            }
+        },
+        "186": {
+            "id": 186,
+            "code": "C186",
+            "name": "VinMart+ 9 Thịnh Liệt",
+            "location": {
+                "lat": 20.9740814,
+                "long": 105.8412509
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 295
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 157
+                }
+            }
+        },
+        "187": {
+            "id": 187,
+            "code": "C187",
+            "name": "VinMart+ C15 Nơ 19 Định Công",
+            "location": {
+                "lat": 20.9855934,
+                "long": 105.8291225
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 190
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 62
+                }
+            }
+        },
+        "188": {
+            "id": 188,
+            "code": "C188",
+            "name": "VinMart+ 207 Định Công Thượng",
+            "location": {
+                "lat": 20.9914504,
+                "long": 105.8325043
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 105
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 224
+                }
+            }
+        },
+        "189": {
+            "id": 189,
+            "code": "C189",
+            "name": "VinMart+ 33 Lương Khánh Thiện",
+            "location": {
+                "lat": 20.8543902,
+                "long": 106.6844221
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 70
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 299
+                }
+            }
+        },
+        "190": {
+            "id": 190,
+            "code": "C190",
+            "name": "VinMart+ 589 Trương Định",
+            "location": {
+                "lat": 20.981216,
+                "long": 105.845363
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 137
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 149
+                }
+            }
+        },
+        "191": {
+            "id": 191,
+            "code": "C191",
+            "name": "VinMart+ 353 Nam Dư",
+            "location": {
+                "lat": 20.9836752,
+                "long": 105.8873658
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 235
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 80
+                }
+            }
+        },
+        "192": {
+            "id": 192,
+            "code": "C192",
+            "name": "VinMart+ 68 Yên Duyên",
+            "location": {
+                "lat": 20.9724033,
+                "long": 105.8681474
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 193
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 396
+                }
+            }
+        },
+        "193": {
+            "id": 193,
+            "code": "C193",
+            "name": "VinMart+ 87 Ngõ 192 Lê Trọng Tấn",
+            "location": {
+                "lat": 20.992893,
+                "long": 105.8292186
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 174
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 429
+                }
+            }
+        },
+        "194": {
+            "id": 194,
+            "code": "C194",
+            "name": "VinMart+ 103 Thanh Đàm",
+            "location": {
+                "lat": 20.9938443,
+                "long": 105.8877189
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 214
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 398
+                }
+            }
+        },
+        "195": {
+            "id": 195,
+            "code": "C195",
+            "name": "VinMart+ 1 Ngõ 250 Kim Giang",
+            "location": {
+                "lat": 20.9791362,
+                "long": 105.8206641
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 132
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 123
+                }
+            }
+        },
+        "196": {
+            "id": 196,
+            "code": "C196",
+            "name": "VinMart+ 169 Nam Dư",
+            "location": {
+                "lat": 20.9836752,
+                "long": 105.8873658
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 165
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 446
+                }
+            }
+        },
+        "197": {
+            "id": 197,
+            "code": "C197",
+            "name": "VinMart+ 345 Bùi Xương Trạch",
+            "location": {
+                "lat": 20.983288,
+                "long": 105.820876
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 32
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 401
+                }
+            }
+        },
+        "198": {
+            "id": 198,
+            "code": "C198",
+            "name": "VinMart+ Tòa Nhà 151 Nguyễn Đức Cảnh",
+            "location": {
+                "lat": 20.9873542,
+                "long": 105.8506232
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 91
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 49
+                }
+            }
+        },
+        "199": {
+            "id": 199,
+            "code": "C199",
+            "name": "VinMart+ 91 Vĩnh Hưng",
+            "location": {
+                "lat": 20.9863632,
+                "long": 105.8763119
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 284
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 434
+                }
+            }
+        },
+        "200": {
+            "id": 200,
+            "code": "C200",
+            "name": "VinMart+ 142 Kim Giang",
+            "location": {
+                "lat": 20.9808851,
+                "long": 105.8175585
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 430
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 113
+                }
+            }
+        },
+        "201": {
+            "id": 201,
+            "code": "C201",
+            "name": "VinMart+ 58 Lô 6 Đền Lừ II",
+            "location": {
+                "lat": 20.9812249,
+                "long": 105.863915
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 97
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 287
+                }
+            }
+        },
+        "202": {
+            "id": 202,
+            "code": "C202",
+            "name": "VinMart+ 98/245 Định Công",
+            "location": {
+                "lat": 20.9800772,
+                "long": 105.8339628
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 484
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 367
+                }
+            }
+        },
+        "203": {
+            "id": 203,
+            "code": "C203",
+            "name": "VinMart+ 62/63 Lô 7 Đền Lừ II",
+            "location": {
+                "lat": 20.98077,
+                "long": 105.8640209
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 52
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 266
+                }
+            }
+        },
+        "204": {
+            "id": 204,
+            "code": "C204",
+            "name": "VinMart+ 100 Nguyễn Sơn",
+            "location": {
+                "lat": 21.047304,
+                "long": 105.877084
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 77
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 356
+                }
+            }
+        },
+        "205": {
+            "id": 205,
+            "code": "C205",
+            "name": "VinMart+ 491D Nguyễn Văn Cừ",
+            "location": {
+                "lat": 21.048673,
+                "long": 105.8811986
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 496
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 220
+                }
+            }
+        },
+        "206": {
+            "id": 206,
+            "code": "C206",
+            "name": "VinMart+ 18 Lệ Mật",
+            "location": {
+                "lat": 21.053532,
+                "long": 105.900618
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 121
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 37
+                }
+            }
+        },
+        "207": {
+            "id": 207,
+            "code": "C207",
+            "name": "VinMart+ 29/32/564 Nguyễn Văn Cừ",
+            "location": {
+                "lat": 21.043682,
+                "long": 105.873315
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 270
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 90
+                }
+            }
+        },
+        "208": {
+            "id": 208,
+            "code": "C208",
+            "name": "VinMart+ 1D Ngõ 405 Ngọc Thụy",
+            "location": {
+                "lat": 21.0588582,
+                "long": 105.8583873
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 262
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 293
+                }
+            }
+        },
+        "209": {
+            "id": 209,
+            "code": "C209",
+            "name": "VinMart+ Số 21/765 Nguyễn Văn Linh",
+            "location": {
+                "lat": 21.0293784,
+                "long": 105.9187682
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 155
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 156
+                }
+            }
+        },
+        "210": {
+            "id": 210,
+            "code": "C210",
+            "name": "VinMart+ 207 Đức Giang",
+            "location": {
+                "lat": 21.060497,
+                "long": 105.895171
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 322
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 20
+                }
+            }
+        },
+        "211": {
+            "id": 211,
+            "code": "C211",
+            "name": "VinMart+ Chung Cư Ruby",
+            "location": {
+                "lat": 21.0590047,
+                "long": 105.9147471
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 169
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 372
+                }
+            }
+        },
+        "212": {
+            "id": 212,
+            "code": "C212",
+            "name": "VinMart+ 11 Nguyễn Sơn",
+            "location": {
+                "lat": 21.047304,
+                "long": 105.877084
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 99
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 321
+                }
+            }
+        },
+        "213": {
+            "id": 213,
+            "code": "C213",
+            "name": "VinMart+ 166 Ái Mộ",
+            "location": {
+                "lat": 21.0387567,
+                "long": 105.8709758
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 380
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 214
+                }
+            }
+        },
+        "214": {
+            "id": 214,
+            "code": "C214",
+            "name": "VinMart+ 15 Ngõ 68 Trung Hà",
+            "location": {
+                "lat": 21.0503702,
+                "long": 105.8663224
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 257
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 217
+                }
+            }
+        },
+        "215": {
+            "id": 215,
+            "code": "C215",
+            "name": "VinMart+ 70 Ngõ 268 Ngọc Thụy",
+            "location": {
+                "lat": 21.057372,
+                "long": 105.869028
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 424
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 489
+                }
+            }
+        },
+        "216": {
+            "id": 216,
+            "code": "C216",
+            "name": "VinMart+ 195 Hoa Lâm",
+            "location": {
+                "lat": 21.0553424,
+                "long": 105.8966805
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 474
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 167
+                }
+            }
+        },
+        "217": {
+            "id": 217,
+            "code": "C217",
+            "name": "VinMart+ 51 Ngõ 53 Vũ Xuân Thiều",
+            "location": {
+                "lat": 21.0325032,
+                "long": 105.9131525
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 243
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 152
+                }
+            }
+        },
+        "218": {
+            "id": 218,
+            "code": "C218",
+            "name": "VinMart+ 3 Ngõ 22 Phú Viên",
+            "location": {
+                "lat": 21.0386515,
+                "long": 105.8661235
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 479
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 445
+                }
+            }
+        },
+        "219": {
+            "id": 219,
+            "code": "C219",
+            "name": "VinMart+ 271 Bồ Đề",
+            "location": {
+                "lat": 21.040653,
+                "long": 105.8694847
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 296
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 253
+                }
+            }
+        },
+        "220": {
+            "id": 220,
+            "code": "C220",
+            "name": "VinMart+ 102-K9 Kđt Việt Hưng",
+            "location": {
+                "lat": 21.0543504,
+                "long": 105.903124
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 476
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 194
+                }
+            }
+        },
+        "221": {
+            "id": 221,
+            "code": "C221",
+            "name": "VinMart+ 10 Đức Giang",
+            "location": {
+                "lat": 21.0636394,
+                "long": 105.8954898
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 454
+                }
+            }
+        },
+        "222": {
+            "id": 222,
+            "code": "C222",
+            "name": "VinMart+ 167 Nguyễn Văn Cừ",
+            "location": {
+                "lat": 20.9338069,
+                "long": 106.3155665
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 330
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 9
+                }
+            }
+        },
+        "223": {
+            "id": 223,
+            "code": "C223",
+            "name": "VinMart+ 22 Thạch Bàn",
+            "location": {
+                "lat": 21.027147,
+                "long": 105.910858
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 434
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 451
+                }
+            }
+        },
+        "224": {
+            "id": 224,
+            "code": "C224",
+            "name": "VinMart+ 97 Sài Đồng",
+            "location": {
+                "lat": 21.0358758,
+                "long": 105.9108607
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 439
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 88
+                }
+            }
+        },
+        "225": {
+            "id": 225,
+            "code": "C225",
+            "name": "VinMart+ 38 Trường Lâm",
+            "location": {
+                "lat": 19.81235,
+                "long": 105.778144
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 251
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 324
+                }
+            }
+        },
+        "226": {
+            "id": 226,
+            "code": "C226",
+            "name": "VinMart+ 652 Nguyễn Văn Cừ",
+            "location": {
+                "lat": 20.7355246,
+                "long": 105.7707965
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 446
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 5
+                }
+            }
+        },
+        "227": {
+            "id": 227,
+            "code": "C227",
+            "name": "VinMart+ 24 Sài Đồng",
+            "location": {
+                "lat": 21.0332395,
+                "long": 105.9095571
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 360
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 49
+                }
+            }
+        },
+        "228": {
+            "id": 228,
+            "code": "C228",
+            "name": "VinMart+ 27 Ngô Thì Nhậm",
+            "location": {
+                "lat": 21.017131,
+                "long": 105.85305
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 241
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 398
+                }
+            }
+        },
+        "229": {
+            "id": 229,
+            "code": "C229",
+            "name": "VinMart+ 150 Bạch Mai",
+            "location": {
+                "lat": 21.0056197,
+                "long": 105.8510874
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 495
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 356
+                }
+            }
+        },
+        "230": {
+            "id": 230,
+            "code": "C230",
+            "name": "VinMart+ 47 Ngõ 187 Hồng Mai",
+            "location": {
+                "lat": 21.0003442,
+                "long": 105.8556307
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 319
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 470
+                }
+            }
+        },
+        "231": {
+            "id": 231,
+            "code": "C231",
+            "name": "VinMart+ 250 Minh Khai",
+            "location": {
+                "lat": 20.994943,
+                "long": 105.857299
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 316
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 367
+                }
+            }
+        },
+        "232": {
+            "id": 232,
+            "code": "C232",
+            "name": "VinMart+ 59 Mai Hắc Đế",
+            "location": {
+                "lat": 21.0145224,
+                "long": 105.8511623
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 183
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 401
+                }
+            }
+        },
+        "233": {
+            "id": 233,
+            "code": "C233",
+            "name": "VinMart+ 310 Minh Khai",
+            "location": {
+                "lat": 20.995835,
+                "long": 105.861182
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 215
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 390
+                }
+            }
+        },
+        "234": {
+            "id": 234,
+            "code": "C234",
+            "name": "VinMart+ 409 Bạch Mai",
+            "location": {
+                "lat": 21.001268,
+                "long": 105.850713
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 484
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 482
+                }
+            }
+        },
+        "235": {
+            "id": 235,
+            "code": "C235",
+            "name": "VinMart+ - Căn 22, Lô 1, Khu Lạc Trung, 2 Ngõ 61 Lạc Trung, Phường Vĩnh Tuy, Quận Hai Bà Trưng, Thành phố Hà Nội",
+            "location": {
+                "lat": 21.002678152,
+                "long": 105.866729039
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 166
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 500
+                }
+            }
+        },
+        "236": {
+            "id": 236,
+            "code": "C236",
+            "name": "VinMart+ 86 Lạc Trung",
+            "location": {
+                "lat": 21.0032022,
+                "long": 105.8667205
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 75
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 34
+                }
+            }
+        },
+        "237": {
+            "id": 237,
+            "code": "C237",
+            "name": "VinMart+ 38 Đê Tô Hoàng",
+            "location": {
+                "lat": 21.0079088,
+                "long": 105.8506417
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 49
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 494
+                }
+            }
+        },
+        "238": {
+            "id": 238,
+            "code": "C238",
+            "name": "VinMart+ N3 Nguyễn Công Trứ",
+            "location": {
+                "lat": 20.4328377,
+                "long": 106.1551035
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 474
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 403
+                }
+            }
+        },
+        "239": {
+            "id": 239,
+            "code": "C239",
+            "name": "VinMart+ T7 – So-05 Times City",
+            "location": {
+                "lat": 20.9940169,
+                "long": 105.8696715
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 327
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 295
+                }
+            }
+        },
+        "240": {
+            "id": 240,
+            "code": "C240",
+            "name": "VinMart+ 37 Lê Quý Đôn",
+            "location": {
+                "lat": 21.0131938,
+                "long": 105.8621605
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 100
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 346
+                }
+            }
+        },
+        "241": {
+            "id": 241,
+            "code": "C241",
+            "name": "VinMart+ 348 Lạc Trung",
+            "location": {
+                "lat": 21.003153,
+                "long": 105.86886
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 42
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 175
+                }
+            }
+        },
+        "242": {
+            "id": 242,
+            "code": "C242",
+            "name": "VinMart+ 118 Ngõ Hòa Bình 7",
+            "location": {
+                "lat": 20.997405,
+                "long": 105.8580317
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 452
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 367
+                }
+            }
+        },
+        "243": {
+            "id": 243,
+            "code": "C243",
+            "name": "VinMart+ 167 Trần Đại Nghĩa",
+            "location": {
+                "lat": 21.0020514,
+                "long": 105.8463485
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 234
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 24
+                }
+            }
+        },
+        "244": {
+            "id": 244,
+            "code": "C244",
+            "name": "VinMart+ 49B Ngõ 651 Minh Khai",
+            "location": {
+                "lat": 20.9940169,
+                "long": 105.8696715
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 60
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 349
+                }
+            }
+        },
+        "245": {
+            "id": 245,
+            "code": "C245",
+            "name": "VinMart+ 101 Hương Viên",
+            "location": {
+                "lat": 21.0115119,
+                "long": 105.8565208
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 314
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 22
+                }
+            }
+        },
+        "246": {
+            "id": 246,
+            "code": "C246",
+            "name": "VinMart+ 31 Mạc Thị Bưởi",
+            "location": {
+                "lat": 21.0006527,
+                "long": 105.8691705
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 419
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 296
+                }
+            }
+        },
+        "247": {
+            "id": 247,
+            "code": "C247",
+            "name": "VinMart+ 70 Vạn Kiếp",
+            "location": {
+                "lat": 21.0188751,
+                "long": 105.8638139
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 122
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 215
+                }
+            }
+        },
+        "248": {
+            "id": 248,
+            "code": "C248",
+            "name": "VinMart+ 7 Nguyễn Cao",
+            "location": {
+                "lat": 21.0121,
+                "long": 105.86046
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 363
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 176
+                }
+            }
+        },
+        "249": {
+            "id": 249,
+            "code": "C249",
+            "name": "VinMart+ 69 Hồng Mai",
+            "location": {
+                "lat": 20.998553,
+                "long": 105.852251
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 72
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 270
+                }
+            }
+        },
+        "250": {
+            "id": 250,
+            "code": "C250",
+            "name": "VinMart+ 145 Lò Đúc",
+            "location": {
+                "lat": 21.0111713,
+                "long": 105.8595886
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 46
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 65
+                }
+            }
+        },
+        "251": {
+            "id": 251,
+            "code": "C251",
+            "name": "VinMart+ 17 Nguyễn Thượng Hiền",
+            "location": {
+                "lat": 21.018794,
+                "long": 105.8426206
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 283
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 195
+                }
+            }
+        },
+        "252": {
+            "id": 252,
+            "code": "C252",
+            "name": "VinMart+ 23 Ngõ Tự Do",
+            "location": {
+                "lat": 20.996799,
+                "long": 105.8459277
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 70
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 8
+                }
+            }
+        },
+        "253": {
+            "id": 253,
+            "code": "C253",
+            "name": "VinMart+ 52 Trương Định",
+            "location": {
+                "lat": 10.7725367,
+                "long": 106.6958684
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 346
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 446
+                }
+            }
+        },
+        "254": {
+            "id": 254,
+            "code": "C254",
+            "name": "VinMart+ 317 Phố Vọng",
+            "location": {
+                "lat": 20.9939887,
+                "long": 105.8421536
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 496
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 470
+                }
+            }
+        },
+        "255": {
+            "id": 255,
+            "code": "C255",
+            "name": "VinMart+ 66 Đại Cổ Việt",
+            "location": {
+                "lat": 21.0084179,
+                "long": 105.8474426
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 356
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 453
+                }
+            }
+        },
+        "256": {
+            "id": 256,
+            "code": "C256",
+            "name": "VinMart+ 164 Trương Định",
+            "location": {
+                "lat": 20.991539,
+                "long": 105.848858
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 156
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 6
+                }
+            }
+        },
+        "257": {
+            "id": 257,
+            "code": "C257",
+            "name": "VinMart+ 35B Nguyễn Bỉnh Khiêm",
+            "location": {
+                "lat": 21.014685,
+                "long": 105.848449
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 428
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 61
+                }
+            }
+        },
+        "258": {
+            "id": 258,
+            "code": "C258",
+            "name": "VinMart+ 242 Lê Thanh Nghị",
+            "location": {
+                "lat": 20.9241327,
+                "long": 106.3282576
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 125
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 467
+                }
+            }
+        },
+        "259": {
+            "id": 259,
+            "code": "C259",
+            "name": "VinMart+ 601 Kim Ngưu",
+            "location": {
+                "lat": 20.9978548,
+                "long": 105.8624011
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 225
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 304
+                }
+            }
+        },
+        "260": {
+            "id": 260,
+            "code": "C260",
+            "name": "VinMart+ 194 Minh Khai",
+            "location": {
+                "lat": 20.995239,
+                "long": 105.854304
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 91
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 198
+                }
+            }
+        },
+        "261": {
+            "id": 261,
+            "code": "C261",
+            "name": "VinMart+ 17A Hàn Thuyên",
+            "location": {
+                "lat": 21.018625,
+                "long": 105.856795
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 19
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 449
+                }
+            }
+        },
+        "262": {
+            "id": 262,
+            "code": "C262",
+            "name": "VinMart+ 347 Bạch Mai",
+            "location": {
+                "lat": 21.000588,
+                "long": 105.8508824
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 86
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 302
+                }
+            }
+        },
+        "263": {
+            "id": 263,
+            "code": "C263",
+            "name": "VinMart+ 227 Thanh Nhàn",
+            "location": {
+                "lat": 21.0026915,
+                "long": 105.8547871
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 189
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 285
+                }
+            }
+        },
+        "264": {
+            "id": 264,
+            "code": "C264",
+            "name": "VinMart+ 48 Lê Thanh Nghị",
+            "location": {
+                "lat": 20.9241327,
+                "long": 106.3282576
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 11
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 125
+                }
+            }
+        },
+        "265": {
+            "id": 265,
+            "code": "C265",
+            "name": "VinMart+ 81 Thanh Nhàn",
+            "location": {
+                "lat": 21.0026658,
+                "long": 105.8586096
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 499
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 270
+                }
+            }
+        },
+        "266": {
+            "id": 266,
+            "code": "C266",
+            "name": "VinMart+ T2-L1-03 Times City",
+            "location": {
+                "lat": 20.9919203,
+                "long": 105.8660426
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 309
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 76
+                }
+            }
+        },
+        "267": {
+            "id": 267,
+            "code": "C267",
+            "name": "VinMart+ T4 L1-07 Times City",
+            "location": {
+                "lat": 20.9919203,
+                "long": 105.8660426
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 253
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 93
+                }
+            }
+        },
+        "268": {
+            "id": 268,
+            "code": "C268",
+            "name": "VinMart+ - Chung cư 46 Lạc Trung",
+            "location": {
+                "lat": 21.0038282,
+                "long": 105.8661158
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 223
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 236
+                }
+            }
+        },
+        "269": {
+            "id": 269,
+            "code": "C269",
+            "name": "VinMart+ - 15 Ngõ 35 Tu Hoàng, Phường Phương Canh, Quận Nam Từ Liêm, Thành phố Hà Nội",
+            "location": {
+                "lat": 21.0527279,
+                "long": 105.7309005
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 12
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 355
+                }
+            }
+        },
+        "270": {
+            "id": 270,
+            "code": "C270",
+            "name": "VinMart+ Intracom Trung Văn",
+            "location": {
+                "lat": 20.9880287,
+                "long": 105.7966083
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 407
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 10
+                }
+            }
+        },
+        "271": {
+            "id": 271,
+            "code": "C271",
+            "name": "VinMart+ 44 Nguyễn Hoàng",
+            "location": {
+                "lat": 21.0314336,
+                "long": 105.774488
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 435
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 442
+                }
+            }
+        },
+        "272": {
+            "id": 272,
+            "code": "C272",
+            "name": "VinMart+ 297 Trung Văn",
+            "location": {
+                "lat": 20.9905471,
+                "long": 105.7877691
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 434
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 258
+                }
+            }
+        },
+        "273": {
+            "id": 273,
+            "code": "C273",
+            "name": "VinMart+ Tây Hà Tower",
+            "location": {
+                "lat": 21.001785,
+                "long": 105.750634
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 27
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 69
+                }
+            }
+        },
+        "274": {
+            "id": 274,
+            "code": "C274",
+            "name": "VinMart+ N4-A5 Mỹ Đình",
+            "location": {
+                "lat": 21.028823,
+                "long": 105.7752222
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 202
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 454
+                }
+            }
+        },
+        "275": {
+            "id": 275,
+            "code": "C275",
+            "name": "VinMart+ 354-356 Mỹ Đình",
+            "location": {
+                "lat": 21.0223038,
+                "long": 105.774583
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 35
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 253
+                }
+            }
+        },
+        "276": {
+            "id": 276,
+            "code": "C276",
+            "name": "VinMart+ 29 Tây Mỗ",
+            "location": {
+                "lat": 21.001785,
+                "long": 105.750634
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 274
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 111
+                }
+            }
+        },
+        "277": {
+            "id": 277,
+            "code": "C277",
+            "name": "VinMart+ 16 Khu Tái Định Cư 7.3-8.1",
+            "location": {
+                "lat": 21.3905016,
+                "long": 105.6137626
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 248
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 304
+                }
+            }
+        },
+        "278": {
+            "id": 278,
+            "code": "C278",
+            "name": "VinMart+ 156 Trần Bình",
+            "location": {
+                "lat": 21.030462,
+                "long": 105.775947
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 423
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 128
+                }
+            }
+        },
+        "279": {
+            "id": 279,
+            "code": "C279",
+            "name": "VinMart+ Ct2B Cổ Nhuế",
+            "location": {
+                "lat": 21.0511321,
+                "long": 105.785991
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 404
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 188
+                }
+            }
+        },
+        "280": {
+            "id": 280,
+            "code": "C280",
+            "name": "VinMart+ 357 Xuân Đỉnh",
+            "location": {
+                "lat": 21.0716302,
+                "long": 105.7902016
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 51
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 402
+                }
+            }
+        },
+        "281": {
+            "id": 281,
+            "code": "C281",
+            "name": "VinMart+ 464 Hoàng Công Chất",
+            "location": {
+                "lat": 21.048436,
+                "long": 105.769322
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 452
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 223
+                }
+            }
+        },
+        "282": {
+            "id": 282,
+            "code": "C282",
+            "name": "VinMart+ Ecohome 2",
+            "location": {
+                "lat": 21.0912884,
+                "long": 105.7852628
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 68
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 48
+                }
+            }
+        },
+        "283": {
+            "id": 283,
+            "code": "C283",
+            "name": "VinMart+ 5 Nhật Tảo",
+            "location": {
+                "lat": 21.0876049,
+                "long": 105.7868275
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 368
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 50
+                }
+            }
+        },
+        "284": {
+            "id": 284,
+            "code": "C284",
+            "name": "VinMart+ 29 Ngõ 126 Xuân Đỉnh",
+            "location": {
+                "lat": 21.0721563,
+                "long": 105.7986169
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 182
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 262
+                }
+            }
+        },
+        "285": {
+            "id": 285,
+            "code": "C285",
+            "name": "VinMart+ Intracom Cầu Diễn",
+            "location": {
+                "lat": 21.042045,
+                "long": 105.759034
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 184
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 99
+                }
+            }
+        },
+        "286": {
+            "id": 286,
+            "code": "C286",
+            "name": "VinMart+ 46 Tăng Thiết Giáp",
+            "location": {
+                "lat": 21.057464,
+                "long": 105.780936
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 335
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 168
+                }
+            }
+        },
+        "287": {
+            "id": 287,
+            "code": "C287",
+            "name": "VinMart+ 116-118 Cầu Diễn",
+            "location": {
+                "lat": 21.0479537,
+                "long": 105.745557
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 286
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 223
+                }
+            }
+        },
+        "288": {
+            "id": 288,
+            "code": "C288",
+            "name": "VinMart+ 24 Ngõ 1 Đỗ Nhuận",
+            "location": {
+                "lat": 21.0213777,
+                "long": 105.7603575
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 389
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 453
+                }
+            }
+        },
+        "289": {
+            "id": 289,
+            "code": "C289",
+            "name": "VinMart+ 22A Đức Diễn",
+            "location": {
+                "lat": 17.4674878,
+                "long": 106.5978879
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 42
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 336
+                }
+            }
+        },
+        "290": {
+            "id": 290,
+            "code": "C290",
+            "name": "VinMart+ 21 Văn Tiến Dũng",
+            "location": {
+                "lat": 21.048515,
+                "long": 105.748805
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 448
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 124
+                }
+            }
+        },
+        "291": {
+            "id": 291,
+            "code": "C291",
+            "name": "VinMart+ 31 Xuân Đỉnh",
+            "location": {
+                "lat": 21.069774,
+                "long": 105.801282
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 368
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 412
+                }
+            }
+        },
+        "292": {
+            "id": 292,
+            "code": "C292",
+            "name": "VinMart+ 271 Nguyễn Hoàng Tôn",
+            "location": {
+                "lat": 21.0715453,
+                "long": 105.8063906
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 393
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 167
+                }
+            }
+        },
+        "293": {
+            "id": 293,
+            "code": "C293",
+            "name": "VinMart+ 272 Thụy Phương",
+            "location": {
+                "lat": 21.092775,
+                "long": 105.7777473
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 422
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 381
+                }
+            }
+        },
+        "294": {
+            "id": 294,
+            "code": "C294",
+            "name": "VinMart+ 212 Cổ Nhuế",
+            "location": {
+                "lat": 21.0475009,
+                "long": 105.7969377
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 353
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 441
+                }
+            }
+        },
+        "295": {
+            "id": 295,
+            "code": "C295",
+            "name": "VinMart+ Bt2-01 Nam La Khê",
+            "location": {
+                "lat": 20.9645764,
+                "long": 105.7645865
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 144
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 240
+                }
+            }
+        },
+        "296": {
+            "id": 296,
+            "code": "C296",
+            "name": "VinMart+ Liền Kề 16-19 Ngô Thì Nhậm",
+            "location": {
+                "lat": 21.0166103,
+                "long": 105.8532494
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 349
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 18
+                }
+            }
+        },
+        "297": {
+            "id": 297,
+            "code": "C297",
+            "name": "VinMart+ 84 Bế Văn Đàn - Hà Đông",
+            "location": {
+                "lat": 20.9688898640001,
+                "long": 105.772130742
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 164
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 470
+                }
+            }
+        },
+        "298": {
+            "id": 298,
+            "code": "C298",
+            "name": "VinMart+ 108 Trần Phú - Hà Đông",
+            "location": {
+                "lat": 20.9779625840001,
+                "long": 105.784732078
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 451
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 303
+                }
+            }
+        },
+        "299": {
+            "id": 299,
+            "code": "C299",
+            "name": "VinMart+ 121-123 Tô Hiệu",
+            "location": {
+                "lat": 20.974254,
+                "long": 105.745423
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 212
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 100
+                }
+            }
+        },
+        "300": {
+            "id": 300,
+            "code": "C300",
+            "name": "VinMart+ Lô 11 Liền Kề 19 Mậu Lương",
+            "location": {
+                "lat": 20.9584268,
+                "long": 105.7945406
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 437
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 423
+                }
+            }
+        },
+        "301": {
+            "id": 301,
+            "code": "C301",
+            "name": "VinMart+ Liền Kề Lk1-30 Văn Phú",
+            "location": {
+                "lat": 20.9604598,
+                "long": 105.7644895
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 311
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 251
+                }
+            }
+        },
+        "302": {
+            "id": 302,
+            "code": "C302",
+            "name": "VinMart+ 2A-20 Liền Kề Mỗ Lao - Hà Đông",
+            "location": {
+                "lat": 20.980817696,
+                "long": 105.785836698
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 127
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 481
+                }
+            }
+        },
+        "303": {
+            "id": 303,
+            "code": "C303",
+            "name": "VinMart+ 26 Vạn Phúc - Hà Đông",
+            "location": {
+                "lat": 20.98198382,
+                "long": 105.770937659
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 176
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 119
+                }
+            }
+        },
+        "304": {
+            "id": 304,
+            "code": "C304",
+            "name": "VinMart+ B15 Bồ Hỏa - Hà Đông",
+            "location": {
+                "lat": 20.966314,
+                "long": 105.775557
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 224
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 49
+                }
+            }
+        },
+        "305": {
+            "id": 305,
+            "code": "C305",
+            "name": "VinMart+ 54 Lý Thường Kiệt - Hà Đông",
+            "location": {
+                "lat": 20.965389627,
+                "long": 105.769538772
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 379
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 416
+                }
+            }
+        },
+        "306": {
+            "id": 306,
+            "code": "C306",
+            "name": "VinMart+ 6 Ba La - Hà Đông",
+            "location": {
+                "lat": 20.956039446,
+                "long": 105.757361418
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 432
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 187
+                }
+            }
+        },
+        "307": {
+            "id": 307,
+            "code": "C307",
+            "name": "VinMart+ - 136 Nguyễn Viết Xuân, Phường Quang Trung, Quận Hà Đông, Thành phố Hà Nội",
+            "location": {
+                "lat": 20.970206,
+                "long": 105.768813
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 377
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 474
+                }
+            }
+        },
+        "308": {
+            "id": 308,
+            "code": "C308",
+            "name": "VinMart+ 556 Quang Trung - Hà Đông",
+            "location": {
+                "lat": 20.959860334,
+                "long": 105.761526542
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 411
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 259
+                }
+            }
+        },
+        "309": {
+            "id": 309,
+            "code": "C309",
+            "name": "VinMart+ - 20 Ngô Thì Nhậm, Phường Hà Cầu, Quận Hà Đông, Thành phố Hà Nội",
+            "location": {
+                "lat": 20.968753,
+                "long": 105.769232
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 207
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 162
+                }
+            }
+        },
+        "310": {
+            "id": 310,
+            "code": "C310",
+            "name": "VinMart+ 148 Lê Lợi",
+            "location": {
+                "lat": 20.852364,
+                "long": 106.689462
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 50
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 393
+                }
+            }
+        },
+        "311": {
+            "id": 311,
+            "code": "C311",
+            "name": "VinMart+ 37 Lê Lợi",
+            "location": {
+                "lat": 20.852364,
+                "long": 106.689462
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 300
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 417
+                }
+            }
+        }
+    }
+}

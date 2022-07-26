@@ -1,0 +1,631 @@
+{
+    "depot": {
+        "0": {
+            "id": 0,
+            "code": "D0",
+            "name": "Vinamilk - XÍ NGHIỆP KHO VẬN HÀ NỘI",
+            "location": {
+                "lat": 20.996266705,
+                "long": 105.971229751
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1206
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2317
+                }
+            }
+        },
+        "1": {
+            "id": 1,
+            "code": "D1",
+            "name": "Kho hàng AEON Mall Hà Đông",
+            "location": {
+                "lat": 20.9897037,
+                "long": 105.7517169
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1668
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1138
+                }
+            }
+        },
+        "2": {
+            "id": 2,
+            "code": "D2",
+            "name": "Acecook - Nhà máy Bắc Ninh 1",
+            "location": {
+                "lat": 21.1781766,
+                "long": 106.0710255
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1863
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1900
+                }
+            }
+        },
+        "3": {
+            "id": 3,
+            "code": "D3",
+            "name": "Kho hàng AEON Mall Long Biên",
+            "location": {
+                "lat": 21.0267986,
+                "long": 105.9006428
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4173
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3473
+                }
+            }
+        },
+        "4": {
+            "id": 4,
+            "code": "D4",
+            "name": "Trung Tâm Cung Cấp Nông Sản VINECO",
+            "location": {
+                "lat": 21.0421490960001,
+                "long": 105.914789092
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3084
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1299
+                }
+            }
+        },
+        "5": {
+            "id": 5,
+            "code": "D5",
+            "name": "VinEco Tam Dao",
+            "location": {
+                "lat": 21.349685,
+                "long": 105.64775
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3137
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3459
+                }
+            }
+        },
+        "6": {
+            "id": 6,
+            "code": "D6",
+            "name": "Kho đông lạnh Công ty Thực Phẩm Thanh Nga",
+            "location": {
+                "lat": 21.0041454,
+                "long": 105.8678754
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1748
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1375
+                }
+            }
+        },
+        "7": {
+            "id": 7,
+            "code": "D7",
+            "name": "Chi nhánh công ty TNHH nước giải khát Coca-cola Việt Nam tại Hà Nội",
+            "location": {
+                "lat": 20.917832477,
+                "long": 105.848909875
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2360
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1277
+                }
+            }
+        },
+        "8": {
+            "id": 8,
+            "code": "D8",
+            "name": "Nhà máy MNS MEAT Hà Nam",
+            "location": {
+                "lat": 20.6325015,
+                "long": 105.8856716
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2445
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4745
+                }
+            }
+        },
+        "9": {
+            "id": 9,
+            "code": "D9",
+            "name": "Công ty Coca-cola Ngọc Hồi",
+            "location": {
+                "lat": 20.8670772,
+                "long": 105.8658805
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4186
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3942
+                }
+            }
+        },
+        "10": {
+            "id": 10,
+            "code": "D10",
+            "name": "Kho hàng Big C THĂNG LONG",
+            "location": {
+                "lat": 21.0076674,
+                "long": 105.7929976
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3628
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3733
+                }
+            }
+        },
+        "11": {
+            "id": 11,
+            "code": "D11",
+            "name": "Kho hàng Big C Mê Linh",
+            "location": {
+                "lat": 21.1874027,
+                "long": 105.7822931
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2008
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2736
+                }
+            }
+        },
+        "12": {
+            "id": 12,
+            "code": "D12",
+            "name": "Kho hàng Big C VIỆT TRÌ",
+            "location": {
+                "lat": 21.3064074,
+                "long": 105.431927
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1430
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4420
+                }
+            }
+        },
+        "13": {
+            "id": 13,
+            "code": "D13",
+            "name": "Kho hàng MM Mega Market Hà Đông",
+            "location": {
+                "lat": 20.9642345,
+                "long": 105.7719851
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2500
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1161
+                }
+            }
+        },
+        "14": {
+            "id": 14,
+            "code": "D14",
+            "name": "Kho hàng MM Mega Market Thăng Long",
+            "location": {
+                "lat": 21.0544582,
+                "long": 105.7800604
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3611
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4977
+                }
+            }
+        },
+        "15": {
+            "id": 15,
+            "code": "D15",
+            "name": "Kho hàng MM Mega Market Hoàng Mai",
+            "location": {
+                "lat": 20.969517,
+                "long": 105.865993
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2722
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1976
+                }
+            }
+        },
+        "16": {
+            "id": 16,
+            "code": "D16",
+            "name": "Kho hàng MM Supermarket Thanh Xuân",
+            "location": {
+                "lat": 20.9857392,
+                "long": 105.8405974
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1151
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4405
+                }
+            }
+        },
+        "17": {
+            "id": 17,
+            "code": "D17",
+            "name": "CÔNG TY TNHH MTV TM VÀ DV HÙNG CƯỜNG",
+            "location": {
+                "lat": 21.0296596,
+                "long": 105.8592402
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1294
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3477
+                }
+            }
+        },
+        "18": {
+            "id": 18,
+            "code": "D18",
+            "name": "CÔNG TY TNHH TM VÀ DV HƯƠNG LINH",
+            "location": {
+                "lat": 16.7088889,
+                "long": 106.7030556
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4808
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2472
+                }
+            }
+        },
+        "19": {
+            "id": 19,
+            "code": "D19",
+            "name": "CÔNG TY CỔ PHẦN DỊCH VỤ HẠ TẦNG MẠNG",
+            "location": {
+                "lat": 21.02654,
+                "long": 105.810004
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2316
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4012
+                }
+            }
+        },
+        "20": {
+            "id": 20,
+            "code": "D20",
+            "name": "Công ty TNHH Thủ Đô- Tín Nghĩa ( Unilever - Gia Lâm- Long Biên- Đông Anh - Sóc Sơn)",
+            "location": {
+                "lat": 21.1943243,
+                "long": 105.8617054
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1493
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1761
+                }
+            }
+        },
+        "21": {
+            "id": 21,
+            "code": "D21",
+            "name": "CÔNG TY CP THƯƠNG MẠI PHÚ THÁI HÀ NỘI (P&G)",
+            "location": {
+                "lat": 21.028692327,
+                "long": 105.740637369
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2637
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2540
+                }
+            }
+        },
+        "22": {
+            "id": 22,
+            "code": "D22",
+            "name": "Công ty TNHH nước giải khát BlueSea (nước giải khát và đồ uống không cồn)",
+            "location": {
+                "lat": 21.0474313,
+                "long": 105.7925836
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4826
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4127
+                }
+            }
+        },
+        "23": {
+            "id": 23,
+            "code": "D23",
+            "name": "Công ty Đại Nam (phân phối đồ uống)",
+            "location": {
+                "lat": 21.0133744,
+                "long": 105.7999177
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2245
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 2815
+                }
+            }
+        },
+        "24": {
+            "id": 24,
+            "code": "D24",
+            "name": "Nhà phân phối Tuệ Minh (Pepsico)",
+            "location": {
+                "lat": 21.0242706,
+                "long": 105.8397537
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 2970
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1371
+                }
+            }
+        },
+        "25": {
+            "id": 25,
+            "code": "D25",
+            "name": "Nhà Phân phối nước giải khát Bách Khoa",
+            "location": {
+                "lat": 21.0070261600001,
+                "long": 105.848679573
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1253
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3503
+                }
+            }
+        },
+        "26": {
+            "id": 26,
+            "code": "D26",
+            "name": "CÔNG TY CỔ PHẦN HÀ NỘI FOODS VIỆT NAM",
+            "location": {
+                "lat": 21.0344003320001,
+                "long": 105.87479439
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4943
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 1404
+                }
+            }
+        },
+        "27": {
+            "id": 27,
+            "code": "D27",
+            "name": "Công Ty Cổ Phần V-FOOD Việt Nam",
+            "location": {
+                "lat": 21.0435017,
+                "long": 105.8713042
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4830
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3243
+                }
+            }
+        },
+        "28": {
+            "id": 28,
+            "code": "D28",
+            "name": "Công Ty Hoa Quả Sạch FUJI FRUIT",
+            "location": {
+                "lat": 20.9880994,
+                "long": 105.8402677
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 1760
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4275
+                }
+            }
+        },
+        "29": {
+            "id": 29,
+            "code": "D29",
+            "name": "Công ty TNHH Thực Phẩm Sạch Thương Mại T&P",
+            "location": {
+                "lat": 21.0569059,
+                "long": 105.8702094
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3390
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3050
+                }
+            }
+        },
+        "30": {
+            "id": 30,
+            "code": "D30",
+            "name": "Công Ty TNHH Sản Xuất Bánh Hà Nội",
+            "location": {
+                "lat": 20.9737220000001,
+                "long": 105.730887
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4041
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 3807
+                }
+            }
+        },
+        "31": {
+            "id": 31,
+            "code": "D31",
+            "name": "Cửa hàng phân phối bánh kẹo Kinh Đô - Cầu Giấy",
+            "location": {
+                "lat": 21.0331495,
+                "long": 105.793491
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 3552
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4735
+                }
+            }
+        },
+        "32": {
+            "id": 32,
+            "code": "D32",
+            "name": "Lò Bánh Mì - Bánh Ngọt Duy Mùi",
+            "location": {
+                "lat": 10.760807,
+                "long": 106.67086
+            },
+            "demand_list": {
+                "1": {
+                    "item_id": 1,
+                    "demand": 4449
+                },
+                "2": {
+                    "item_id": 2,
+                    "demand": 4103
+                }
+            }
+        }
+    }
+}
