@@ -115,63 +115,6 @@ class Cluster:
         self.current_mass = np.array(np.zeros(self.n_items))
         self.n_cities = 0
         self.city_id_list = []
-        
-    # def get_quantity(self):
-    #     """
-    #     Get the number of city in this cluster
-        
-    #     Args:
-        
-    #     Returns:
-
-    #     The number of city
-    #     """
-    #     return len(self.city_list)
-
-
-    # def append(self, city: City):
-    #     """
-    #     Append a new city into this cluster
-        
-    #     Args:
-        
-    #     Returns:
-    #     """
-    #     #print(type(self.city_list))
-    #     print('City list: {}'.format(a.id for a in self.city_list))
-    #     self.city_list.append(city)
-    #     self.current_mass = self.current_mass + city.demand_array
-
-
-    # def distance(self, cluster, distance_callback):
-    #     """
-    #     Calculate the distance between 2 clusters
-
-    #     Args:
-
-    #     `cluster`: Cluster you want to cal distance
-
-    #     `distance_callback`: The function defining the distance between 2 city
-        
-    #     Returns:
-
-    #     The distance between 2 cluster
-    #     Được tính bằng khoảng cách nhỏ nhất giữa 2 thành phố thuộc 2 cụm
-    #     Trả về: khoảng cách đã tính được, id thành phố của cluster kia
-
-    #     """
-    #     min_distance = np.inf
-    #     city_list = cluster.city_list
-    #     connect_city = None
-        
-    #     for beg in self.city_list:
-    #         for des in city_list:
-    #             distance = distance_callback(beg, des)
-    #             if min_distance > distance:
-    #                 min_distance = distance
-    #                 connect_city = beg.id
-        
-    #     return min_distance, connect_city
 
     def print(self, location_flag = False, capa_flag = False, current_mass_flag = False, get_n_cities_flag = False, city_id_list_flag = False, header = ''):
         if location_flag: print('{}Location: {}'.format(header, self.get_center()))

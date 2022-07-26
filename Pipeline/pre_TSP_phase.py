@@ -17,12 +17,24 @@ sys.path.append(os.getcwd())
 from KMeans.KMeans import KMeans
 from utils.utils import *
 
-def Pre_TSP_phase(n_node_threshold = 15):
+def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     item_fname = 'input/item.txt'
     city_fname = 'input/market.json'
-    vehicle_fname = 'input/vehicle.json'
     convert_coef_fname = 'input/latlong_to_meter_coef.txt'
     output_phase1_fname = 'output/KMeans_phase.json'
+    dump_file = 'output/pre_TSP_phase.json'
+
+    summary = []
+    details = []
+
+    details.append('\tInput data list:')
+    details.append('\t\t{}'.format(item_fname))
+    details.append('\t\t{}'.format(city_fname))
+    details.append('\t\t{}'.format(vehicle_fname))
+    details.append('\t\t{}'.format(convert_coef_fname))
+    details.append('\t\t{}'.format(output_phase1_fname))
+    details.append('\tOutput data to: ')
+    details.append('\t\t{}'.format(dump_file))
 
     (n_items, item_list) = load_item_from_text(item_fname)
     (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
@@ -57,7 +69,7 @@ def Pre_TSP_phase(n_node_threshold = 15):
     '''
 
     # Một số biến lưu trữ các thông tin về số lần thử kmeans, số cụm cha, số cụm con
-    try_kmeans_counter = 0
+    try_kmeans_counter_list = []
     n_cluster_parent = 0
     n_cluster_child = []
     total_distance = []
@@ -88,6 +100,7 @@ def Pre_TSP_phase(n_node_threshold = 15):
         # các current_mass có đều nhỏ hơn capacity của xe hay không, nếu không thì ta tăng giá trị n_child và lặp lại
         continue_flag = True
         time1 = time()
+        try_kmeans_counter = 1
         while continue_flag:
             
             capacity_array = np.array([list(vehicle_list[cluster_id].capacity_list)]*n_child).reshape((n_child, n_items))
@@ -133,24 +146,45 @@ def Pre_TSP_phase(n_node_threshold = 15):
 
                 # Update các thông tin để in ra màn hình
                 n_cluster_child.append(n_child)
-                total_distance.append(distance)
+                total_distance.append(np.sum(distance))
                 time_computing.append(time2-time1)
+                try_kmeans_counter_list.append(try_kmeans_counter)
 
 
     '''
     3. Dump ra file json, lấy tên là pre_TSP_phase.json
     '''
-    dump_file = 'output/pre_TSP_phase.json'
+    
     with open(dump_file, 'w', encoding='utf-8') as json_file:
         json.dump(save_data, json_file, ensure_ascii=False, indent=4)
 
         #TODO: lấy ra các thành phố thuộc vào cụm cha này, sau đó fit vào model, lưu lại các thông tin về nhãn của từng cụm con để biểu diễn dữ liệu
 
     print('\tSummary: ')
-    print('\t\tTotal try KMeans times = {}'.format(try_kmeans_counter))
+    print('\t\tTotal try KMeans times = {}'.format(np.sum(try_kmeans_counter_list)))
     print('\t\tNo. cluster parent = {}'.format(n_cluster_parent))
-    print('\t\tNo. cluster child = {}'.format(np.sum(np.array(n_cluster_child))))
-    print('\t\tTotal distance = {} (m)'.format(round(np.sum(np.array(total_distance)), 3)))
+    print('\t\tTotal no. cluster child = {}'.format(np.sum(np.array(n_cluster_child))))
+    print('\t\tTotal distance = {} (m)'.format(round(np.sum(np.sum(total_distance)), 3)))
     print('\t\tTotal time for clustering = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
+
+    summary.append('\tSummary: ')
+    summary.append('\t\tTotal try KMeans times = {}'.format(np.sum(try_kmeans_counter_list)))
+    summary.append('\t\tNo. cluster parent = {}'.format(n_cluster_parent))
+    summary.append('\t\tTotal no. cluster child = {}'.format(np.sum(np.array(n_cluster_child))))
+    summary.append('\t\tTotal distance = {} (m)'.format(round(np.sum(np.sum(total_distance)), 3)))
+    summary.append('\t\tTotal time for clustering = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
+
+    details.append('\n'.join(summary))
+    details.append('\tDetails: ')
+
+    for i in range(n_clusters):
+        details.append('\t\tCluster parent {}'.format(i))
+        details.append('\t\t\tTry KMeans {} times'.format(try_kmeans_counter_list[i]))
+        details.append('\t\t\tNo. cluster child: {}'.format(n_cluster_child[i]))
+        details.append('\t\t\tTotal distance in all cluster child: {} (m)'.format(round(total_distance[i], 3)))
+        details.append('\t\t\tTime for clustering: {} ms'.format(round(time_computing[i]*1000.0, 0)))
+    details.append('\n\n')
+    summary.append('\n\n')
+    return ('\n'.join(summary), '\n'.join(details))
 
 # Pre_TSP_phase()

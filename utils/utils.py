@@ -57,7 +57,7 @@ def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_
 
     labels = {}
     result_array = np.zeros((n_cities, n_clusters))
-    total_distance  = 0.0
+    total_distance  = []
 
     for i in range(n_cities):
         city_id = city_list_shuffle[i].id
@@ -77,7 +77,7 @@ def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_
             # print('Res[{}, {}] = {}'.format(i,j,result_array[i,j]))
 
         labels[city_id] = np.argmin(result_array[i])
-        total_distance+=np.min(result_array[i])
+        total_distance.append(np.min(result_array[i]))
 
         (cluster_list[int(labels[city_id])]).update_mass(city_list_shuffle[i].demand_array, city_list_shuffle[i].id)
 

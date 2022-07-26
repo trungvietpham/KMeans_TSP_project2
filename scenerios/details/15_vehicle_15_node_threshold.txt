@@ -1,0 +1,282 @@
+Scenerios: 
+No. cluster = No. vehicle = 15
+Higher no. nodes threshold for TSP = 15
+
+1. Generate data: no gendata, use data in input/*
+	Input data list: 
+		test_data/customers.csv
+		test_data/depots.csv
+		test_data/correlations.csv
+	Output data to : 
+		input/market.json
+		input/depot.json
+		input/correlation.json
+		input/vehicle_15.json
+
+
+2. KMeans clustering phase:
+	Input data list:
+		input/item.txt
+		input/market.json
+		input/latlong_to_meter_coef.txt
+	Output data to:
+		output/KMeans_phase.json
+		input/vehicle_15.json
+	Summary: 
+		Coverged after 9 step
+		KMeans took 1632.0 ms to clustering.
+		No. clusters = 15
+		No. customer = 312
+		Total distance = 2416826.721 (m)
+	Details:
+		No. items: 2
+		Cluster 0:
+			Current mass: [3987. 4573.]
+			No. cities: 19
+			Distance: 156853.855 (m)
+		Cluster 1:
+			Current mass: [2016. 2157.]
+			No. cities: 8
+			Distance: 280178.941 (m)
+		Cluster 2:
+			Current mass: [867. 782.]
+			No. cities: 3
+			Distance: 619905.312 (m)
+		Cluster 3:
+			Current mass: [17082. 16298.]
+			No. cities: 68
+			Distance: 223247.678 (m)
+		Cluster 4:
+			Current mass: [9562. 7049.]
+			No. cities: 35
+			Distance: 138818.979 (m)
+		Cluster 5:
+			Current mass: [2225. 3212.]
+			No. cities: 11
+			Distance: 104177.614 (m)
+		Cluster 6:
+			Current mass: [3960. 4863.]
+			No. cities: 20
+			Distance: 188367.056 (m)
+		Cluster 7:
+			Current mass: [12521. 12579.]
+			No. cities: 47
+			Distance: 107459.012 (m)
+		Cluster 8:
+			Current mass: [1414. 1555.]
+			No. cities: 6
+			Distance: 119267.703 (m)
+		Cluster 9:
+			Current mass: [444. 714.]
+			No. cities: 2
+			Distance: 52133.88 (m)
+		Cluster 10:
+			Current mass: [679. 961.]
+			No. cities: 3
+			Distance: 53141.676 (m)
+		Cluster 11:
+			Current mass: [895. 915.]
+			No. cities: 3
+			Distance: 56608.835 (m)
+		Cluster 12:
+			Current mass: [8673. 8846.]
+			No. cities: 41
+			Distance: 118641.128 (m)
+		Cluster 13:
+			Current mass: [10886. 11101.]
+			No. cities: 44
+			Distance: 156211.407 (m)
+		Cluster 14:
+			Current mass: [425. 673.]
+			No. cities: 2
+			Distance: 41813.645 (m)
+
+
+
+3. Clustering each cluster into smaller clusters before step over TSP phase:
+	Input data list:
+		input/item.txt
+		input/market.json
+		input/vehicle_15.json
+		input/latlong_to_meter_coef.txt
+		output/KMeans_phase.json
+	Output data to: 
+		output/pre_TSP_phase.json
+	Summary: 
+		Total try KMeans times = 32
+		No. cluster parent = 15
+		Total no. cluster child = 42
+		Total distance = 1726822.633 (m)
+		Total time for clustering = 991.315 ms
+	Details: 
+		Cluster parent 0
+			Try KMeans 3 times
+			No. cluster child: 3
+			Total distance in all cluster child: 59819.804 (m)
+			Time for clustering: 19.0 ms
+		Cluster parent 1
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 280178.941 (m)
+			Time for clustering: 4.0 ms
+		Cluster parent 2
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 619905.312 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 3
+			Try KMeans 7 times
+			No. cluster child: 9
+			Total distance in all cluster child: 74127.648 (m)
+			Time for clustering: 676.0 ms
+		Cluster parent 4
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 65277.449 (m)
+			Time for clustering: 79.0 ms
+		Cluster parent 5
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 104177.614 (m)
+			Time for clustering: 2.0 ms
+		Cluster parent 6
+			Try KMeans 3 times
+			No. cluster child: 3
+			Total distance in all cluster child: 46083.623 (m)
+			Time for clustering: 29.0 ms
+		Cluster parent 7
+			Try KMeans 2 times
+			No. cluster child: 4
+			Total distance in all cluster child: 49979.336 (m)
+			Time for clustering: 46.0 ms
+		Cluster parent 8
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 119267.703 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 9
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 52133.88 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 10
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 53141.676 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 11
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 56608.835 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 12
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 50639.375 (m)
+			Time for clustering: 59.0 ms
+		Cluster parent 13
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 53667.791 (m)
+			Time for clustering: 74.0 ms
+		Cluster parent 14
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 41813.645 (m)
+			Time for clustering: 1.0 ms
+
+
+
+4. TSP phase:
+	Input data list:
+		input/item.txt
+		input/market.json
+		input/vehicle_15.json
+		input/latlong_to_meter_coef.txt
+		output/KMeans_phase.json
+	Output data to: 
+		output/pre_TSP_phase.json
+	Summary: 
+		Total try KMeans times = 32
+		No. cluster parent = 15
+		Total no. cluster child = 42
+		Total distance = 1726822.633 (m)
+		Total time for clustering = 991.315 ms
+	Details: 
+		Cluster parent 0
+			Try KMeans 3 times
+			No. cluster child: 3
+			Total distance in all cluster child: 59819.804 (m)
+			Time for clustering: 19.0 ms
+		Cluster parent 1
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 280178.941 (m)
+			Time for clustering: 4.0 ms
+		Cluster parent 2
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 619905.312 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 3
+			Try KMeans 7 times
+			No. cluster child: 9
+			Total distance in all cluster child: 74127.648 (m)
+			Time for clustering: 676.0 ms
+		Cluster parent 4
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 65277.449 (m)
+			Time for clustering: 79.0 ms
+		Cluster parent 5
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 104177.614 (m)
+			Time for clustering: 2.0 ms
+		Cluster parent 6
+			Try KMeans 3 times
+			No. cluster child: 3
+			Total distance in all cluster child: 46083.623 (m)
+			Time for clustering: 29.0 ms
+		Cluster parent 7
+			Try KMeans 2 times
+			No. cluster child: 4
+			Total distance in all cluster child: 49979.336 (m)
+			Time for clustering: 46.0 ms
+		Cluster parent 8
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 119267.703 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 9
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 52133.88 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 10
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 53141.676 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 11
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 56608.835 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 12
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 50639.375 (m)
+			Time for clustering: 59.0 ms
+		Cluster parent 13
+			Try KMeans 3 times
+			No. cluster child: 5
+			Total distance in all cluster child: 53667.791 (m)
+			Time for clustering: 74.0 ms
+		Cluster parent 14
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 41813.645 (m)
+			Time for clustering: 1.0 ms
+
+

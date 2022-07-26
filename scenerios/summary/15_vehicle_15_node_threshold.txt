@@ -1,0 +1,35 @@
+1. Generate data: no gendata
+
+
+2. KMeans clustering phase:
+	Summary: 
+		Coverged after 9 step
+		KMeans took 1632.0 ms to clustering.
+		No. clusters = 15
+		No. customer = 312
+		Total distance = 2416826.721 (m)
+
+
+
+3. Clustering each cluster into smaller clusters before step over TSP phase:
+	Summary: 
+		Total try KMeans times = 32
+		No. cluster parent = 15
+		Total no. cluster child = 42
+		Total distance = 1726822.633 (m)
+		Total time for clustering = 991.315 ms
+
+
+
+4. TSP phase:
+	Summary: 
+		Total try KMeans times = 32
+		No. cluster parent = 15
+		Total no. cluster child = 42
+		Total distance = 1726822.633 (m)
+		Total time for clustering = 991.315 ms
+
+
+
+
+More details in scenerios/details/15_vehicle_15_node_threshold.txt

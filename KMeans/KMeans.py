@@ -6,6 +6,8 @@ from scipy.spatial import distance
 import sys
 from sklearn import cluster
 
+from utils.utils import manhattan_distance
+
 sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 from utils.SupportClass import Cluster
 
@@ -46,10 +48,11 @@ class KMeans:
         # return index of the closest center
         return (distance, labels)
 
-    def update_centers(self, city_list, labels):
+    def update_centers(self, city_list, labels, distance_coef):
         centers = np.zeros((self.n_clusters, 2))
         cities = []
         n_items = len(city_list[0].demand_array)
+        distance_list = []
         #for k in range(self.n_clusters):
         for i in range(len(city_list)):
         # collect all points assigned to the k-th cluster 
@@ -65,7 +68,11 @@ class KMeans:
                 #Note: Sửa lại để cập nhật theo hàm optimizer
             if len(cities_k) != 0: 
                 centers[k,:] = np.mean(cities_k, axis = 0)
-        return centers
+            dist = 0.0
+            for a in cities_k:
+                dist+=manhattan_distance(a, centers[k, :])
+            distance_list.append(dist*distance_coef)
+        return (distance_list, centers)
 
 
     def has_converged(self, centers, new_centers, epsilon = 1e-6):
@@ -121,14 +128,13 @@ class KMeans:
             cluster_list.append(Cluster(location[0], location[1], capacity_list, city_id_list=[]))
             # print('Cluster {}, city list: {}'.format(i, cluster_list[-1].city_id_list))
         it = 0 
-        total_dis = 0.0
         continue_flag = True
         while continue_flag:
             # print('Loop thread')
-            total_dis, label = self.assign_labels(optimizer, city_list, cluster_list, distance_coef, alpha, penalty_coef, zeros_penalty, shuffle=shuffle, normalization_flag=True)
+            _, label = self.assign_labels(optimizer, city_list, cluster_list, distance_coef, alpha, penalty_coef, zeros_penalty, shuffle=shuffle, normalization_flag=True)
             labels.append(label)
             # print('Assign done')
-            new_centers = self.update_centers(city_list, labels[-1])
+            total_dis, new_centers = self.update_centers(city_list, labels[-1], distance_coef)
             # print('Update done')
             # for cluster_id in range(len(cluster_list)):
                 # print('\tCluster {}: City list = {}'.format(cluster_id, cluster_list[cluster_id].city_id_list))

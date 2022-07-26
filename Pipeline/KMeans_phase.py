@@ -10,12 +10,11 @@ sys.path.append(os.getcwd())
 from KMeans.KMeans import KMeans
 from utils.utils import *
 
-def KMeans_phase():
+def KMeans_phase(vehicle_fname):
     # print('Start model:')
     item_fname = 'input/item.txt'
     #city_fname = 'input/node.txt'
     city_fname = 'input/market.json'
-    vehicle_fname = 'input/vehicle.json'
     convert_coef_fname = 'input/latlong_to_meter_coef.txt'
 
     (n_items, item_list) = load_item_from_text(item_fname)
@@ -51,7 +50,7 @@ def KMeans_phase():
     print('\t\tKMeans took {} ms to clustering.'.format(round((time2-time1)*1000.0, 3)))
     print('\t\tNo. clusters = {}'.format(len(cluster_list)))
     print('\t\tNo. customer = {}'.format(len(labels[-1])))
-    print('\t\tTotal distance = {} (m)'.format(round(total_distance, 3)))
+    print('\t\tTotal distance = {} (m)'.format(round(np.sum(total_distance), 3)))
 
     # In ra các thông tin trong cụm:
     # for i in range(len(cluster_list)):
@@ -60,52 +59,31 @@ def KMeans_phase():
 
     output_to_json_file(cluster_list, city_list, 'output/KMeans_phase.json')
 
-    '''
-    Save centers, labels, it thành dict và dump vào file json
-    Dạng file json: 
-    {
-        'it': it
-        'center':{
-            it_number:{
-                center_i: {
-                    'lat': x
-                    'long': y
-                }
-            }
-        }
-        'label':{
-            it_number: {
-                label_i: label
-            }
-        }
-    }
-    '''
-    # save_data = {}
-    # save_data['it'] = it
-    # centers_dict = {}
-    # labels_dict = {}
-    # label_0 = {}
+    summary = []
+    details = []
+    summary.append('\tSummary: ')
+    summary.append('\t\tCoverged after {} step'.format(it))
+    summary.append('\t\tKMeans took {} ms to clustering.'.format(round((time2-time1)*1000.0, 0)))
+    summary.append('\t\tNo. clusters = {}'.format(len(cluster_list)))
+    summary.append('\t\tNo. customer = {}'.format(len(labels[-1])))
+    summary.append('\t\tTotal distance = {} (m)'.format(round(np.sum(total_distance), 3)))
 
-    # #Centers: 
-    # for i in range(it+1):
-    #     center_i = {}
-    #     for j in range(len(centers[i])):
-    #         center_i[str(j)] = {'lat':centers[i][j][0], 'long':centers[i][j][1]}
-    #     centers_dict[str(i)] = center_i
+    details.append('\tInput data list:')
+    details.append('\t\tinput/item.txt')
+    details.append('\t\tinput/market.json')
+    details.append('\t\tinput/latlong_to_meter_coef.txt')
+    details.append('\tOutput data to:')
+    details.append('\t\toutput/KMeans_phase.json')
+    details.append('\t\t{}'.format(vehicle_fname))
+    details.append('\n'.join(summary))
+    details.append('\tDetails:')
+    details.append('\t\tNo. items: {}'.format(n_items))
 
-    # #Label ban đầu đều là -1, tương ứng với nó là chưa được gán giá trị
-    # for j in range(len(labels[0])): label_0[str(j)] = -1
-    # labels_dict['0'] = label_0
-
-    # for i in range(it):
-    #     label_i = {}
-    #     for j in range(len(labels[i])):
-    #         label_i[str(j)] = labels[i][j]
-    #     labels_dict[str(i+1)] = label_i
-    # save_data['centers'] = centers_dict
-    # save_data['labels'] = labels_dict
-
-    # print('labels: {}\ncenters: {}'.format(labels, centers))
-    # f = open('output/for_plotting_phase2.json', 'w')
-    # json.dump(save_data, f, indent=4)
-
+    for i in range(len(cluster_list)):
+        details.append('\t\tCluster {}:'.format(i))
+        details.append('\t\t\tCurrent mass: {}'.format(cluster_list[i].current_mass))
+        details.append('\t\t\tNo. cities: {}'.format(cluster_list[i].n_cities))
+        details.append('\t\t\tDistance: {} (m)'.format(round(total_distance[i], 3)))
+    details.append('\n\n')
+    summary.append('\n\n')
+    return ('\n'.join(summary), '\n'.join(details))
