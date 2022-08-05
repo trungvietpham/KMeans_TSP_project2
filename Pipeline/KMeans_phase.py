@@ -45,29 +45,36 @@ def KMeans_phase(vehicle_fname):
     time1 = time.time()
     (centers, labels, it, cluster_list, total_distance) = model.fit(optimizer=optimizer, city_list = city_list,capacity_array = capacity_array, distance_coef=convert_coef, normalization_flag=False, alpha=200, penalty_coef=60000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
     time2 = time.time()
-    print('\tSummary: ')
-    print('\t\tCoverged after {} step'.format(it))
-    print('\t\tKMeans took {} ms to clustering.'.format(round((time2-time1)*1000.0, 3)))
-    print('\t\tNo. clusters = {}'.format(len(cluster_list)))
-    print('\t\tNo. customer = {}'.format(len(labels[-1])))
-    print('\t\tTotal distance = {} (m)'.format(round(np.sum(total_distance), 3)))
 
-    # In ra các thông tin trong cụm:
-    # for i in range(len(cluster_list)):
-    #     print('Cluster {}: '.format(i))
-    #     cluster_list[i].print(True, True, True, True,True, '\t')
+    total_mass = np.zeros(n_items)
+    for cluster in cluster_list:
+        total_mass += np.array(cluster.current_mass)
+
+    print('\tSummary: ')
+    print('\t\tConverged after {} steps'.format(it))
+    print('\t\tNo. of clusters = No. of vehicles = {}'.format(len(cluster_list)))
+    print('\t\tNo. of customers = {}'.format(len(labels[-1])))
+    print('\t\tNo. of good types =  {}'.format(n_items))
+    print('\t\tTotal picked capacity = {} kg'.format(total_mass))
+    print('\t\tTotal delivered capacity = {} kg'.format(total_mass))
+    print('\t\tTotal distance = {} (km)'.format(round(np.sum(total_distance), 3)))
+    print('\t\tClustering duration = {} ms'.format(round((time2-time1)*1000.0, 0)))
 
     output_to_json_file(cluster_list, city_list, 'output/KMeans_phase.json')
 
     summary = []
     details = []
     summary.append('\tSummary: ')
-    summary.append('\t\tCoverged after {} step'.format(it))
-    summary.append('\t\tKMeans took {} ms to clustering.'.format(round((time2-time1)*1000.0, 0)))
-    summary.append('\t\tNo. clusters = {}'.format(len(cluster_list)))
-    summary.append('\t\tNo. customer = {}'.format(len(labels[-1])))
-    summary.append('\t\tTotal distance = {} (m)'.format(round(np.sum(total_distance), 3)))
+    summary.append('\t\tConverged after {} steps'.format(it))
+    summary.append('\t\tNo. of clusters = No. of vehicles = {}'.format(len(cluster_list)))
+    summary.append('\t\tNo. of customers = {}'.format(len(labels[-1])))
+    summary.append('\t\tNo. of good types =  {}'.format(n_items))
+    summary.append('\t\tTotal picked capacity = {} kg'.format(total_mass))
+    summary.append('\t\tTotal delivered capacity = {} kg'.format(total_mass))
+    summary.append('\t\tTotal distance = {} (km)'.format(round(np.sum(total_distance), 3)))
+    summary.append('\t\tClustering duration = {} ms'.format(round((time2-time1)*1000.0, 0)))
 
+    details.append('Description: Clustering {} customers into {} cluster ({} is no. of vehicles) by using KMeans clustering.\n'.format(n_cities, n_clusters, n_vehicles))
     details.append('\tInput data list:')
     details.append('\t\tinput/item.txt')
     details.append('\t\tinput/market.json')
@@ -81,9 +88,9 @@ def KMeans_phase(vehicle_fname):
 
     for i in range(len(cluster_list)):
         details.append('\t\tCluster {}:'.format(i))
-        details.append('\t\t\tCurrent mass: {}'.format(cluster_list[i].current_mass))
-        details.append('\t\t\tNo. cities: {}'.format(cluster_list[i].n_cities))
-        details.append('\t\t\tDistance: {} (m)'.format(round(total_distance[i], 3)))
+        details.append('\t\t\tCurrent mass = {}'.format(cluster_list[i].current_mass))
+        details.append('\t\t\tNo. of customers = {}'.format(cluster_list[i].n_cities))
+        details.append('\t\t\tDistance = {} (km)'.format(round(total_distance[i], 3)))
     details.append('\n\n')
     summary.append('\n\n')
     return ('\n'.join(summary), '\n'.join(details))

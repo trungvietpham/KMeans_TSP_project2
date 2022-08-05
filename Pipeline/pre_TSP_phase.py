@@ -24,8 +24,17 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     output_phase1_fname = 'output/KMeans_phase.json'
     dump_file = 'output/pre_TSP_phase.json'
 
+    (n_items, item_list) = load_item_from_text(item_fname)
+    (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
+    (n_vehicles, vehicle_list) = load_vehicle_from_json(vehicle_fname, n_items=n_items)
+    convert_coef = get_convert_coef_from_file(convert_coef_fname)
+    cluster_data = json.load(open(output_phase1_fname, 'r'))
+    n_clusters = len(cluster_data)
+
     summary = []
     details = []
+
+    details.append('Description: Clustering {} cluster obtain from previous step into smaller cluster (sub-cluster) for TSP in next step\n'.format(n_vehicles))
 
     details.append('\tInput data list:')
     details.append('\t\t{}'.format(item_fname))
@@ -36,12 +45,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     details.append('\tOutput data to: ')
     details.append('\t\t{}'.format(dump_file))
 
-    (n_items, item_list) = load_item_from_text(item_fname)
-    (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
-    (n_vehicles, vehicle_list) = load_vehicle_from_json(vehicle_fname, n_items=n_items)
-    convert_coef = get_convert_coef_from_file(convert_coef_fname)
-    cluster_data = json.load(open(output_phase1_fname, 'r'))
-    n_clusters = len(cluster_data)
+
 
     '''
     1. Khôi phục lại các cụm từ output_phase1_file
@@ -161,9 +165,9 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
         #TODO: lấy ra các thành phố thuộc vào cụm cha này, sau đó fit vào model, lưu lại các thông tin về nhãn của từng cụm con để biểu diễn dữ liệu
 
     print('\tSummary: ')
-    print('\t\tTotal try KMeans times = {}'.format(np.sum(try_kmeans_counter_list)))
-    print('\t\tNo. cluster parent = {}'.format(n_cluster_parent))
-    print('\t\tTotal no. cluster child = {}'.format(np.sum(np.array(n_cluster_child))))
+    print('\t\tTotal KMeans rounds = {} (Converged on average after {} steps)'.format(np.sum(try_kmeans_counter_list), np.sum(try_kmeans_counter_list)/n_cluster_parent))
+    print('\t\tNo. of clusters = {}'.format(n_cluster_parent))
+    print('\t\tTotal no. of sub-clusters = {} ({} childs per cluster on average)'.format(np.sum(np.array(n_cluster_child)), np.sum(np.array(n_cluster_child))/n_cluster_parent))
     print('\t\tTotal distance = {} (m)'.format(round(np.sum(np.sum(total_distance)), 3)))
     print('\t\tTotal time for clustering = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
 
