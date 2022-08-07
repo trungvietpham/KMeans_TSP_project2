@@ -46,7 +46,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     details.append('\t\t{}'.format(dump_file))
 
 
-
+    
     '''
     1. Khôi phục lại các cụm từ output_phase1_file
     '''
@@ -165,9 +165,9 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
         #TODO: lấy ra các thành phố thuộc vào cụm cha này, sau đó fit vào model, lưu lại các thông tin về nhãn của từng cụm con để biểu diễn dữ liệu
 
     print('\tSummary: ')
-    print('\t\tTotal KMeans rounds = {} (Converged on average after {} steps)'.format(np.sum(try_kmeans_counter_list), np.sum(try_kmeans_counter_list)/n_cluster_parent))
-    print('\t\tNo. of clusters = {}'.format(n_cluster_parent))
-    print('\t\tTotal no. of sub-clusters = {} ({} childs per cluster on average)'.format(np.sum(np.array(n_cluster_child)), np.sum(np.array(n_cluster_child))/n_cluster_parent))
+    print('\t\tTotal try KMeans times = {}'.format(np.sum(try_kmeans_counter_list)))
+    print('\t\tNo. cluster parent = {}'.format(n_cluster_parent))
+    print('\t\tTotal no. cluster child = {}'.format(np.sum(np.array(n_cluster_child))))
     print('\t\tTotal distance = {} (m)'.format(round(np.sum(np.sum(total_distance)), 3)))
     print('\t\tTotal time for clustering = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
 

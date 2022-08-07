@@ -35,6 +35,7 @@ def TSP_phase():
 
     summary = []
     details = []
+    details.append('\nDescription: Use TSP algorithm for each sub-cluster\n')
 
     details.append('\tInput data list:')
     details.append('\t\tinput/correlation.json')
@@ -55,6 +56,7 @@ def TSP_phase():
     # Một số biến lưu trữ tổng độ dài TSP, thời gian tính toán
     route_distance = []
     time_computing = []
+    route_list = []
 
     #Lặp qua các cụm con và tsp 
     for cluster_parent_key in cluster_data:
@@ -102,6 +104,7 @@ def TSP_phase():
             # print('Cluster cha = {}, cluster con = {}'.format(cluster_parent_key, cluster_child_key))
             # print('Permutation: {}'.format(' -> '.join(reverse_permutation)))
             # print('Distance = {}'.format(dist_res))
+            route_list.append(' -> '.join(reverse_permutation))
             cluster_info["child_cluster_list"][cluster_child_key] = ' -> '.join(reverse_permutation)
 
             # Lưu lại các thông tin về khoảng cách, thời gian tính toán
@@ -134,6 +137,7 @@ def TSP_phase():
         details.append('\t\tCluster parent: {}'. format(cluster_parent_key))
         for cluster_child_key in cluster_data[cluster_parent_key]["child_cluster_list"]:
             details.append('\t\t\tCLuster child: {}'.format(cluster_child_key))
+            details.append('\t\t\tRoute: {}'.format(route_list[cnt]))
             details.append('\t\t\tTSP route length: {}'.format(route_distance[cnt]))
             details.append('\t\t\tTime computing TSP: {}'.format(round(time_computing[cnt]*1000.0, 3)))
             cnt+=1

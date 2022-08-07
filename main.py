@@ -36,14 +36,19 @@ if gendata_ret == 'y':
     details.append('\t\tinput/correlation.json')
     details.append('\t\tinput/vehicle_{}.json\n\n'.format(n_vehicle))
 
+
     print('\tWaiting for generate data...')
     gendata(n_vehicle)
     print('Generate done!')
 else: 
-    n_vehicle = 15
-    summary.append('1. Generate data: no gendata\n\n')
-    details.append('1. Generate data: no gendata, use data in input/*')
+    continue_flag = True
+    while continue_flag:
+        n_vehicle = input('Input a number to specify no. of vehicles scenarios: ')
+        n_vehicle = int(n_vehicle)
+        if os.path.exists(os.getcwd()+'\\input\\vehicle_{}.json'.format(n_vehicle)): continue_flag = False
 
+    summary.append('\tNo gendata\n\n')
+    details.append('\tNo gendata, use data in input/*')
 
 adding_to_detail+='No. cluster = No. vehicle = {}\n'.format(n_vehicle)
     

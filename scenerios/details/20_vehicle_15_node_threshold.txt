@@ -1,0 +1,434 @@
+Scenerios: 
+No. cluster = No. vehicle = 20
+Maximal number of customers for TSP = 15
+
+1. Generate data: 
+
+Description: randomly generate demand for each depot, customer and generate capacity for each vehicle
+
+	No gendata, use data in input/*
+2. KMeans clustering phase:
+Description: Clustering 312 customers into 20 cluster (20 is no. of vehicles) by using KMeans clustering.
+
+	Input data list:
+		input/item.txt
+		input/market.json
+		input/latlong_to_meter_coef.txt
+	Output data to:
+		output/KMeans_phase.json
+		input/vehicle_20.json
+	Summary: 
+		Converged after 13 steps
+		No. of clusters = No. of vehicles = 20
+		No. of customers = 312
+		No. of good types =  2
+		Total picked capacity = [75236. 81177.] kg
+		Total delivered capacity = [75236. 81177.] kg
+		Total distance = 1568291.391 (km)
+		Clustering duration = 2547.0 ms
+	Details:
+		No. items: 2
+		Cluster 0:
+			Current mass = [8379. 6248.]
+			No. of customers = 28
+			Distance = 58215.172 (km)
+		Cluster 1:
+			Current mass = [811. 689.]
+			No. of customers = 3
+			Distance = 130864.811 (km)
+		Cluster 2:
+			Current mass = [ 9125. 12127.]
+			No. of customers = 42
+			Distance = 86859.325 (km)
+		Cluster 3:
+			Current mass = [3626. 5439.]
+			No. of customers = 18
+			Distance = 54006.228 (km)
+		Cluster 4:
+			Current mass = [1103.  737.]
+			No. of customers = 4
+			Distance = 66989.506 (km)
+		Cluster 5:
+			Current mass = [ 8549. 10101.]
+			No. of customers = 36
+			Distance = 124316.854 (km)
+		Cluster 6:
+			Current mass = [4835. 5255.]
+			No. of customers = 19
+			Distance = 60975.139 (km)
+		Cluster 7:
+			Current mass = [305. 539.]
+			No. of customers = 2
+			Distance = 159580.023 (km)
+		Cluster 8:
+			Current mass = [184. 259.]
+			No. of customers = 1
+			Distance = 0.0 (km)
+		Cluster 9:
+			Current mass = [ 864. 1108.]
+			No. of customers = 3
+			Distance = 56608.835 (km)
+		Cluster 10:
+			Current mass = [503. 605.]
+			No. of customers = 3
+			Distance = 6441.264 (km)
+		Cluster 11:
+			Current mass = [1234. 1104.]
+			No. of customers = 7
+			Distance = 93752.014 (km)
+		Cluster 12:
+			Current mass = [11838. 12885.]
+			No. of customers = 48
+			Distance = 81850.819 (km)
+		Cluster 13:
+			Current mass = [4088. 5907.]
+			No. of customers = 19
+			Distance = 48316.092 (km)
+		Cluster 14:
+			Current mass = [425. 301.]
+			No. of customers = 2
+			Distance = 52133.88 (km)
+		Cluster 15:
+			Current mass = [477. 536.]
+			No. of customers = 3
+			Distance = 21031.049 (km)
+		Cluster 16:
+			Current mass = [1776. 1218.]
+			No. of customers = 7
+			Distance = 99395.78 (km)
+		Cluster 17:
+			Current mass = [1790. 1421.]
+			No. of customers = 7
+			Distance = 170511.206 (km)
+		Cluster 18:
+			Current mass = [7385. 6871.]
+			No. of customers = 29
+			Distance = 88389.52 (km)
+		Cluster 19:
+			Current mass = [7939. 7827.]
+			No. of customers = 31
+			Distance = 108053.874 (km)
+
+
+
+3. Kmeans sub-clustering phase:
+Description: Clustering 20 cluster obtain from previous step into smaller cluster (sub-cluster) for TSP in next step
+
+	Input data list:
+		input/item.txt
+		input/market.json
+		input/vehicle_20.json
+		input/latlong_to_meter_coef.txt
+		output/KMeans_phase.json
+	Output data to: 
+		output/pre_TSP_phase.json
+	Summary: 
+		Total try KMeans times = 32
+		No. cluster parent = 20
+		Total no. cluster child = 41
+		Total distance = 1238968.38 (m)
+		Total time for clustering = 394.942 ms
+	Details: 
+		Cluster parent 0
+			Try KMeans 1 times
+			No. cluster child: 3
+			Total distance in all cluster child: 33322.347 (m)
+			Time for clustering: 16.0 ms
+		Cluster parent 1
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 130864.811 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 2
+			Try KMeans 3 times
+			No. cluster child: 4
+			Total distance in all cluster child: 42104.711 (m)
+			Time for clustering: 62.0 ms
+		Cluster parent 3
+			Try KMeans 2 times
+			No. cluster child: 2
+			Total distance in all cluster child: 39446.909 (m)
+			Time for clustering: 5.0 ms
+		Cluster parent 4
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 66989.506 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 5
+			Try KMeans 4 times
+			No. cluster child: 5
+			Total distance in all cluster child: 43461.654 (m)
+			Time for clustering: 121.0 ms
+		Cluster parent 6
+			Try KMeans 1 times
+			No. cluster child: 2
+			Total distance in all cluster child: 44551.752 (m)
+			Time for clustering: 12.0 ms
+		Cluster parent 7
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 159580.023 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 8
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 0.0 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 9
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 56608.835 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 10
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 6441.264 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 11
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 93752.014 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 12
+			Try KMeans 3 times
+			No. cluster child: 4
+			Total distance in all cluster child: 44036.508 (m)
+			Time for clustering: 68.0 ms
+		Cluster parent 13
+			Try KMeans 1 times
+			No. cluster child: 2
+			Total distance in all cluster child: 40570.354 (m)
+			Time for clustering: 5.0 ms
+		Cluster parent 14
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 52133.88 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 15
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 21031.049 (m)
+			Time for clustering: 0.0 ms
+		Cluster parent 16
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 99395.78 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 17
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 170511.206 (m)
+			Time for clustering: 1.0 ms
+		Cluster parent 18
+			Try KMeans 2 times
+			No. cluster child: 3
+			Total distance in all cluster child: 50827.079 (m)
+			Time for clustering: 26.0 ms
+		Cluster parent 19
+			Try KMeans 4 times
+			No. cluster child: 5
+			Total distance in all cluster child: 43338.698 (m)
+			Time for clustering: 72.0 ms
+
+
+
+4. TSP phase:
+
+Description: Use TSP algorithm for each sub-cluster
+
+	Input data list:
+		input/correlation.json
+		input/depot.json
+		output/pre_TSP_phase.json
+	Output data to: 
+		output/TSP_phase.json
+	Summary: 
+		Total route length = 2710933.0
+		Total time computing TSP = 11912.189 ms
+	Details: 
+		Cluster parent: 0
+			CLuster child: 0
+			Route: D28 -> C162 -> C188 -> C168 -> C187 -> C193 -> C44 -> C165 -> C138 -> C164 -> C163 -> C161 -> D28
+			TSP route length: 8690.0
+			Time computing TSP: 130.685
+			CLuster child: 1
+			Route: D16 -> C172 -> C22 -> C72 -> C186 -> C181 -> C171 -> C2 -> D16
+			TSP route length: 13625.0
+			Time computing TSP: 1.992
+			CLuster child: 2
+			Route: D16 -> C197 -> C158 -> C143 -> C144 -> C270 -> C180 -> C200 -> C178 -> C195 -> C141 -> D16
+			TSP route length: 15572.0
+			Time computing TSP: 35.904
+		Cluster parent: 1
+			CLuster child: 0
+			Route: D8 -> C104 -> C225 -> C238 -> D8
+			TSP route length: 263006.0
+			Time computing TSP: 0.0
+		Cluster parent: 2
+			CLuster child: 0
+			Route: D19 -> C108 -> C7 -> C103 -> C101 -> C0 -> C114 -> C6 -> C4 -> D19
+			TSP route length: 11441.0
+			Time computing TSP: 5.949
+			CLuster child: 1
+			Route: D24 -> C117 -> C129 -> C121 -> C122 -> C33 -> C119 -> C118 -> C124 -> C112 -> D24
+			TSP route length: 10788.0
+			Time computing TSP: 14.96
+			CLuster child: 2
+			Route: D23 -> C140 -> C123 -> C16 -> C126 -> C9 -> C125 -> C157 -> C160 -> C137 -> C15 -> C159 -> C142 -> D23
+			TSP route length: 14889.0
+			Time computing TSP: 278.256
+			CLuster child: 3
+			Route: D23 -> C136 -> C151 -> C24 -> C37 -> C152 -> C133 -> C19 -> C116 -> C132 -> C120 -> C148 -> C145 -> C155 -> D23
+			TSP route length: 15188.0
+			Time computing TSP: 677.19
+		Cluster parent: 3
+			CLuster child: 0
+			Route: D27 -> C207 -> C205 -> C204 -> C212 -> D27
+			TSP route length: 5091.0
+			Time computing TSP: 0.0
+			CLuster child: 1
+			Route: D4 -> C34 -> C211 -> C51 -> C221 -> C210 -> C216 -> C206 -> C220 -> C224 -> C227 -> C217 -> C223 -> C209 -> C68 -> D4
+			TSP route length: 23329.0
+			Time computing TSP: 1665.548
+		Cluster parent: 4
+			CLuster child: 0
+			Route: D12 -> C48 -> C49 -> C277 -> C50 -> D12
+			TSP route length: 80930.0
+			Time computing TSP: 0.0
+		Cluster parent: 5
+			CLuster child: 0
+			Route: D24 -> C102 -> C100 -> C90 -> C95 -> C96 -> C111 -> C135 -> D24
+			TSP route length: 10609.0
+			Time computing TSP: 2.992
+			CLuster child: 1
+			Route: D17 -> C218 -> C219 -> C213 -> C18 -> C214 -> C208 -> C215 -> C109 -> C106 -> C115 -> C105 -> C64 -> C54 -> C13 -> D17
+			TSP route length: 19065.0
+			Time computing TSP: 1557.835
+			CLuster child: 2
+			Route: D19 -> C39 -> C87 -> D19
+			TSP route length: 5310.0
+			Time computing TSP: 0.0
+			CLuster child: 3
+			Route: D20 -> C65 -> C66 -> C52 -> D20
+			TSP route length: 17135.0
+			Time computing TSP: 0.0
+			CLuster child: 4
+			Route: D24 -> C134 -> C61 -> C55 -> C59 -> C60 -> C53 -> C63 -> C57 -> C251 -> C128 -> D24
+			TSP route length: 8755.0
+			Time computing TSP: 198.469
+		Cluster parent: 6
+			CLuster child: 0
+			Route: D21 -> C32 -> C273 -> C276 -> C288 -> C290 -> C287 -> C269 -> D21
+			TSP route length: 27479.0
+			Time computing TSP: 1.994
+			CLuster child: 1
+			Route: D31 -> C23 -> C275 -> C274 -> C278 -> C271 -> C14 -> C29 -> C285 -> C281 -> C149 -> C154 -> C146 -> D31
+			TSP route length: 18087.0
+			Time computing TSP: 231.413
+		Cluster parent: 7
+			CLuster child: 0
+			Route: D18 -> C110 -> C166 -> D18
+			TSP route length: 791352.0
+			Time computing TSP: 0.0
+		Cluster parent: 8
+			CLuster child: 0
+			Route: D18 -> C289 -> D18
+			TSP route length: 341093.0
+			Time computing TSP: 0.0
+		Cluster parent: 9
+			CLuster child: 0
+			Route: D32 -> C43 -> C177 -> C253 -> D32
+			TSP route length: 82135.0
+			Time computing TSP: 0.0
+		Cluster parent: 10
+			CLuster child: 0
+			Route: D2 -> C45 -> C3 -> C46 -> D2
+			TSP route length: 9140.0
+			Time computing TSP: 0.0
+		Cluster parent: 11
+			CLuster child: 0
+			Route: D11 -> C31 -> C70 -> C69 -> C84 -> C131 -> C85 -> C83 -> D11
+			TSP route length: 120677.0
+			Time computing TSP: 1.995
+		Cluster parent: 12
+			CLuster child: 0
+			Route: D17 -> C261 -> C228 -> C296 -> C232 -> C245 -> C250 -> C248 -> C240 -> C40 -> C56 -> C247 -> C58 -> D17
+			TSP route length: 7751.0
+			Time computing TSP: 305.152
+			CLuster child: 1
+			Route: D6 -> C265 -> C11 -> C263 -> C234 -> C262 -> C249 -> C230 -> C242 -> C231 -> C233 -> C259 -> C268 -> C241 -> C236 -> C235 -> D6
+			TSP route length: 9247.0
+			Time computing TSP: 3495.692
+			CLuster child: 2
+			Route: D28 -> C256 -> C260 -> C174 -> C198 -> C175 -> C254 -> C139 -> C1 -> C127 -> C243 -> C252 -> C17 -> C156 -> D28
+			TSP route length: 13740.0
+			Time computing TSP: 892.58
+			CLuster child: 3
+			Route: D25 -> C255 -> C130 -> C35 -> C62 -> C257 -> C26 -> C229 -> C237 -> D25
+			TSP route length: 7740.0
+			Time computing TSP: 5.984
+		Cluster parent: 13
+			CLuster child: 0
+			Route: D13 -> C38 -> C298 -> C302 -> C272 -> C303 -> C299 -> D13
+			TSP route length: 17859.0
+			Time computing TSP: 0.997
+			CLuster child: 1
+			Route: D13 -> C304 -> C30 -> C20 -> C300 -> C78 -> C306 -> C308 -> C301 -> C295 -> C309 -> C307 -> C297 -> C305 -> D13
+			TSP route length: 23115.0
+			Time computing TSP: 698.165
+		Cluster parent: 14
+			CLuster child: 0
+			Route: D12 -> C10 -> C107 -> D12
+			TSP route length: 233185.0
+			Time computing TSP: 0.997
+		Cluster parent: 15
+			CLuster child: 0
+			Route: D9 -> C79 -> C226 -> C80 -> D9
+			TSP route length: 59241.0
+			Time computing TSP: 0.0
+		Cluster parent: 16
+			CLuster child: 0
+			Route: D20 -> C76 -> C47 -> C73 -> C82 -> C75 -> C74 -> C77 -> D20
+			TSP route length: 127328.0
+			Time computing TSP: 1.997
+		Cluster parent: 17
+			CLuster child: 0
+			Route: D0 -> C222 -> C264 -> C258 -> C311 -> C310 -> C189 -> C88 -> D0
+			TSP route length: 183672.0
+			Time computing TSP: 1.994
+		Cluster parent: 18
+			CLuster child: 0
+			Route: D22 -> C150 -> C5 -> C42 -> C147 -> C153 -> C113 -> C99 -> C89 -> C92 -> C8 -> C294 -> D22
+			TSP route length: 12779.0
+			Time computing TSP: 88.796
+			CLuster child: 1
+			Route: D14 -> C27 -> C279 -> C280 -> C284 -> C283 -> C293 -> C282 -> C286 -> D14
+			TSP route length: 16864.0
+			Time computing TSP: 4.991
+			CLuster child: 2
+			Route: D22 -> C94 -> C25 -> C21 -> C91 -> C12 -> C93 -> C98 -> C292 -> C97 -> C291 -> D22
+			TSP route length: 19813.0
+			Time computing TSP: 34.873
+		Cluster parent: 19
+			CLuster child: 0
+			Route: D16 -> C202 -> C184 -> C71 -> C190 -> C167 -> D16
+			TSP route length: 13234.0
+			Time computing TSP: 0.0
+			CLuster child: 1
+			Route: D15 -> C183 -> C179 -> C185 -> C191 -> C196 -> C176 -> C194 -> C170 -> D15
+			TSP route length: 13414.0
+			Time computing TSP: 5.984
+			CLuster child: 2
+			Route: D0 -> C67 -> C86 -> C28 -> D0
+			TSP route length: 19665.0
+			Time computing TSP: 0.0
+			CLuster child: 3
+			Route: D15 -> C41 -> C173 -> C192 -> C199 -> C246 -> C239 -> C244 -> C36 -> C266 -> C267 -> C169 -> C182 -> C201 -> C203 -> D15
+			TSP route length: 17545.0
+			Time computing TSP: 1568.806
+			CLuster child: 4
+			Route: D9 -> C81 -> D9
+			TSP route length: 1355.0
+			Time computing TSP: 0.0
+
+

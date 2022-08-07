@@ -8,7 +8,7 @@ from sklearn import cluster
 
 from utils.utils import manhattan_distance
 
-sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
+# sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
 from utils.SupportClass import Cluster
 
 class KMeans:
