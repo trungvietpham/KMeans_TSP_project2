@@ -93,4 +93,5 @@ def KMeans_phase(vehicle_fname):
         details.append('\t\t\tDistance = {} (km)'.format(round(total_distance[i], 3)))
     details.append('\n\n')
     summary.append('\n\n')
-    return ('\n'.join(summary), '\n'.join(details))
+    return ('\n'.join(summary), '\n'.join(details), round((time2-time1)*1000.0, 0))
+    # return (summary, details, time in ms)

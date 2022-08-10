@@ -31,7 +31,7 @@ def TSP_phase():
     correlation = json.load(open('input/correlation.json', 'r'))
     cluster_data = json.load(open('output/pre_TSP_phase.json', 'r'))
     depot_data = json.load(codecs.open('input/depot.json', 'r', 'utf-8-sig'))
-    dump_file = 'output/TSP_phase.json'
+    dump_file = 'output/TSP_phase_with_Kmeans.json'
 
     summary = []
     details = []
@@ -107,10 +107,13 @@ def TSP_phase():
 
             dist_res = 0.0
             for i in range(1, len(reverse_permutation)):
-                dist_res += float(correlation[reverse_permutation[i-1]][reverse_permutation[i]])
+                dist_res += float(correlation[reverse_permutation[i-1]][reverse_permutation[i]]/1000)
 
+            dist_res = round(dist_res, 0)
             route_list.append(' -> '.join(reverse_permutation))
-            cluster_info["child_cluster_list"][cluster_child_key] = ' -> '.join(reverse_permutation)
+            cluster_info["child_cluster_list"][cluster_child_key] = {}
+            cluster_info["child_cluster_list"][cluster_child_key]['route']= ' -> '.join(reverse_permutation)
+            cluster_info["child_cluster_list"][cluster_child_key]['length'] = str(round(dist_res, 0)) + ' km'
 
             # Lưu lại các thông tin về khoảng cách, thời gian tính toán
             route_distance.append(dist_res)
@@ -125,13 +128,17 @@ def TSP_phase():
     #Dump ra file 'output/TSP_phase.json'
     json.dump(save_data, open(dump_file, 'w'), indent=4)
 
+    summary_for_compare = {'Distance': np.sum(np.array(route_distance)), 'Time': round(np.sum(np.array(time_computing))*1000.0, 0)}
+    json.dump(summary_for_compare, open('output/summary_TSP_with_Kmeans.json', 'w'), indent=4)
+
+
     print('\tSummary: ')
     print('\t\tTotal route length = {} (km)'.format(np.sum(np.array(route_distance))))
-    print('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
+    print('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 0)))
 
     summary.append('\tSummary: ')
-    summary.append('\t\tTotal route length = {}'.format(np.sum(np.array(route_distance))))
-    summary.append('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
+    summary.append('\t\tTotal route length = {} (km)'.format(np.sum(np.array(route_distance))))
+    summary.append('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 0)))
 
     details.append('\n'.join(summary))
     details.append('\tDetails: ')
@@ -144,14 +151,15 @@ def TSP_phase():
             details.append('\t\t\tCLuster child: {}'.format(cluster_child_key))
             details.append('\t\t\tRoute: {}'.format(route_list[cnt]))
             details.append('\t\t\tTSP route length: {} (km)'.format(route_distance[cnt]))
-            details.append('\t\t\tTime computing TSP: {}'.format(round(time_computing[cnt]*1000.0, 3)))
+            details.append('\t\t\tTime computing TSP: {}'.format(round(time_computing[cnt]*1000.0, 0)))
             cnt+=1
     
     details.append('\n\n')
     summary.append('\n\n')
-    return ('\n'.join(summary), '\n'.join(details))
+    return ('\n'.join(summary), '\n'.join(details), dump_file, np.sum(np.array(route_distance)), round(np.sum(np.array(time_computing))*1000.0, 0))
+    # Return (string summary, string details, outter file, total distance in km, total time in ms)
 
-
-
+if __name__ == "__main__":
+    TSP_phase()
 
 

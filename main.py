@@ -54,7 +54,7 @@ adding_to_detail+='No. cluster = No. vehicle = {}\n'.format(n_vehicle)
     
 
 print('2. Kmeans clustering phase:')
-summary_kmeans, details_kmeans = KMeans_phase('input/vehicle_{}.json'.format(n_vehicle))
+summary_kmeans, details_kmeans, _ = KMeans_phase('input/vehicle_{}.json'.format(n_vehicle))
 summary.append('2. KMeans clustering phase:')
 summary.append(summary_kmeans)
 
@@ -77,7 +77,7 @@ details.append('3. Kmeans sub-clustering phase:')
 details.append(details_pre_tsp)
 
 print('4. TSP phase:')
-summary_tsp, details_tsp = TSP_phase()
+summary_tsp, details_tsp, _, _, _ = TSP_phase()
 
 summary.append('4. TSP phase:')
 summary.append(summary_tsp)

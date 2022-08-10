@@ -130,7 +130,7 @@ class Node(object):
         return str('\n'.join(a))
 
 
-def get_cluster_data(fname= 'output/TSP_phase.json'):
+def get_cluster_data(fname= 'output/TSP_phase_with_Kmeans.json'):
     cluster_data = json.load(open(fname, 'r'))
     return cluster_data
 
@@ -294,7 +294,7 @@ def main():
                 parent_id_all_node.append(key1)
                 n_child_all_node.append(len(cluster_data[key1]["child_cluster_list"][key2]["node_list"]))
 
-            route = TSP_data[key1]["child_cluster_list"][key2].split(' -> ')[:-1]
+            route = TSP_data[key1]["child_cluster_list"][key2]['route'].split(' -> ')[:-1]
             # print(route)
             full_node_list.append([depot_data[route[0][1:]]['location']['lat'], depot_data[route[0][1:]]['location']['long']])
             color_list_full_node.append(orange)
