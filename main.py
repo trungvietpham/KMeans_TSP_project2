@@ -77,7 +77,7 @@ details.append('3. Kmeans sub-clustering phase:')
 details.append(details_pre_tsp)
 
 print('4. TSP phase:')
-summary_tsp, details_tsp, _, _, _ = TSP_phase()
+summary_tsp, details_tsp, _, _, _ = TSP_phase(n_vehicle)
 
 summary.append('4. TSP phase:')
 summary.append(summary_tsp)

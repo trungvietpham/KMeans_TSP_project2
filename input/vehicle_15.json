@@ -1,152 +1,182 @@
 {
     "0": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 5599
+            "demand": 4009
         },
         "2": {
             "item_id": 2,
-            "demand": 9549
+            "demand": 6232
         }
     },
     "1": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 8707
+            "demand": 3631
         },
         "2": {
             "item_id": 2,
-            "demand": 6648
+            "demand": 6775
         }
     },
     "2": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 7165
+            "demand": 5033
         },
         "2": {
             "item_id": 2,
-            "demand": 5389
+            "demand": 9900
         }
     },
     "3": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 9060
+            "demand": 6831
         },
         "2": {
             "item_id": 2,
-            "demand": 5990
+            "demand": 4647
         }
     },
     "4": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 3815
+            "demand": 6421
         },
         "2": {
             "item_id": 2,
-            "demand": 4433
+            "demand": 9833
         }
     },
     "5": {
+        "type": 2,
+        "coef": 1.1,
         "1": {
             "item_id": 1,
-            "demand": 4708
+            "demand": 5475
         },
         "2": {
             "item_id": 2,
-            "demand": 9571
+            "demand": 9335
         }
     },
     "6": {
+        "type": 1,
+        "coef": 7.6,
         "1": {
             "item_id": 1,
-            "demand": 7067
+            "demand": 6740
         },
         "2": {
             "item_id": 2,
-            "demand": 6860
+            "demand": 6030
         }
     },
     "7": {
+        "type": 1,
+        "coef": 7.6,
         "1": {
             "item_id": 1,
-            "demand": 4324
+            "demand": 6805
         },
         "2": {
             "item_id": 2,
-            "demand": 9225
+            "demand": 7042
         }
     },
     "8": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 6239
+            "demand": 3688
         },
         "2": {
             "item_id": 2,
-            "demand": 6242
+            "demand": 5844
         }
     },
     "9": {
+        "type": 1,
+        "coef": 7.6,
         "1": {
             "item_id": 1,
-            "demand": 3122
+            "demand": 6139
         },
         "2": {
             "item_id": 2,
-            "demand": 8490
+            "demand": 6702
         }
     },
     "10": {
+        "type": 2,
+        "coef": 1.1,
         "1": {
             "item_id": 1,
-            "demand": 3505
+            "demand": 5958
         },
         "2": {
             "item_id": 2,
-            "demand": 3538
+            "demand": 8267
         }
     },
     "11": {
+        "type": 1,
+        "coef": 7.6,
         "1": {
             "item_id": 1,
-            "demand": 6974
+            "demand": 6535
         },
         "2": {
             "item_id": 2,
-            "demand": 3992
+            "demand": 3084
         }
     },
     "12": {
+        "type": 1,
+        "coef": 7.6,
         "1": {
             "item_id": 1,
-            "demand": 5538
+            "demand": 8818
         },
         "2": {
             "item_id": 2,
-            "demand": 3512
+            "demand": 9388
         }
     },
     "13": {
+        "type": 2,
+        "coef": 1.1,
         "1": {
             "item_id": 1,
-            "demand": 9097
+            "demand": 6353
         },
         "2": {
             "item_id": 2,
-            "demand": 4109
+            "demand": 5344
         }
     },
     "14": {
+        "type": 3,
+        "coef": 2.5,
         "1": {
             "item_id": 1,
-            "demand": 9225
+            "demand": 8634
         },
         "2": {
             "item_id": 2,
-            "demand": 7688
+            "demand": 7547
         }
     }
 }

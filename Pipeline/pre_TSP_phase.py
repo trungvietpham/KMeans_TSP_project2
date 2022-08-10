@@ -13,6 +13,9 @@ from sklearn.covariance import oas
 
 from sklearn.utils import shuffle
 import os
+from graph_pygame import scale
+
+from utils.SupportClass import Cluster
 sys.path.append(os.getcwd())
 from KMeans.KMeans import KMeans
 from utils.utils import *
@@ -51,6 +54,10 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     1. Khôi phục lại các cụm từ output_phase1_file
     '''
     cluster_list = []
+
+    scale_coef_list = []
+    for i in range(n_vehicles):
+        scale_coef_list.append(vehicle_list[i].coef)
     cnt = 0
     for cluster_id in cluster_data:
         x, y = cluster_data[cluster_id]['center']['lat'], cluster_data[cluster_id]['center']['long']
@@ -58,11 +65,13 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
         child_list = []
         mass = np.zeros(n_items)
 
+        cnt = 0
         for id in cluster_data[cluster_id]['node_list']:
             child_list.append(int(id))
             for i in range(n_items):
                 mass[i]+=cluster_data[cluster_id]['node_list'][id]["demand"]['Item '+str(i)]
-        cluster_list.append(Cluster(x,y,None, n_cities=n_cities_i, city_id_list=child_list, current_mass=mass))
+        cluster_list.append(Cluster(x,y,None, n_cities=n_cities_i, city_id_list=child_list, current_mass=mass, scale_coef=scale_coef_list[cnt]))
+        cnt+=1
         # print('Cluster {}: \n\tChild list = {}\n\tCurrent mass = {}'.format(cnt, child_list, mass))
         # child_list = None
         # cnt+=1
@@ -90,7 +99,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     save_data = {}
     for cluster_id in range(n_clusters):
         n_cluster_parent +=1
-        n_child = low_n_cluster[cluster_id]
+        n_child = max(low_n_cluster[cluster_id],1)
 
         #Lấy ra các node nằm trong cluster cha này
         child_city_list = []
@@ -108,9 +117,10 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
         while continue_flag:
             
             capacity_array = np.array([list(vehicle_list[cluster_id].capacity_list)]*n_child).reshape((n_child, n_items))
+            child_scale_coef = [scale_coef_list[cluster_id] for _ in range(n_child)]
             model = KMeans(n_child)
             # print('Cluster {}'.format(cluster_id))
-            (_,_,_, child_cluster_list, distance) = model.fit(optimizer=optimizer, city_list = child_city_list,capacity_array = capacity_array, distance_coef=convert_coef, normalization_flag=False, alpha=500, penalty_coef=100000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
+            (_,_,_, child_cluster_list, distance) = model.fit(optimizer=optimizer, city_list = child_city_list,capacity_array = capacity_array, scale_coef=child_scale_coef, distance_coef=convert_coef, normalization_flag=False, alpha=500, penalty_coef=100000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
             
             continue_flag = False
             for child in child_cluster_list:

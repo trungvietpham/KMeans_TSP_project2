@@ -49,6 +49,8 @@ def TSP_no_Kmeans(n_vehicle = 20):
     n_route_current = 0
     n_point = []
     length_list = []
+    coef_list = []
+    goods_percentage = []
 
     time1 = []
     time2 = []

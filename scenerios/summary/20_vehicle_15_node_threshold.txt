@@ -8,10 +8,10 @@
 		No. of clusters = No. of vehicles = 20
 		No. of customers = 312
 		No. of good types =  2
-		Total picked capacity = [75236. 81177.] kg
-		Total delivered capacity = [75236. 81177.] kg
-		Total distance = 2029.031 (km)
-		Clustering duration = 2902.0 ms
+		Total picked capacity = [77345. 75650.] kg
+		Total delivered capacity = [77345. 75650.] kg
+		Total distance = 2059.308 (km)
+		Clustering duration = 2974.0 ms
 
 
 
@@ -19,16 +19,17 @@
 	Summary: 
 		Total try KMeans times = 31
 		No. cluster parent = 20
-		Total no. cluster child = 39
-		Total distance = 1755.431 (km)
-		Total time for clustering = 627.323 ms
+		Total no. cluster child = 38
+		Total distance = 1791.0 (km)
+		Total time for clustering = 642.0 ms
 
 
 
 4. TSP phase:
 	Summary: 
-		Total route length = 2069.895
-		Total time computing TSP = 13115.015 ms
+		Total route length = 2031.0 (km)
+		Total time computing TSP = 17650.0 ms
+		Total cost = 2229.346398208812
 
 
 

@@ -22,92 +22,92 @@ Description: Clustering 312 customers into 20 cluster (20 is no. of vehicles) by
 		No. of clusters = No. of vehicles = 20
 		No. of customers = 312
 		No. of good types =  2
-		Total picked capacity = [75236. 81177.] kg
-		Total delivered capacity = [75236. 81177.] kg
-		Total distance = 2029.031 (km)
-		Clustering duration = 2902.0 ms
+		Total picked capacity = [77345. 75650.] kg
+		Total delivered capacity = [77345. 75650.] kg
+		Total distance = 2059.308 (km)
+		Clustering duration = 2974.0 ms
 	Details:
 		No. items: 2
 		Cluster 0:
-			Current mass = [1655. 1058.]
-			No. of customers = 6
-			Distance = 84.251 (km)
+			Current mass = [3790. 3198.]
+			No. of customers = 16
+			Distance = 32.615 (km)
 		Cluster 1:
-			Current mass = [503. 605.]
-			No. of customers = 3
-			Distance = 6.441 (km)
+			Current mass = [1712. 2347.]
+			No. of customers = 7
+			Distance = 170.511 (km)
 		Cluster 2:
-			Current mass = [3819. 3514.]
-			No. of customers = 15
-			Distance = 31.477 (km)
-		Cluster 3:
-			Current mass = [425. 301.]
-			No. of customers = 2
-			Distance = 52.134 (km)
-		Cluster 4:
-			Current mass = [1438. 1080.]
-			No. of customers = 6
-			Distance = 119.268 (km)
-		Cluster 5:
-			Current mass = [8243. 8107.]
-			No. of customers = 31
-			Distance = 91.331 (km)
-		Cluster 6:
-			Current mass = [4521. 6642.]
-			No. of customers = 22
-			Distance = 92.006 (km)
-		Cluster 7:
-			Current mass = [8153. 9372.]
-			No. of customers = 35
-			Distance = 84.273 (km)
-		Cluster 8:
-			Current mass = [314. 315.]
-			No. of customers = 1
-			Distance = 0.0 (km)
-		Cluster 9:
-			Current mass = [477. 536.]
+			Current mass = [867. 515.]
 			No. of customers = 3
 			Distance = 21.031 (km)
-		Cluster 10:
-			Current mass = [1020.  921.]
-			No. of customers = 6
-			Distance = 45.723 (km)
-		Cluster 11:
-			Current mass = [14089. 15077.]
-			No. of customers = 55
-			Distance = 127.57 (km)
-		Cluster 12:
-			Current mass = [12877. 13459.]
-			No. of customers = 53
-			Distance = 94.315 (km)
-		Cluster 13:
-			Current mass = [648. 542.]
-			No. of customers = 2
-			Distance = 41.814 (km)
-		Cluster 14:
-			Current mass = [489. 798.]
+		Cluster 3:
+			Current mass = [9094. 8839.]
+			No. of customers = 31
+			Distance = 55.856 (km)
+		Cluster 4:
+			Current mass = [8208. 8988.]
+			No. of customers = 35
+			Distance = 72.372 (km)
+		Cluster 5:
+			Current mass = [4558. 4085.]
+			No. of customers = 16
+			Distance = 40.764 (km)
+		Cluster 6:
+			Current mass = [ 894. 1070.]
 			No. of customers = 3
 			Distance = 619.905 (km)
-		Cluster 15:
-			Current mass = [3789. 5545.]
-			No. of customers = 18
-			Distance = 43.547 (km)
-		Cluster 16:
-			Current mass = [ 864. 1108.]
+		Cluster 7:
+			Current mass = [2131. 2428.]
+			No. of customers = 8
+			Distance = 12.477 (km)
+		Cluster 8:
+			Current mass = [811. 833.]
+			No. of customers = 3
+			Distance = 130.865 (km)
+		Cluster 9:
+			Current mass = [748. 751.]
 			No. of customers = 3
 			Distance = 56.609 (km)
+		Cluster 10:
+			Current mass = [5797. 6586.]
+			No. of customers = 26
+			Distance = 75.805 (km)
+		Cluster 11:
+			Current mass = [372. 740.]
+			No. of customers = 2
+			Distance = 52.134 (km)
+		Cluster 12:
+			Current mass = [293. 342.]
+			No. of customers = 3
+			Distance = 6.441 (km)
+		Cluster 13:
+			Current mass = [8060. 6002.]
+			No. of customers = 28
+			Distance = 51.514 (km)
+		Cluster 14:
+			Current mass = [3418. 4198.]
+			No. of customers = 16
+			Distance = 35.51 (km)
+		Cluster 15:
+			Current mass = [1980. 1647.]
+			No. of customers = 6
+			Distance = 119.268 (km)
+		Cluster 16:
+			Current mass = [14226. 14795.]
+			No. of customers = 67
+			Distance = 216.208 (km)
 		Cluster 17:
-			Current mass = [3513. 3901.]
-			No. of customers = 13
-			Distance = 42.32 (km)
+			Current mass = [2216. 1971.]
+			No. of customers = 9
+			Distance = 9.064 (km)
 		Cluster 18:
-			Current mass = [6446. 6728.]
-			No. of customers = 27
-			Distance = 94.837 (km)
+			Current mass = [3634. 2329.]
+			No. of customers = 15
+			Distance = 236.361 (km)
 		Cluster 19:
-			Current mass = [1953. 1568.]
-			No. of customers = 8
-			Distance = 280.179 (km)
+			Current mass = [4536. 3986.]
+			No. of customers = 15
+			Distance = 43.997 (km)
 
 
 
@@ -125,109 +125,109 @@ Description: Clustering 20 cluster obtain from previous step into smaller cluste
 	Summary: 
 		Total try KMeans times = 31
 		No. cluster parent = 20
-		Total no. cluster child = 39
-		Total distance = 1755.431 (km)
-		Total time for clustering = 627.323 ms
+		Total no. cluster child = 38
+		Total distance = 1791.0 (km)
+		Total time for clustering = 642.0 ms
 	Details: 
 		Cluster parent 0
-			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 84.251 (km)
-			Time for clustering: 1.0 ms
+			Try KMeans 2 times
+			No. cluster child: 2
+			Total distance in all cluster child: 27.0 (km)
+			Time for clustering: 15.0 ms
 		Cluster parent 1
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 6.441 (km)
-			Time for clustering: 2.0 ms
+			Total distance in all cluster child: 171.0 (km)
+			Time for clustering: 3.0 ms
 		Cluster parent 2
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 31.477 (km)
-			Time for clustering: 3.0 ms
+			Total distance in all cluster child: 21.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 3
-			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 52.134 (km)
-			Time for clustering: 1.0 ms
-		Cluster parent 4
-			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 119.268 (km)
-			Time for clustering: 1.0 ms
-		Cluster parent 5
 			Try KMeans 2 times
 			No. cluster child: 3
-			Total distance in all cluster child: 51.503 (km)
-			Time for clustering: 66.0 ms
+			Total distance in all cluster child: 32.0 (km)
+			Time for clustering: 30.0 ms
+		Cluster parent 4
+			Try KMeans 2 times
+			No. cluster child: 3
+			Total distance in all cluster child: 41.0 (km)
+			Time for clustering: 25.0 ms
+		Cluster parent 5
+			Try KMeans 2 times
+			No. cluster child: 2
+			Total distance in all cluster child: 33.0 (km)
+			Time for clustering: 9.0 ms
 		Cluster parent 6
 			Try KMeans 1 times
-			No. cluster child: 2
-			Total distance in all cluster child: 73.207 (km)
-			Time for clustering: 86.0 ms
+			No. cluster child: 1
+			Total distance in all cluster child: 620.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 7
-			Try KMeans 2 times
-			No. cluster child: 4
-			Total distance in all cluster child: 41.373 (km)
-			Time for clustering: 149.0 ms
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 12.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 8
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 0.0 (km)
-			Time for clustering: 0.0 ms
+			Total distance in all cluster child: 131.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 9
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 21.031 (km)
+			Total distance in all cluster child: 57.0 (km)
 			Time for clustering: 1.0 ms
 		Cluster parent 10
 			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 45.723 (km)
-			Time for clustering: 1.0 ms
+			No. cluster child: 3
+			Total distance in all cluster child: 48.0 (km)
+			Time for clustering: 33.0 ms
 		Cluster parent 11
-			Try KMeans 2 times
-			No. cluster child: 5
-			Total distance in all cluster child: 63.977 (km)
-			Time for clustering: 110.0 ms
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 52.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 12
-			Try KMeans 5 times
-			No. cluster child: 6
-			Total distance in all cluster child: 37.06 (km)
-			Time for clustering: 147.0 ms
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 6.0 (km)
+			Time for clustering: 0.0 ms
 		Cluster parent 13
 			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 41.814 (km)
-			Time for clustering: 0.0 ms
+			No. cluster child: 2
+			Total distance in all cluster child: 41.0 (km)
+			Time for clustering: 20.0 ms
 		Cluster parent 14
-			Try KMeans 1 times
-			No. cluster child: 1
-			Total distance in all cluster child: 619.905 (km)
-			Time for clustering: 1.0 ms
-		Cluster parent 15
 			Try KMeans 2 times
 			No. cluster child: 2
-			Total distance in all cluster child: 32.111 (km)
-			Time for clustering: 5.0 ms
-		Cluster parent 16
+			Total distance in all cluster child: 30.0 (km)
+			Time for clustering: 9.0 ms
+		Cluster parent 15
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 56.609 (km)
+			Total distance in all cluster child: 119.0 (km)
 			Time for clustering: 1.0 ms
+		Cluster parent 16
+			Try KMeans 7 times
+			No. cluster child: 9
+			Total distance in all cluster child: 60.0 (km)
+			Time for clustering: 487.0 ms
 		Cluster parent 17
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 42.32 (km)
-			Time for clustering: 2.0 ms
+			Total distance in all cluster child: 9.0 (km)
+			Time for clustering: 1.0 ms
 		Cluster parent 18
-			Try KMeans 4 times
-			No. cluster child: 4
-			Total distance in all cluster child: 55.046 (km)
-			Time for clustering: 50.0 ms
+			Try KMeans 1 times
+			No. cluster child: 1
+			Total distance in all cluster child: 236.0 (km)
+			Time for clustering: 2.0 ms
 		Cluster parent 19
 			Try KMeans 1 times
 			No. cluster child: 1
-			Total distance in all cluster child: 280.179 (km)
+			Total distance in all cluster child: 44.0 (km)
 			Time for clustering: 2.0 ms
 
 
@@ -241,186 +241,379 @@ Description: Use TSP algorithm for each sub-cluster
 		input/depot.json
 		output/pre_TSP_phase.json
 	Output data to: 
-		output/TSP_phase.json
+		output/TSP_phase_with_Kmeans.json
 	Summary: 
-		Total route length = 2069.895
-		Total time computing TSP = 13115.015 ms
+		Total route length = 2031.0 (km)
+		Total time computing TSP = 17650.0 ms
+		Total cost = 2229.346398208812
 	Details: 
 		Cluster parent: 0
-			CLuster child: 0
-			Route: D20 -> C75 -> C74 -> C76 -> C47 -> C73 -> C77
-			TSP route length: 107.971 (km)
-			Time computing TSP: 0.997
+			No. of routes: 2
+			Total length: 32.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 48.08674098805953
+			All route details: 
+				CLuster child: 0
+				Route: D22 -> C25 -> C97 -> C292 -> C21 -> C91 -> C98 -> C283 -> C280 -> C284 -> C291
+				TSP route length: 16.0 (km)
+				Route cost: 31.04856544621131
+				Time computing TSP: 60.0
+
+				CLuster child: 1
+				Route: D22 -> C99 -> C89 -> C12 -> C93 -> C94 -> C92
+				TSP route length: 16.0 (km)
+				Route cost: 17.038175541848226
+				Time computing TSP: 1.0
+
 		Cluster parent: 1
-			CLuster child: 0
-			Route: D2 -> C45 -> C3 -> C46
-			TSP route length: 8.434 (km)
-			Time computing TSP: 0.0
+			No. of routes: 1
+			Total length: 104.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 119.27954790096878
+			All route details: 
+				CLuster child: 0
+				Route: D0 -> C222 -> C258 -> C264 -> C310 -> C311 -> C189 -> C88
+				TSP route length: 104.0 (km)
+				Route cost: 119.27954790096878
+				Time computing TSP: 2.0
+
 		Cluster parent: 2
-			CLuster child: 0
-			Route: D16 -> C181 -> C186 -> C171 -> C2 -> C190 -> C167 -> C192 -> C173 -> C41 -> C71 -> C72 -> C22 -> C172 -> C184 -> C202
-			TSP route length: 22.601000000000003 (km)
-			Time computing TSP: 3400.979
+			No. of routes: 1
+			Total length: 37.0 (km)
+			Vehicle type: 2
+			Vehicle cost coef: 5.2
+			Total cost: 20.60257244692391
+			All route details: 
+				CLuster child: 0
+				Route: D9 -> C79 -> C226 -> C80
+				TSP route length: 37.0 (km)
+				Route cost: 20.60257244692391
+				Time computing TSP: 0.0
+
 		Cluster parent: 3
-			CLuster child: 0
-			Route: D12 -> C10 -> C107
-			TSP route length: 145.595 (km)
-			Time computing TSP: 0.0
+			No. of routes: 3
+			Total length: 31.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 104.16941417391939
+			All route details: 
+				CLuster child: 0
+				Route: D23 -> C140 -> C123 -> C16 -> C35 -> C126 -> C9 -> C125 -> C157 -> C15 -> C159 -> C142
+				TSP route length: 12.0 (km)
+				Route cost: 45.02970818401228
+				Time computing TSP: 143.0
+
+				CLuster child: 1
+				Route: D28 -> C161 -> C163 -> C138 -> C164 -> C44 -> C165 -> C143 -> C160 -> C144 -> C137
+				TSP route length: 9.0 (km)
+				Route cost: 27.12888173773129
+				Time computing TSP: 38.0
+
+				CLuster child: 2
+				Route: D23 -> C155 -> C24 -> C37 -> C132 -> C116 -> C19 -> C133 -> C152 -> C136 -> C151
+				TSP route length: 10.0 (km)
+				Route cost: 32.01082425217582
+				Time computing TSP: 38.0
+
 		Cluster parent: 4
-			CLuster child: 0
-			Route: D12 -> C48 -> C49 -> C277 -> C50 -> C70 -> C69
-			TSP route length: 86.52400000000002 (km)
-			Time computing TSP: 0.967
+			No. of routes: 3
+			Total length: 35.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 101.13565606100447
+			All route details: 
+				CLuster child: 0
+				Route: D24 -> C111 -> C101 -> C103 -> C87 -> C39 -> C95 -> C96 -> C90 -> C102 -> C100
+				TSP route length: 8.0 (km)
+				Route cost: 20.3639232185117
+				Time computing TSP: 37.0
+
+				CLuster child: 1
+				Route: D24 -> C128 -> C117 -> C124 -> C129 -> C121 -> C122 -> C33 -> C119 -> C118 -> C6 -> C4 -> C135 -> C112 -> C134 -> C53
+				TSP route length: 13.0 (km)
+				Route cost: 50.28979752826716
+				Time computing TSP: 3539.0
+
+				CLuster child: 2
+				Route: D19 -> C114 -> C0 -> C113 -> C7 -> C147 -> C153 -> C148 -> C145 -> C120 -> C108
+				TSP route length: 14.0 (km)
+				Route cost: 30.481935314225613
+				Time computing TSP: 46.0
+
 		Cluster parent: 5
-			CLuster child: 0
-			Route: D22 -> C94 -> C25 -> C21 -> C91 -> C12 -> C93 -> C98 -> C97 -> C292
-			TSP route length: 15.16 (km)
-			Time computing TSP: 15.955
-			CLuster child: 1
-			Route: D19 -> C108 -> C113 -> C7 -> C103 -> C87 -> C39 -> C99 -> C89 -> C92 -> C8 -> C294 -> C150 -> C147 -> C153 -> C0
-			TSP route length: 15.034999999999998 (km)
-			Time computing TSP: 3928.526
-			CLuster child: 2
-			Route: D22 -> C291 -> C284 -> C280 -> C283 -> C282 -> C286 -> C279
-			TSP route length: 14.99 (km)
-			Time computing TSP: 2.991
+			No. of routes: 2
+			Total length: 21.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 53.59461310913903
+			All route details: 
+				CLuster child: 0
+				Route: D4 -> C220 -> C206 -> C216 -> C210 -> C221 -> C51 -> C211 -> C34
+				TSP route length: 10.0 (km)
+				Route cost: 26.528413513934296
+				Time computing TSP: 12.0
+
+				CLuster child: 1
+				Route: D3 -> C223 -> C209 -> C217 -> C224 -> C227 -> C205 -> C204 -> C212
+				TSP route length: 11.0 (km)
+				Route cost: 27.066199595204733
+				Time computing TSP: 14.0
+
 		Cluster parent: 6
-			CLuster child: 0
-			Route: D29 -> C215 -> C208 -> C66 -> C65 -> C216 -> C212 -> C204 -> C207 -> C214
-			TSP route length: 38.238 (km)
-			Time computing TSP: 13.995
-			CLuster child: 1
-			Route: D4 -> C34 -> C211 -> C51 -> C220 -> C206 -> C210 -> C221 -> C205 -> C227 -> C217 -> C223 -> C209 -> C224
-			TSP route length: 19.813999999999997 (km)
-			Time computing TSP: 522.603
+			No. of routes: 1
+			Total length: 806.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 529.8480076506216
+			All route details: 
+				CLuster child: 0
+				Route: D18 -> C110 -> C166 -> C289
+				TSP route length: 806.0 (km)
+				Route cost: 529.8480076506216
+				Time computing TSP: 0.0
+
 		Cluster parent: 7
-			CLuster child: 0
-			Route: D17 -> C218 -> C219 -> C213 -> C18 -> C109 -> C106 -> C100 -> C102 -> C115 -> C105 -> C64 -> C55 -> C54 -> C13
-			TSP route length: 13.706000000000001 (km)
-			Time computing TSP: 1853.042
-			CLuster child: 1
-			Route: D24 -> C135 -> C112 -> C101 -> C96 -> C95 -> C90 -> C111 -> C134
-			TSP route length: 10.282000000000002 (km)
-			Time computing TSP: 4.986
-			CLuster child: 2
-			Route: D24 -> C251 -> C62 -> C257 -> C58 -> C61 -> C59 -> C60 -> C53 -> C63 -> C57 -> C117 -> C128
-			TSP route length: 11.021999999999998 (km)
-			Time computing TSP: 218.415
-			CLuster child: 3
-			Route: D20 -> C52
-			TSP route length: 7.317 (km)
-			Time computing TSP: 0.0
+			No. of routes: 1
+			Total length: 14.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 38.41286031042128
+			All route details: 
+				CLuster child: 0
+				Route: D13 -> C300 -> C30 -> C20 -> C38 -> C302 -> C272 -> C270 -> C298
+				TSP route length: 14.0 (km)
+				Route cost: 38.41286031042128
+				Time computing TSP: 422.0
+
 		Cluster parent: 8
-			CLuster child: 0
-			Route: D9 -> C81
-			TSP route length: 0.678 (km)
-			Time computing TSP: 0.0
+			No. of routes: 1
+			Total length: 219.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 88.6528228879639
+			All route details: 
+				CLuster child: 0
+				Route: D8 -> C104 -> C225 -> C238
+				TSP route length: 219.0 (km)
+				Route cost: 88.6528228879639
+				Time computing TSP: 0.0
+
 		Cluster parent: 9
-			CLuster child: 0
-			Route: D9 -> C79 -> C226 -> C80
-			TSP route length: 36.696 (km)
-			Time computing TSP: 0.0
+			No. of routes: 1
+			Total length: 79.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 27.24558751027116
+			All route details: 
+				CLuster child: 0
+				Route: D32 -> C43 -> C177 -> C253
+				TSP route length: 79.0 (km)
+				Route cost: 27.24558751027116
+				Time computing TSP: 1.0
+
 		Cluster parent: 10
-			CLuster child: 0
-			Route: D11 -> C82 -> C131 -> C85 -> C84 -> C83 -> C31
-			TSP route length: 61.501999999999995 (km)
-			Time computing TSP: 0.994
+			No. of routes: 3
+			Total length: 46.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 139.47176931292273
+			All route details: 
+				CLuster child: 0
+				Route: D21 -> C285 -> C290 -> C287 -> C269
+				TSP route length: 9.0 (km)
+				Route cost: 14.184051263794943
+				Time computing TSP: 0.0
+
+				CLuster child: 1
+				Route: D22 -> C279 -> C293 -> C282 -> C286 -> C27 -> C154 -> C146 -> C5 -> C42 -> C150 -> C8 -> C294
+				TSP route length: 21.0 (km)
+				Route cost: 69.26037735849057
+				Time computing TSP: 233.0
+
+				CLuster child: 2
+				Route: D31 -> C23 -> C275 -> C274 -> C278 -> C271 -> C281 -> C29 -> C288 -> C14 -> C149
+				TSP route length: 16.0 (km)
+				Route cost: 56.02734069063723
+				Time computing TSP: 38.0
+
 		Cluster parent: 11
-			CLuster child: 0
-			Route: D28 -> C197 -> C195 -> C178 -> C141 -> C143 -> C144 -> C272 -> C270 -> C137
-			TSP route length: 13.480000000000002 (km)
-			Time computing TSP: 14.962
-			CLuster child: 1
-			Route: D23 -> C136 -> C151 -> C24 -> C37 -> C132 -> C116 -> C19 -> C133 -> C152
-			TSP route length: 7.167 (km)
-			Time computing TSP: 13.963
-			CLuster child: 2
-			Route: D28 -> C162 -> C168 -> C187 -> C193 -> C138 -> C164 -> C44 -> C165 -> C163 -> C161 -> C126 -> C35 -> C130
-			TSP route length: 8.437 (km)
-			Time computing TSP: 791.882
-			CLuster child: 3
-			Route: D19 -> C114 -> C118 -> C124 -> C129 -> C16 -> C123 -> C122 -> C121 -> C33 -> C119 -> C6 -> C4
-			TSP route length: 9.889 (km)
-			Time computing TSP: 327.091
-			CLuster child: 4
-			Route: D23 -> C159 -> C142 -> C15 -> C160 -> C158 -> C180 -> C200 -> C188 -> C9 -> C125 -> C157 -> C140
-			TSP route length: 14.923000000000002 (km)
-			Time computing TSP: 226.427
+			No. of routes: 1
+			Total length: 146.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 59.44367535524366
+			All route details: 
+				CLuster child: 0
+				Route: D12 -> C10 -> C107
+				TSP route length: 146.0 (km)
+				Route cost: 59.44367535524366
+				Time computing TSP: 0.0
+
 		Cluster parent: 12
-			CLuster child: 0
-			Route: D16 -> C203 -> C201 -> C182 -> C174 -> C169 -> C198
-			TSP route length: 6.114999999999999 (km)
-			Time computing TSP: 0.0
-			CLuster child: 1
-			Route: D6 -> C246 -> C239 -> C244 -> C36 -> C266 -> C267 -> C259 -> C268 -> C241 -> C236 -> C235
-			TSP route length: 5.652 (km)
-			Time computing TSP: 184.507
-			CLuster child: 2
-			Route: D6 -> C250 -> C248 -> C240 -> C261 -> C247 -> C56 -> C40
-			TSP route length: 5.92 (km)
-			Time computing TSP: 2.961
-			CLuster child: 3
-			Route: D28 -> C256 -> C175 -> C254 -> C139 -> C1 -> C127 -> C243 -> C252 -> C17 -> C156
-			TSP route length: 9.543 (km)
-			Time computing TSP: 39.924
-			CLuster child: 4
-			Route: D25 -> C237 -> C229 -> C245 -> C228 -> C296 -> C232 -> C26 -> C255
-			TSP route length: 5.3100000000000005 (km)
-			Time computing TSP: 5.99
-			CLuster child: 5
-			Route: D6 -> C265 -> C11 -> C263 -> C234 -> C262 -> C249 -> C230 -> C242 -> C260 -> C231 -> C233
-			TSP route length: 5.723 (km)
-			Time computing TSP: 86.73
+			No. of routes: 1
+			Total length: 8.0 (km)
+			Vehicle type: 2
+			Vehicle cost coef: 5.2
+			Total cost: 1.6186274509803922
+			All route details: 
+				CLuster child: 0
+				Route: D2 -> C45 -> C3 -> C46
+				TSP route length: 8.0 (km)
+				Route cost: 1.6186274509803922
+				Time computing TSP: 0.0
+
 		Cluster parent: 13
-			CLuster child: 0
-			Route: D8 -> C104 -> C225
-			TSP route length: 122.71699999999998 (km)
-			Time computing TSP: 0.0
+			No. of routes: 2
+			Total length: 32.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 162.8841107318923
+			All route details: 
+				CLuster child: 0
+				Route: D16 -> C202 -> C184 -> C72 -> C71 -> C181 -> C186 -> C171 -> C2 -> C190 -> C167 -> C182 -> C198 -> C256 -> C127
+				TSP route length: 19.0 (km)
+				Route cost: 98.70345089116421
+				Time computing TSP: 1580.0
+
+				CLuster child: 1
+				Route: D28 -> C162 -> C168 -> C188 -> C193 -> C187 -> C169 -> C174 -> C175 -> C254 -> C139 -> C1 -> C252 -> C17 -> C156
+				TSP route length: 13.0 (km)
+				Route cost: 64.1806598407281
+				Time computing TSP: 1735.0
+
 		Cluster parent: 14
-			CLuster child: 0
-			Route: D18 -> C110 -> C166 -> C289
-			TSP route length: 806.4259999999999 (km)
-			Time computing TSP: 0.0
+			No. of routes: 2
+			Total length: 32.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 50.60025724260427
+			All route details: 
+				CLuster child: 0
+				Route: D3 -> C67 -> C86 -> C176 -> C194
+				TSP route length: 19.0 (km)
+				Route cost: 14.292301096343481
+				Time computing TSP: 0.0
+
+				CLuster child: 1
+				Route: D15 -> C173 -> C41 -> C185 -> C196 -> C191 -> C179 -> C183 -> C199 -> C170 -> C203 -> C201 -> C192
+				TSP route length: 13.0 (km)
+				Route cost: 36.30795614626079
+				Time computing TSP: 242.0
+
 		Cluster parent: 15
-			CLuster child: 0
-			Route: D13 -> C304 -> C300 -> C20 -> C30 -> C38 -> C302 -> C298
-			TSP route length: 8.520999999999999 (km)
-			Time computing TSP: 2.026
-			CLuster child: 1
-			Route: D13 -> C308 -> C78 -> C306 -> C301 -> C295 -> C299 -> C303 -> C297 -> C307 -> C309 -> C305
-			TSP route length: 25.176000000000005 (km)
-			Time computing TSP: 159.54
+			No. of routes: 1
+			Total length: 87.0 (km)
+			Vehicle type: 2
+			Vehicle cost coef: 5.2
+			Total cost: 109.94738675958189
+			All route details: 
+				CLuster child: 0
+				Route: D12 -> C48 -> C49 -> C277 -> C50 -> C70 -> C69
+				TSP route length: 87.0 (km)
+				Route cost: 109.94738675958189
+				Time computing TSP: 1.0
+
 		Cluster parent: 16
-			CLuster child: 0
-			Route: D32 -> C43 -> C177 -> C253
-			TSP route length: 78.682 (km)
-			Time computing TSP: 0.0
+			No. of routes: 9
+			Total length: 62.0 (km)
+			Vehicle type: 2
+			Vehicle cost coef: 5.2
+			Total cost: 87.97742571135808
+			All route details: 
+				CLuster child: 0
+				Route: D25 -> C255 -> C243 -> C130 -> C251 -> C257 -> C62 -> C26 -> C237
+				TSP route length: 9.0 (km)
+				Route cost: 14.438023173327029
+				Time computing TSP: 6.0
+
+				CLuster child: 1
+				Route: D25 -> C234 -> C262 -> C249 -> C230 -> C242 -> C260 -> C231 -> C265 -> C11 -> C263 -> C229
+				TSP route length: 7.0 (km)
+				Route cost: 12.489099077796169
+				Time computing TSP: 94.0
+
+				CLuster child: 2
+				Route: D6 -> C241 -> C268 -> C236 -> C235 -> C246 -> C259 -> C233 -> C266 -> C267 -> C244 -> C36 -> C239
+				TSP route length: 5.0 (km)
+				Route cost: 10.867659809253565
+				Time computing TSP: 446.0
+
+				CLuster child: 3
+				Route: D17 -> C261 -> C228 -> C296 -> C232 -> C245 -> C250 -> C248 -> C240 -> C40 -> C56 -> C247
+				TSP route length: 6.0 (km)
+				Route cost: 13.513360132419011
+				Time computing TSP: 164.0
+
+				CLuster child: 4
+				Route: D24 -> C109 -> C106 -> C115 -> C105 -> C64 -> C54 -> C61 -> C55 -> C59 -> C60 -> C63 -> C57
+				TSP route length: 11.0 (km)
+				Route cost: 19.67532119492394
+				Time computing TSP: 238.0
+
+				CLuster child: 5
+				Route: D17 -> C13 -> C58
+				TSP route length: 3.0 (km)
+				Route cost: 1.2037834003310475
+				Time computing TSP: 0.0
+
+				CLuster child: 6
+				Route: D0 -> C68 -> C28
+				TSP route length: 11.0 (km)
+				Route cost: 3.805217939623237
+				Time computing TSP: 0.0
+
+				CLuster child: 7
+				Route: D27 -> C18 -> C214 -> C208 -> C215 -> C218 -> C219 -> C213 -> C207
+				TSP route length: 9.0 (km)
+				Route cost: 11.74518798770395
+				Time computing TSP: 6.0
+
+				CLuster child: 8
+				Route: D9 -> C81
+				TSP route length: 1.0 (km)
+				Route cost: 0.23977299598013713
+				Time computing TSP: 0.0
+
 		Cluster parent: 17
-			CLuster child: 0
-			Route: D3 -> C68 -> C28 -> C86 -> C67 -> C185 -> C196 -> C191 -> C176 -> C194 -> C179 -> C183 -> C199 -> C170
-			TSP route length: 29.929000000000002 (km)
-			Time computing TSP: 589.422
+			No. of routes: 1
+			Total length: 10.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 27.98944498196851
+			All route details: 
+				CLuster child: 0
+				Route: D16 -> C172 -> C22 -> C195 -> C180 -> C200 -> C178 -> C141 -> C158 -> C197
+				TSP route length: 10.0 (km)
+				Route cost: 27.98944498196851
+				Time computing TSP: 97.0
+
 		Cluster parent: 18
-			CLuster child: 0
-			Route: D14 -> C293
-			TSP route length: 7.624 (km)
-			Time computing TSP: 0.0
-			CLuster child: 1
-			Route: D14 -> C27 -> C154 -> C5 -> C42 -> C146 -> C149 -> C278 -> C274 -> C271 -> C14 -> C29 -> C285 -> C281
-			TSP route length: 14.882 (km)
-			Time computing TSP: 696.17
-			CLuster child: 2
-			Route: D21 -> C32 -> C273 -> C276 -> C288 -> C290 -> C287 -> C269
-			TSP route length: 24.086999999999996 (km)
-			Time computing TSP: 1.995
-			CLuster child: 3
-			Route: D31 -> C120 -> C148 -> C155 -> C23 -> C275 -> C145
-			TSP route length: 10.939 (km)
-			Time computing TSP: 0.997
+			No. of routes: 1
+			Total length: 197.0 (km)
+			Vehicle type: 3
+			Vehicle cost coef: 4.2
+			Total cost: 327.10907644367836
+			All route details: 
+				CLuster child: 0
+				Route: D11 -> C82 -> C131 -> C85 -> C84 -> C83 -> C31 -> C52 -> C66 -> C65 -> C77 -> C74 -> C75 -> C73 -> C47 -> C76
+				TSP route length: 197.0 (km)
+				Route cost: 327.10907644367836
+				Time computing TSP: 4328.0
+
 		Cluster parent: 19
-			CLuster child: 0
-			Route: D9 -> C222 -> C258 -> C264 -> C88 -> C310 -> C311 -> C189 -> C238
-			TSP route length: 233.18800000000002 (km)
-			Time computing TSP: 5.979
+			No. of routes: 1
+			Total length: 33.0 (km)
+			Vehicle type: 1
+			Vehicle cost coef: 7.6
+			Total cost: 131.27680117928873
+			All route details: 
+				CLuster child: 0
+				Route: D13 -> C305 -> C309 -> C307 -> C295 -> C308 -> C306 -> C78 -> C301 -> C299 -> C32 -> C273 -> C276 -> C303 -> C297 -> C304
+				TSP route length: 33.0 (km)
+				Route cost: 131.27680117928873
+				Time computing TSP: 4090.0
+
 
 

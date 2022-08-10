@@ -51,7 +51,7 @@ class KMeans:
     def update_centers(self, city_list, labels, distance_coef):
         centers = np.zeros((self.n_clusters, 2))
         cities = []
-        n_items = len(city_list[0].demand_array)
+        # n_items = len(city_list[0].demand_array)
         distance_list = []
         #for k in range(self.n_clusters):
         for i in range(len(city_list)):
@@ -97,7 +97,7 @@ class KMeans:
         return diff<epsilon
 
 
-    def fit(self, optimizer, city_list, capacity_array, distance_coef, epsilon = 1e-6, normalization_flag=True, alpha = 100, penalty_coef = 300, zeros_penalty = 100000, shuffle = False):
+    def fit(self, optimizer, city_list, capacity_array, scale_coef: list, distance_coef, epsilon = 1e-6, normalization_flag=True, alpha = 100, penalty_coef = 300, zeros_penalty = 100000, shuffle = False):
         '''
         Hàm fit để thực hiện quá trình học của thuật toán.
 
@@ -121,12 +121,12 @@ class KMeans:
         centers = [np.array(self.init_centers(city_list))]
         labels = []
         cluster_list = []
-        # print('On start')
+        
         for i in range(self.n_clusters):
             location = centers[-1][i]
             capacity_list = np.array(capacity_array[i])
-            cluster_list.append(Cluster(location[0], location[1], capacity_list, city_id_list=[]))
-            # print('Cluster {}, city list: {}'.format(i, cluster_list[-1].city_id_list))
+            cluster_list.append(Cluster(location[0], location[1], capacity_list, city_id_list=[], scale_coef=scale_coef[i]))
+
         it = 0 
         continue_flag = True
         while continue_flag:

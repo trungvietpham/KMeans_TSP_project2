@@ -26,11 +26,13 @@ def get_nearest_depot(point, depot_list):
 
 
 
-def TSP_phase():
+def TSP_phase(n_vehicles = 20):
     #Load correlation 
+    n_items, _ = load_item_from_text('input/item.txt')
     correlation = json.load(open('input/correlation.json', 'r'))
     cluster_data = json.load(open('output/pre_TSP_phase.json', 'r'))
     depot_data = json.load(codecs.open('input/depot.json', 'r', 'utf-8-sig'))
+    (_, vehicle_list) = load_vehicle_from_json('input/vehicle_{}.json'.format(n_vehicles), n_items)
     dump_file = 'output/TSP_phase_with_Kmeans.json'
 
     summary = []
@@ -56,6 +58,8 @@ def TSP_phase():
     # Một số biến lưu trữ tổng độ dài TSP, thời gian tính toán
     route_distance = []
     time_computing = []
+    v_coef_list = []
+    goods_percentage = []
     route_list = []
 
     #Lặp qua các cụm con và tsp 
@@ -78,12 +82,20 @@ def TSP_phase():
             mapping = {0:'D'+str(index)}
             reverse = {'D'+str(index):0}
             cnt = 1
+            route_demand = np.zeros(n_items)
             for id in cluster_child['node_list']:
                 mapping[cnt] = 'C' + str(id)
                 reverse['C' + str(id)] = cnt
                 node_id_list.append('C'+str(id))
+                node_demand = []
+                for k in range(n_items):
+                    node_demand.append(cluster_child['node_list'][id]['demand']['Item {}'.format(k)])
+                route_demand += np.array(node_demand)
                 cnt+=1
             del cnt
+
+            goods_percentage.append(np.sum(route_demand)/np.sum(vehicle_list[int(cluster_parent_key)].capacity_list))
+            v_coef_list.append(vehicle_list[int(cluster_parent_key)].coef)
 
             # Tạo 1 mảng 2 chiều là distance giữa 2 node bất kỳ trong đây, 
             distance_matrix = np.zeros((n_node_child+1, n_node_child+1))
@@ -125,6 +137,8 @@ def TSP_phase():
 
         save_data[cluster_parent_key] = cluster_info
 
+    cost = np.array(v_coef_list) * np.array(route_distance) * np.array(goods_percentage)
+
     #Dump ra file 'output/TSP_phase.json'
     json.dump(save_data, open(dump_file, 'w'), indent=4)
 
@@ -135,10 +149,12 @@ def TSP_phase():
     print('\tSummary: ')
     print('\t\tTotal route length = {} (km)'.format(np.sum(np.array(route_distance))))
     print('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 0)))
+    print('\t\tTotal cost = {}'.format(np.sum(cost)))
 
     summary.append('\tSummary: ')
     summary.append('\t\tTotal route length = {} (km)'.format(np.sum(np.array(route_distance))))
     summary.append('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 0)))
+    summary.append('\t\tTotal cost = {}'.format(np.sum(cost)))
 
     details.append('\n'.join(summary))
     details.append('\tDetails: ')
@@ -147,11 +163,21 @@ def TSP_phase():
 
     for cluster_parent_key in cluster_data:
         details.append('\t\tCluster parent: {}'. format(cluster_parent_key))
+        details.append('\t\t\tNo. of routes: {}'.format(len(cluster_data[cluster_parent_key]["child_cluster_list"])))
+        total_cost = np.sum(cost[cnt:cnt+len(cluster_data[cluster_parent_key]["child_cluster_list"])])
+        total_distance = np.sum(route_distance[cnt:cnt+len(cluster_data[cluster_parent_key]["child_cluster_list"])])
+        details.append('\t\t\tTotal length: {} (km)'.format(total_distance))
+        details.append('\t\t\tVehicle type: {}'.format(vehicle_list[int(cluster_parent_key)].type))
+        details.append('\t\t\tVehicle cost coef: {}'.format(vehicle_list[int(cluster_parent_key)].coef))
+        details.append('\t\t\tTotal cost: {}'.format(total_cost))
+        details.append('\t\t\tAll route details: ')
+
         for cluster_child_key in cluster_data[cluster_parent_key]["child_cluster_list"]:
-            details.append('\t\t\tCLuster child: {}'.format(cluster_child_key))
-            details.append('\t\t\tRoute: {}'.format(route_list[cnt]))
-            details.append('\t\t\tTSP route length: {} (km)'.format(route_distance[cnt]))
-            details.append('\t\t\tTime computing TSP: {}'.format(round(time_computing[cnt]*1000.0, 0)))
+            details.append('\t\t\t\tCLuster child: {}'.format(cluster_child_key))
+            details.append('\t\t\t\tRoute: {}'.format(route_list[cnt]))
+            details.append('\t\t\t\tTSP route length: {} (km)'.format(route_distance[cnt]))
+            details.append('\t\t\t\tRoute cost: {}'.format(cost[cnt]))
+            details.append('\t\t\t\tTime computing TSP: {}\n'.format(round(time_computing[cnt]*1000.0, 0)))
             cnt+=1
     
     details.append('\n\n')

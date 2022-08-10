@@ -11,7 +11,7 @@ import codecs
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 # sys.path.append("D:/TaiLieuHocTap/Năm 3- Kỳ 2/Project 2/Source code/VietVRP")
-from utils.SupportClass import Vehicle, Node, Cluster
+from utils.SupportClass import Vehicle, Node
 
 def manhattan_distance(p1, p2):
     '''
@@ -62,7 +62,7 @@ def optimizer(city_list, cluster_list, distance_coef, alpha, penalty_coef, zero_
     for i in range(n_cities):
         city_id = city_list_shuffle[i].id
         for j in range(n_clusters):
-            result_array[i,j] = distance_coef * manhattan_distance(city_list_shuffle[i].get_location(), cluster_list[j].get_center()) 
+            result_array[i,j] = distance_coef * cluster_list[j].scale_coef * manhattan_distance(city_list_shuffle[i].get_location(), cluster_list[j].get_center()) 
 
             remain_capa = np.array(cluster_list[j].capacity_list) - np.array(cluster_list[j].current_mass) - city_list_shuffle[i].demand_array
             if normalization_flag: remain_capa = remain_capa/cluster_list[j].capacity_list
@@ -125,10 +125,16 @@ def load_vehicle_from_json(file_name, n_items):
     for key in data:
         n_vehicles+=1
         data_i = np.zeros(n_items)
+        v_type = ''
+        v_coef = 0.0
         for j in data[key]:
-            data_i[int(j)-1] = data[key][j]['demand']
+            if j == 'type':
+                v_type = data[key][j]
+            elif j == 'coef': v_coef = round(float(data[key][j]),1)
+            else:
+                data_i[int(j)-1] = data[key][j]['demand']
         
-        vehicle_list.append(Vehicle(id = id, capacity_list= data_i))
+        vehicle_list.append(Vehicle(id = id, capacity_list= data_i, v_type=v_type, coef=v_coef))
         id+=1
     
     return (n_vehicles, vehicle_list)
