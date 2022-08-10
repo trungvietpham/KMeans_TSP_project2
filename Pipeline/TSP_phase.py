@@ -94,16 +94,21 @@ def TSP_phase():
             
             #TSP
             time1 = time()
-            permutation, dist_res = solve_tsp_dynamic_programming(distance_matrix)
+            permutation, _ = solve_tsp_dynamic_programming(distance_matrix)
             time2 = time()
 
             reverse_permutation = []
             for i in range(n_node_child+1):
                 reverse_permutation.append(mapping[int(permutation[i])])
-            reverse_permutation.append(mapping[int(permutation[0])])
+            # reverse_permutation.append(mapping[int(permutation[0])])
             # print('Cluster cha = {}, cluster con = {}'.format(cluster_parent_key, cluster_child_key))
             # print('Permutation: {}'.format(' -> '.join(reverse_permutation)))
             # print('Distance = {}'.format(dist_res))
+
+            dist_res = 0.0
+            for i in range(1, len(reverse_permutation)):
+                dist_res += float(correlation[reverse_permutation[i-1]][reverse_permutation[i]])
+
             route_list.append(' -> '.join(reverse_permutation))
             cluster_info["child_cluster_list"][cluster_child_key] = ' -> '.join(reverse_permutation)
 
@@ -121,7 +126,7 @@ def TSP_phase():
     json.dump(save_data, open(dump_file, 'w'), indent=4)
 
     print('\tSummary: ')
-    print('\t\tTotal route length = {}'.format(np.sum(np.array(route_distance))))
+    print('\t\tTotal route length = {} (km)'.format(np.sum(np.array(route_distance))))
     print('\t\tTotal time computing TSP = {} ms'.format(round(np.sum(np.array(time_computing))*1000.0, 3)))
 
     summary.append('\tSummary: ')
@@ -138,7 +143,7 @@ def TSP_phase():
         for cluster_child_key in cluster_data[cluster_parent_key]["child_cluster_list"]:
             details.append('\t\t\tCLuster child: {}'.format(cluster_child_key))
             details.append('\t\t\tRoute: {}'.format(route_list[cnt]))
-            details.append('\t\t\tTSP route length: {}'.format(route_distance[cnt]))
+            details.append('\t\t\tTSP route length: {} (km)'.format(route_distance[cnt]))
             details.append('\t\t\tTime computing TSP: {}'.format(round(time_computing[cnt]*1000.0, 3)))
             cnt+=1
     

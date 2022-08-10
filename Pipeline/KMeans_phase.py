@@ -43,7 +43,7 @@ def KMeans_phase(vehicle_fname):
     model = KMeans(n_clusters)
 
     time1 = time.time()
-    (centers, labels, it, cluster_list, total_distance) = model.fit(optimizer=optimizer, city_list = city_list,capacity_array = capacity_array, distance_coef=convert_coef, normalization_flag=False, alpha=200, penalty_coef=60000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
+    (centers, labels, it, cluster_list, total_distance) = model.fit(optimizer=optimizer, city_list = city_list,capacity_array = capacity_array, distance_coef=convert_coef, normalization_flag=False, alpha=2, penalty_coef=10, zeros_penalty=1000000, shuffle=True, epsilon=1e-3)
     time2 = time.time()
 
     total_mass = np.zeros(n_items)
