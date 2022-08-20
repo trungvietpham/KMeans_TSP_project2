@@ -1,5 +1,10 @@
 import sys
 import os
+import matplotlib.pyplot as plt
+
+from Pipeline.TSP_no_KMeans import TSP_no_Kmeans
+from Pipeline.compare import compare
+from Pipeline.plotting_data import plotting_for_phase1, plotting_for_pre_phase2
 sys.path.append(os.getcwd())
 
 from Pipeline.KMeans_phase import KMeans_phase
@@ -61,8 +66,12 @@ summary.append(summary_kmeans)
 details.append('2. KMeans clustering phase:')
 details.append(details_kmeans)
 
+plotting_for_phase1()
+plt.show()
+
 print('3. Kmeans sub-clustering phase:')
 print('Input some parameters: ')
+
 n_customers_threshold = input('\tNo. customers threshold (recommended a number in range (15, 30), type \'s\' to skip, default = 15): ')
 if n_customers_threshold == 's': n_customers_threshold = 15
 else: n_customers_threshold = int(n_customers_threshold)
@@ -76,6 +85,9 @@ summary.append(summary_pre_tsp)
 details.append('3. Kmeans sub-clustering phase:')
 details.append(details_pre_tsp)
 
+plotting_for_pre_phase2()
+plt.show()
+
 print('4. TSP phase:')
 summary_tsp, details_tsp, _, _, _ = TSP_phase(n_vehicle)
 
@@ -85,6 +97,10 @@ summary.append(summary_tsp)
 details.append('4. TSP phase:')
 details.append(details_tsp)
 
+print('5. TSP no kmeans:')
+_,_,_, details_tsp_no_kmeans = TSP_no_Kmeans(n_vehicle)
+
+compare()
 # Dump ra file txt
 dump_summary_fname = 'scenerios/summary/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
 dump_details_fname = 'scenerios/details/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
@@ -100,5 +116,9 @@ details_handler = open(dump_details_fname, 'w')
 details_handler.write(details_str)
 details_handler.close()
 
-print('5. Plotting TSP phase by pygame: ')
+with open('scenerios/no_kmeans/{}_vehicle.txt'.format(n_vehicle), 'w') as f:
+    f.write(details_tsp_no_kmeans)
+    f.close()
+
+print('6. Plotting TSP phase by pygame: ')
 main()

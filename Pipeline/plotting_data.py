@@ -97,10 +97,10 @@ def plotting_for_pre_phase2():
     # plt.show()
     return b
 
-# a = plotting_for_pre_phase2()
-b = plotting_for_phase1()
+# # a = plotting_for_pre_phase2()
+# b = plotting_for_phase1()
 
-plt.show()
-# a.show()
-b.show()
-# input()
+# plt.show()
+# # a.show()
+# # b.show()
+# # input()

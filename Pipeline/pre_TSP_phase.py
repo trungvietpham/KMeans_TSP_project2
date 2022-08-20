@@ -120,7 +120,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
             child_scale_coef = [scale_coef_list[cluster_id] for _ in range(n_child)]
             model = KMeans(n_child)
             # print('Cluster {}'.format(cluster_id))
-            (_,_,_, child_cluster_list, distance) = model.fit(optimizer=optimizer, city_list = child_city_list,capacity_array = capacity_array, scale_coef=child_scale_coef, distance_coef=convert_coef, normalization_flag=False, alpha=500, penalty_coef=100000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
+            (_,_,_, child_cluster_list, distance) = model.fit(optimizer=optimizer, city_list = child_city_list,capacity_array = capacity_array, scale_coef=child_scale_coef, distance_coef=convert_coef, normalization_flag=False, alpha=5*n_child, penalty_coef=100000, zeros_penalty=10000000, shuffle=True, epsilon=1e-3)
             
             continue_flag = False
             for child in child_cluster_list:
@@ -142,6 +142,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
                 del child_cluster_list
                 del model
                 del capacity_array
+                # print(try_kmeans_counter)
             else: 
                 # for child in child_cluster_list:
                     # print('Current mass = {}, Child list = {} '.format(child.current_mass, child.city_id_list))

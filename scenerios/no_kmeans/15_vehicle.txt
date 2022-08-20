@@ -1,0 +1,128 @@
+
+Description: Use TSP algorithm without KMeans
+
+Vehicle 0:
+	Route 0:
+		Route: D30 -> C277 -> C264 -> C358 -> C268 -> C75 -> C361 -> C259 -> C255 -> C261 -> C397 -> C65 -> C360
+		Length: 12 km
+		Cost: 63.16
+	Route 1:
+		Route: D13 -> C53 -> C326 -> C368 -> C127 -> C383 -> C77 -> C325 -> C55 -> C3 -> C130 -> C398 -> C421 -> C432 -> C338
+		Length: 10 km
+		Cost: 56.82
+Vehicle 1:
+	Route 0:
+		Route: D41 -> C370 -> C139 -> C195 -> C177 -> C191 -> C193 -> C185 -> C189 -> C85 -> C166 -> C162 -> C160 -> C310 -> C316 -> C161 -> C164 -> C434 -> C331 -> C323 -> C18 -> C156 -> C136 -> C159 -> C141
+		Length: 17 km
+		Cost: 101.13
+	Route 1:
+		Route: D1 -> C80 -> C135 -> C340 -> C365 -> C392 -> C339 -> C150 -> C369 -> C394 -> C72 -> C341 -> C352 -> C142 -> C393 -> C158 -> C62 -> C400 -> C163 -> C169 -> C178 -> C181 -> C417
+		Length: 27 km
+		Cost: 172.21
+Vehicle 2:
+	Route 0:
+		Route: D38 -> C366 -> C390 -> C123 -> C122 -> C57 -> C444 -> C9 -> C124 -> C311 -> C382 -> C322 -> C16 -> C128 -> C319 -> C315 -> C396 -> C129 -> C411 -> C126 -> C54 -> C4 -> C415 -> C330 -> C408 -> C407 -> C336 -> C410 -> C44 -> C442 -> C416
+		Length: 16 km
+		Cost: 107.67
+	Route 1:
+		Route: D33 -> C402 -> C381 -> C380 -> C387 -> C403 -> C386 -> C14 -> C15 -> C440 -> C377 -> C253 -> C270 -> C273 -> C272 -> C359 -> C374 -> C260 -> C429 -> C385 -> C391 -> C375 -> C428 -> C285 -> C11 -> C293 -> C292 -> C420 -> C282
+		Length: 96 km
+		Cost: 628.15
+Vehicle 3:
+	Route 0:
+		Route: D40 -> C435 -> C267 -> C274 -> C37 -> C275 -> C119 -> C73 -> C32 -> C430 -> C35 -> C29 -> C33 -> C34
+		Length: 13 km
+		Cost: 52.46
+	Route 1:
+		Route: D29 -> C280 -> C279 -> C291 -> C289 -> C287 -> C286 -> C447 -> C17 -> C376 -> C76 -> C283 -> C425 -> C334 -> C70 -> C175
+		Length: 15 km
+		Cost: 68.49
+Vehicle 4:
+	Route 0:
+		Route: D8 -> C151 -> C448 -> C351 -> C145 -> C356 -> C61 -> C148 -> C143 -> C152 -> C144 -> C427 -> C147 -> C362 -> C355 -> C84 -> C437 -> C395 -> C71 -> C134 -> C63 -> C149
+		Length: 18 km
+		Cost: 111.62
+	Route 1:
+		Route: D28 -> C87 -> C104 -> C88 -> C101 -> C27 -> C388 -> C436 -> C109 -> C110 -> C108 -> C288 -> C284 -> C290 -> C278 -> C372 -> C281
+		Length: 185 km
+		Cost: 1023.38
+Vehicle 5:
+	Route 0:
+		Route: D1 -> C343 -> C349 -> C346 -> C66 -> C433 -> C140 -> C155 -> C157 -> C329 -> C138
+		Length: 6 km
+		Cost: 22.32
+	Route 1:
+		Route: D40 -> C30 -> C69 -> C371 -> C263 -> C271 -> C269 -> C74 -> C357 -> C258 -> C409 -> C153 -> C56 -> C363
+		Length: 25 km
+		Cost: 96.75
+Vehicle 6:
+	Route 0:
+		Route: D13 -> C91 -> C98 -> C93 -> C238 -> C321 -> C243 -> C12 -> C241 -> C226 -> C218 -> C422 -> C249 -> C7 -> C251 -> C303 -> C294 -> C245 -> C301 -> C426 -> C401 -> C308 -> C328 -> C234 -> C305
+		Length: 12 km
+		Cost: 83.98
+	Route 1:
+		Route: D47 -> C117 -> C38 -> C348 -> C99 -> C344 -> C64 -> C333 -> C327 -> C332 -> C92 -> C96 -> C324 -> C227 -> C309 -> C233 -> C229 -> C235 -> C94 -> C23
+		Length: 14 km
+		Cost: 79.32
+Vehicle 7:
+	Route 0:
+		Route: D45 -> C165 -> C179 -> C313 -> C174 -> C445 -> C167 -> C242 -> C239 -> C246 -> C220 -> C222 -> C405 -> C230 -> C219 -> C302
+		Length: 9 km
+		Cost: 44.79
+	Route 1:
+		Route: D12 -> C68 -> C131 -> C52 -> C347 -> C146 -> C257 -> C254 -> C256 -> C58 -> C419 -> C95 -> C46 -> C45 -> C31 -> C8
+		Length: 34 km
+		Cost: 178.57
+Vehicle 8:
+	Route 0:
+		Route: D45 -> C173 -> C441 -> C190 -> C192 -> C187 -> C182 -> C176 -> C180 -> C423 -> C194 -> C295 -> C168 -> C184
+		Length: 12 km
+		Cost: 56.16
+	Route 1:
+		Route: D20 -> C320 -> C232 -> C225 -> C252 -> C296 -> C224 -> C248 -> C223 -> C236 -> C250 -> C171 -> C228 -> C79
+		Length: 15 km
+		Cost: 75.79
+Vehicle 9:
+	Route 0:
+		Route: D38 -> C345 -> C48 -> C384 -> C133 -> C132 -> C59 -> C414 -> C43 -> C335 -> C337 -> C22 -> C342 -> C97 -> C41 -> C350 -> C51 -> C42 -> C36 -> C118 -> C438
+		Length: 12 km
+		Cost: 76.85
+	Route 1:
+		Route: D6 -> C19 -> C60 -> C20 -> C21 -> C200 -> C204 -> C207 -> C203 -> C208 -> C211 -> C10 -> C196 -> C202 -> C197 -> C201 -> C209 -> C304 -> C188 -> C170 -> C83
+		Length: 80 km
+		Cost: 502.02
+Vehicle 10:
+	Route 0:
+		Route: D10 -> C216 -> C446 -> C213 -> C206 -> C212 -> C443 -> C418 -> C13 -> C100 -> C116 -> C26 -> C379
+		Length: 26 km
+		Cost: 192.59
+	Route 1:
+		Route: D35 -> C103 -> C106 -> C378 -> C265 -> C266 -> C276 -> C120 -> C5 -> C183
+		Length: 72 km
+		Cost: 464.14
+Vehicle 11:
+	Route 0:
+		Route: D34 -> C114 -> C115 -> C113 -> C112 -> C105 -> C107 -> C90 -> C449 -> C25 -> C24 -> C424 -> C210 -> C214 -> C78 -> C198 -> C205 -> C199 -> C215
+		Length: 74 km
+		Cost: 555.72
+	Route 1:
+		Route: D22 -> C89 -> C86 -> C28 -> C102 -> C111
+		Length: 163 km
+		Cost: 362.7
+Vehicle 12:
+	Route 0:
+		Route: D16 -> C300 -> C431 -> C186 -> C2 -> C172 -> C240 -> C137 -> C1 -> C231 -> C439 -> C298 -> C297 -> C244 -> C125 -> C373 -> C67 -> C154 -> C299
+		Length: 11 km
+		Cost: 50.17
+Vehicle 13:
+	Route 0:
+		Route: D8 -> C50 -> C404 -> C0 -> C354 -> C49 -> C121 -> C39 -> C353 -> C81 -> C47 -> C367 -> C40 -> C413 -> C6 -> C406 -> C262 -> C399 -> C364
+		Length: 16 km
+		Cost: 85.81
+Vehicle 14:
+	Route 0:
+		Route: D20 -> C82 -> C312 -> C306 -> C237 -> C317 -> C412 -> C307 -> C389 -> C314 -> C318 -> C247 -> C217 -> C221
+		Length: 7 km
+		Cost: 50.06
+Total length: 997 km
+Total cost: 5362.83

@@ -51,9 +51,14 @@ def TSP_no_Kmeans(n_vehicle = 20):
     length_list = []
     coef_list = []
     goods_percentage = []
+    cost = []
 
     time1 = []
     time2 = []
+
+    details = []
+    details.append('\nDescription: Use TSP algorithm without KMeans\n')
+
 
     while continue_flag:
         continue_flag = False
@@ -131,20 +136,39 @@ def TSP_no_Kmeans(n_vehicle = 20):
                     save_data[v_index][n_route_current]['length'] = str(length) + ' km'
                     n_point.append(len(route)-1)
                     length_list.append(length)
+                    coef_list.append(vehicle_list[v_index].coef)
+                    goods_percentage.append(np.sum(current_mass)/np.sum(vehicle_list[v_index].capacity_list))
+                    cost.append(np.round(coef_list[-1] * length_list[-1] * goods_percentage[-1], 2))
+                    save_data[v_index][n_route_current]['cost'] = cost[-1]
                     # print('V_index = {}, n_points = {}'.format(v_index, n_point[-1]))
             
-            if len(remain_node_index) != 0: continue_flag = True
+        if len(remain_node_index) != 0: 
+            n_route_current += 1
+            continue_flag = True
+
 
     json.dump(save_data, open(dump_file, 'w'), indent=4)
 
-    summary_for_compare = {'Distance': float(np.sum(np.array(length_list))), 'Time': float(round(np.sum(np.array(time2) - np.array(time1))*1000, 0))}
+    summary_for_compare = {'Distance': float(np.sum(np.array(length_list))), 'Time': float(round(np.sum(np.array(time2) - np.array(time1))*1000, 0)), 'Cost': round(np.sum(cost))}
     json.dump(summary_for_compare, open('output/summary_TSP_no_Kmeans.json', 'w'), indent=4)
 
     print('Total length = {} (km)'.format(np.sum(np.array(length_list))))
     print('Total time = {} ms'.format(round(np.sum(np.array(time2) - np.array(time1))*1000, 0)))
+    print('Total cost = {}'.format(np.sum(cost)))
 
-    return (dump_file, np.sum(length_list), round(np.sum(np.array(time2) - np.array(time1))*1000, 0)) # outter file, total length in km, total time in ms
+    for key1 in save_data:
+        details.append('Vehicle {}:'.format(key1))
+        for key2 in save_data[key1]:
+            details.append('\tRoute {}:'.format(key2))
+            details.append('\t\tRoute: {}'.format(save_data[key1][key2]['route']))
+            details.append('\t\tLength: {}'.format(save_data[key1][key2]['length']))
+            details.append('\t\tCost: {}'.format(save_data[key1][key2]['cost']))
+    
+    details.append('Total length: {} km'.format(np.sum(length_list)))
+    details.append('Total cost: {}'.format(np.sum(cost)))
+
+    return (dump_file, np.sum(length_list), round(np.sum(np.array(time2) - np.array(time1))*1000, 0), '\n'.join(details)) # outter file, total length in km, total time in ms
 
 
 if __name__ == "__main__":
-    TSP_no_Kmeans()
+    TSP_no_Kmeans(10)

@@ -442,7 +442,7 @@ def main():
                         # Nếu click vào tâm cụm thì ta sẽ zoom map to ra và tâm cụm nằm giữa console
                         center_console = [SIZE[0]/2, SIZE[1]/2]
                         x_trans, y_trans = - np.array(location_focus)
-                        x_scale, y_scale = 70.0/x_zoom_scaler, 25.0/y_zoom_scaler
+                        x_scale, y_scale = 3/x_zoom_scaler, 4/y_zoom_scaler
                         cnt = 0
                         for node in graph.nodes_list:
                             x,y = node.pos
@@ -590,7 +590,7 @@ def main():
             for node in graph.nodes:
                 nodes_rect.append(node.rect)
             
-            if x_zoom_scaler>25 and y_zoom_scaler>10:
+            if x_zoom_scaler>2 and y_zoom_scaler>2:
                 graph.change_color_by_type('Customer', green)
                 graph.change_color_by_type('Depot', orange)
             

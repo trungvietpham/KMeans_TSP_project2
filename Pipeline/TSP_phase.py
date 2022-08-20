@@ -137,12 +137,12 @@ def TSP_phase(n_vehicles = 20):
 
         save_data[cluster_parent_key] = cluster_info
 
-    cost = np.array(v_coef_list) * np.array(route_distance) * np.array(goods_percentage)
+    cost = np.round(np.array(v_coef_list) * np.array(route_distance) * np.array(goods_percentage), decimals=1)
 
     #Dump ra file 'output/TSP_phase.json'
     json.dump(save_data, open(dump_file, 'w'), indent=4)
 
-    summary_for_compare = {'Distance': np.sum(np.array(route_distance)), 'Time': round(np.sum(np.array(time_computing))*1000.0, 0)}
+    summary_for_compare = {'Distance': np.sum(np.array(route_distance)), 'Time': round(np.sum(np.array(time_computing))*1000.0, 0), 'Cost':round(np.sum(cost))}
     json.dump(summary_for_compare, open('output/summary_TSP_with_Kmeans.json', 'w'), indent=4)
 
 
