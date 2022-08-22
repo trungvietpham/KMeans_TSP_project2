@@ -64,6 +64,7 @@ def TSP_phase(n_vehicles = 20):
 
     #Lặp qua các cụm con và tsp 
     for cluster_parent_key in cluster_data:
+        print('Cluster parent: {}/{}'.format(int(cluster_parent_key)+1, len(cluster_data)))
         center_parent = cluster_data[cluster_parent_key]['center']
         n_cluster_child = len(cluster_data[cluster_parent_key]["child_cluster_list"])
         cluster_info = {}
@@ -127,15 +128,21 @@ def TSP_phase(n_vehicles = 20):
             cluster_info["child_cluster_list"][cluster_child_key]['route']= ' -> '.join(reverse_permutation)
             cluster_info["child_cluster_list"][cluster_child_key]['length'] = str(round(dist_res, 0)) + ' km'
 
+            #In ra thông tin tiến trình
+            print('\r\tDone {}/{}. Output in {}'.format(int(cluster_child_key)+1, len(cluster_data[cluster_parent_key]["child_cluster_list"]), dump_file), end='')
+
             # Lưu lại các thông tin về khoảng cách, thời gian tính toán
             route_distance.append(dist_res)
             time_computing.append(time2-time1)
+
+            #Lưu dữ liệu
+            json.dump(save_data, open(dump_file, 'w'), indent=4)
+
             #Xóa bộ nhớ
             del cluster_child, mapping, reverse
 
-
-
         save_data[cluster_parent_key] = cluster_info
+        print('')
 
     cost = np.round(np.array(v_coef_list) * np.array(route_distance) * np.array(goods_percentage), decimals=1)
 

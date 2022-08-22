@@ -8,7 +8,7 @@ import sys
 import os
 sys.path.append(os.getcwd())
 
-def plotting_for_phase1():
+def plotting_for_phase1(show_text_flag = True):
     #Read data from phase2.json
     fname = 'output/KMeans_phase.json'
     f = open(fname, 'r')
@@ -23,7 +23,7 @@ def plotting_for_phase1():
     n_colors = len(color_list)
     n_markers = len(marker_list)
 
-    a = plt.figure(1)
+    a = plt.figure('Kmeans\'s phase visualization')
 
     for cluster_index in range(n_clusters):
         clusters_i = data[str(cluster_index)]
@@ -43,13 +43,17 @@ def plotting_for_phase1():
                 check_list[pair_check] = 1
                 break
         
-        plt.scatter(latitude, longtitude, c=color, marker=marker, s=15)
+        plt.scatter(latitude, longtitude, c=color, marker=marker, s=10)
         plt.scatter(center_location['lat'], center_location['long'], c = 'red', marker='o', s=25)
-
+        if show_text_flag:
+            label = f"Id: {clusters_i['cluster_id']}\nType: Parent\nN_childs: {len(clusters_i['node_list'])}"
+            plt.annotate(label, (center_location['lat'], center_location['long']), textcoords = 'offset points', xytext = (0,5), ha ='center', size = 8)
+        plt.xlabel('latitude', loc = 'right')
+        plt.ylabel('longitude', loc = 'top')
     # plt.show()
     return a
 
-def plotting_for_pre_phase2():
+def plotting_for_pre_phase2(show_text_flag = True):
     fname = 'output/pre_TSP_phase.json'
     f = open(fname, 'r')
     data = json.load(f)
@@ -63,7 +67,7 @@ def plotting_for_pre_phase2():
     n_colors = len(color_list)
     n_markers = len(marker_list)
 
-    b = plt.figure(2)
+    b = plt.figure('Sub-cluster clustering visualization')
 
     for cluster_index in range(n_clusters):
         check_list = {}
@@ -89,16 +93,25 @@ def plotting_for_pre_phase2():
             x_values = [center_location['lat'], center_child['lat']]
             y_values = [center_location['long'], center_child['long']]
             plt.plot(x_values, y_values, 'bo', linestyle="--", markersize=2, linewidth=1)
-            plt.scatter(latitude, longtitude, c=color, marker=marker, s=15)
-            plt.scatter(center_child['lat'], center_child['long'], c = 'red', marker='o', s=25)
-        
-        plt.scatter(center_location['lat'], center_location['long'], c='red', marker='o', s = 30)
+            plt.scatter(latitude, longtitude, c=color, marker=marker, s=10)
+            plt.scatter(center_child['lat'], center_child['long'], c = 'red', marker='o', s=18)
+            if show_text_flag:
+                label = f"Id: {clusters_i['cluster_id']}.{child_cluster_index}\nType: Child\nN_childs: {len(clusters_i['child_cluster_list'][child_cluster_index]['node_list'])}"
+                plt.annotate(label, (center_location['lat'], center_location['long']), textcoords = 'offset points', xytext = (0,5), ha ='center', size = 8)
+
+        plt.scatter(center_location['lat'], center_location['long'], c='red', marker='o', s = 25)
+    
+    plt.xlabel('latitude', loc = 'right')
+    plt.ylabel('longitude', loc = 'top') 
 
     # plt.show()
     return b
 
-# # a = plotting_for_pre_phase2()
-# b = plotting_for_phase1()
+
+if __name__ == '__main__':
+    # a = plotting_for_pre_phase2()
+    b = plotting_for_phase1()
+    plt.show()
 
 # plt.show()
 # # a.show()

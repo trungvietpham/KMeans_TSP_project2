@@ -4,3 +4,4 @@ sklearn
 matplotlib
 python-tsp
 pygame
+pyautogui

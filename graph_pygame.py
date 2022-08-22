@@ -9,9 +9,10 @@ from matplotlib.pyplot import sca, yscale
 import pygame
 import json
 import numpy as np
+import pyautogui
 
 FR = 30
-SIZE = 900, 680
+# SIZE = 1000, 720
 BGCOLOR = (255,255,255)
 NODECOLOR = (255,0,0)
 NODESIZE = 4,4
@@ -27,6 +28,11 @@ white = (255,255,255)
 orange = (255, 88, 0)
 yellow = (255,255,0)
 
+width, height = pyautogui.size()
+if int((height-100)/3) * 4 <width - 150:
+    height = height-100
+    width = int(height/3) * 4
+SIZE = width, height
 class Graph(object):
     def __init__(self):
         self.nodes = set()

@@ -13,22 +13,36 @@ from Pipeline.gendata import gendata
 from Pipeline.pre_TSP_phase import Pre_TSP_phase
 from graph_pygame import main
 
+def dump_to(fname, mode, data):
+    with open(fname, mode) as f:
+    # with open('scenerios/no_kmeans/{}_vehicle.txt'.format(n_vehicle), 'w') as f:
+        # f.write(details_tsp_no_kmeans)
+        f.write(data)
+        f.close()
+
 details = []
 summary = []
 adding_to_detail = 'Scenerios: \n'
-gendata_ret = input('1. Generate data? (y/n): ')
+gendata_ret = ''
+while gendata_ret not in ['y', 'n']:
+    gendata_ret = input('1. Generate data? (y/n): ')
+
 summary.append('1. Generate data: ')
 details.append('1. Generate data: ')
 details.append('\nDescription: randomly generate demand for each depot, customer and generate capacity for each vehicle\n')
 if gendata_ret == 'y':
-    n_vehicle = input('\tNo. vehicle (type an int number or \'s\' to skip, default = 15) = ')
-    if n_vehicle == 's': 
-        n_vehicle = 15
-    else: 
-        n_vehicle = int(n_vehicle)
+    while True:
+        try:
+            n_vehicle = input('\tNo. vehicle (type an int number or \'s\' to skip, default = 15) = ')
+            if n_vehicle == 's': 
+                n_vehicle = 15
+            else: 
+                n_vehicle = int(n_vehicle)
+            break
+        except ValueError:
+            print("Invalid input")
 
     summary.append('\tNo. vehicles = {}'.format(n_vehicle))
-
     
     details.append('\tNo. vehicles = {}'.format(n_vehicle))
     details.append('\tInput data list: ')
@@ -46,9 +60,18 @@ if gendata_ret == 'y':
     gendata(n_vehicle)
     print('Generate done!')
 else: 
+
+    while True:
+        try:
+            n_vehicle = int(input('Input a number to specify no. of vehicles scenarios: '))
+            if os.path.exists(os.getcwd()+'\\input\\vehicle_{}.json'.format(n_vehicle)): break
+            else: print('No data for {} vehicles, try again!'.format(n_vehicle))
+        except ValueError:
+            print("Invalid input")
+
     continue_flag = True
     while continue_flag:
-        n_vehicle = input('Input a number to specify no. of vehicles scenarios: ')
+        
         n_vehicle = int(n_vehicle)
         if os.path.exists(os.getcwd()+'\\input\\vehicle_{}.json'.format(n_vehicle)): continue_flag = False
 
@@ -56,9 +79,18 @@ else:
     details.append('\tNo gendata, use data in input/*')
 
 adding_to_detail+='No. cluster = No. vehicle = {}\n'.format(n_vehicle)
-    
+
 
 print('2. Kmeans clustering phase:')
+
+while True:
+    show_text_flag = input('Do you want to show cluster\'s information? (y/n): ')
+    if show_text_flag not in ['y', 'n']:
+        print('Invalid input')
+    else: break
+if show_text_flag == 'y': show_text_flag = True
+else: show_text_flag = False
+
 summary_kmeans, details_kmeans, _ = KMeans_phase('input/vehicle_{}.json'.format(n_vehicle))
 summary.append('2. KMeans clustering phase:')
 summary.append(summary_kmeans)
@@ -66,15 +98,28 @@ summary.append(summary_kmeans)
 details.append('2. KMeans clustering phase:')
 details.append(details_kmeans)
 
-plotting_for_phase1()
+plotting_for_phase1(show_text_flag)
 plt.show()
 
 print('3. Kmeans sub-clustering phase:')
 print('Input some parameters: ')
 
-n_customers_threshold = input('\tNo. customers threshold (recommended a number in range (15, 30), type \'s\' to skip, default = 15): ')
-if n_customers_threshold == 's': n_customers_threshold = 15
-else: n_customers_threshold = int(n_customers_threshold)
+while True:
+    try:
+        n_customers_threshold = input('\tNo. customers threshold (recommended a number in range (15, 30), type \'s\' to skip, default = 15): ')
+        if n_customers_threshold == 's': n_customers_threshold = 15
+        else: n_customers_threshold = int(n_customers_threshold)
+        break
+    except ValueError:
+        print("Invalid input")
+
+while True:
+    show_text_flag = input('Do you want to show cluster\'s and sub-cluster\'s information? (y/n): ')
+    if show_text_flag not in ['y', 'n']:
+        print('Invalid input')
+    else: break
+if show_text_flag == 'y': show_text_flag = True
+else: show_text_flag = False
 
 summary_pre_tsp, details_pre_tsp = Pre_TSP_phase(n_customers_threshold, vehicle_fname='input/vehicle_{}.json'.format(n_vehicle))
 
@@ -85,7 +130,13 @@ summary.append(summary_pre_tsp)
 details.append('3. Kmeans sub-clustering phase:')
 details.append(details_pre_tsp)
 
-plotting_for_pre_phase2()
+dump_summary_fname = 'scenerios/summary/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
+dump_details_fname = 'scenerios/details/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
+
+dump_to(dump_summary_fname, 'w', '\n'.join(summary)+ '\n\nMore details in {}'.format(dump_details_fname))
+dump_to(dump_details_fname, 'w', adding_to_detail + '\n'.join(details))
+
+plotting_for_pre_phase2(show_text_flag)
 plt.show()
 
 print('4. TSP phase:')
@@ -102,23 +153,10 @@ _,_,_, details_tsp_no_kmeans = TSP_no_Kmeans(n_vehicle)
 
 compare()
 # Dump ra file txt
-dump_summary_fname = 'scenerios/summary/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
-dump_details_fname = 'scenerios/details/{}_vehicle_{}_node_threshold.txt'.format(n_vehicle, n_customers_threshold)
 
-summary_str = '\n'.join(summary) + '\n\nMore details in {}'.format(dump_details_fname)
-details_str = adding_to_detail + '\n'.join(details)
-
-summary_handler = open(dump_summary_fname, 'w')
-summary_handler.write(summary_str)
-summary_handler.close()
-
-details_handler = open(dump_details_fname, 'w')
-details_handler.write(details_str)
-details_handler.close()
-
-with open('scenerios/no_kmeans/{}_vehicle.txt'.format(n_vehicle), 'w') as f:
-    f.write(details_tsp_no_kmeans)
-    f.close()
+dump_to(dump_summary_fname, 'w', '\n'.join(summary)+ '\n\nMore details in {}'.format(dump_details_fname))
+dump_to(dump_details_fname, 'w', adding_to_detail + '\n'.join(details))
+dump_to('scenerios/no_kmeans/{}_vehicle.txt'.format(n_vehicle), 'w', details_tsp_no_kmeans)
 
 print('6. Plotting TSP phase by pygame: ')
 main()

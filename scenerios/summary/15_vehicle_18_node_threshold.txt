@@ -1,0 +1,37 @@
+1. Generate data: 
+	No gendata
+
+
+2. KMeans clustering phase:
+	Summary: 
+		Converged after 8 steps
+		No. of clusters = No. of vehicles = 15
+		No. of customers = 450
+		No. of good types =  2
+		Total picked capacity = [114297. 111686.] kg
+		Total delivered capacity = [114297. 111686.] kg
+		Total distance = 1404.831 (km)
+		Clustering duration = 1963.0 ms
+
+
+
+3. Kmeans sub-clustering phase:
+	Summary: 
+		Total try KMeans times = 27
+		No. cluster parent = 15
+		Total no. cluster child = 46
+		Total distance = 822.0 (km)
+		Total time for clustering = 1028.0 ms
+
+
+
+4. TSP phase:
+	Summary: 
+		Total route length = 811.0 (km)
+		Total time computing TSP = 65350.0 ms
+		Total cost = 2447.1000000000004
+
+
+
+
+More details in scenerios/details/15_vehicle_18_node_threshold.txt
