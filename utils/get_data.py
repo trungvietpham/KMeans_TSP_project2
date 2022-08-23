@@ -65,13 +65,13 @@ def csv_to_json_file(csv_file, n_items = 2, data_type = 'market', low_threshold 
     with open('input/'+data_type+'.json', mode, encoding='utf8') as json_file:
         json.dump(save_data, json_file, ensure_ascii=False, indent=4)
 
-def gen_vehicle(n_vehicle, n_items, dump_file, low_threshold = 0, high_threshold = 10000, n_types = 3):
+def gen_vehicle(n_vehicle, n_items, dump_file, low_threshold = 0, high_threshold = 10000, n_types = 3, coef_list = None):
     save_data = {}
-    coef_list = []
-    for _ in range(n_types):
-        coef_list.append(round(random.randint(30, 300)/30, 1))
-    
-
+    if coef_list == None:
+        coef_list = []
+        for _ in range(n_types):
+            coef_list.append(round(random.randint(30, 300)/30, 1))
+        
     for i in range(n_vehicle):
         vehicle_i = {}
         v_type = random.randint(1, 3)

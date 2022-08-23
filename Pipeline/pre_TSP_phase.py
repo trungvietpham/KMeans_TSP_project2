@@ -9,11 +9,8 @@ from time import time
 import numpy as np
 import json
 import sys
-from sklearn.covariance import oas
-
-from sklearn.utils import shuffle
 import os
-from graph_pygame import scale
+
 
 from utils.SupportClass import Cluster
 sys.path.append(os.getcwd())
@@ -27,12 +24,13 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     output_phase1_fname = 'output/KMeans_phase.json'
     dump_file = 'output/pre_TSP_phase.json'
 
-    (n_items, item_list) = load_item_from_text(item_fname)
+    n_items = load_item_from_text(item_fname)
     (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
     (n_vehicles, vehicle_list) = load_vehicle_from_json(vehicle_fname, n_items=n_items)
     convert_coef = get_convert_coef_from_file(convert_coef_fname)
     cluster_data = json.load(open(output_phase1_fname, 'r'))
     n_clusters = len(cluster_data)
+    n_items = vehicle_list[0].capacity_list.shape[0]
 
     summary = []
     details = []
@@ -70,7 +68,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
             child_list.append(int(id))
             for i in range(n_items):
                 mass[i]+=cluster_data[cluster_id]['node_list'][id]["demand"]['Item '+str(i)]
-        cluster_list.append(Cluster(x,y,None, n_cities=n_cities_i, city_id_list=child_list, current_mass=mass, scale_coef=scale_coef_list[cnt]))
+        cluster_list.append(Cluster(x,y,None, n_items=n_items, n_cities=n_cities_i, city_id_list=child_list, current_mass=mass, scale_coef=scale_coef_list[cnt]))
         cnt+=1
         # print('Cluster {}: \n\tChild list = {}\n\tCurrent mass = {}'.format(cnt, child_list, mass))
         # child_list = None
@@ -99,7 +97,7 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     save_data = {}
     for cluster_id in range(n_clusters):
         n_cluster_parent +=1
-        n_child = max(low_n_cluster[cluster_id],1)
+        n_child = 1
 
         #Lấy ra các node nằm trong cluster cha này
         child_city_list = []
@@ -202,4 +200,5 @@ def Pre_TSP_phase(n_node_threshold, vehicle_fname):
     summary.append('\n\n')
     return ('\n'.join(summary), '\n'.join(details))
 
-# Pre_TSP_phase()
+if __name__ == '__main__':
+    Pre_TSP_phase(15, 'input/vehicle_20.json')

@@ -120,6 +120,9 @@ def load_vehicle_from_text(file_name, n_items):
 def load_vehicle_from_json(file_name, n_items):
     data = json.load(open(file_name, 'r'))
     n_vehicles = 0
+    for key in data:
+        n_items = len(data[key]) - 2
+        break
     vehicle_list = []
     id = 0
     for key in data:
@@ -217,7 +220,9 @@ def load_node_from_json(file_name, format, n_items):
     
     f = codecs.open(file_name, 'r', 'utf-8-sig')
     data = json.load(f)
-
+    for key in data[format]: 
+        n_items = len(data[format][key]['demand_list'])
+        break
     n_cities = len(data[format])
     city_list = []
     for node in data[format]:
@@ -247,12 +252,12 @@ def load_item_from_text(file_name):
         data = f.read()
     data = data.split('\n')
     n_items = int(data[0])
-    item_list = []
-    for i in range(n_items):
-        tmp = [data[2*i+1], data[2*i+2]]
-        item_list.append(tmp)
+    # item_list = []
+    # for i in range(n_items):
+    #     tmp = [data[2*i+1], data[2*i+2]]
+    #     item_list.append(tmp)
     
-    return (n_items, item_list)
+    return n_items
 
 
 

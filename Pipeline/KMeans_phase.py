@@ -17,7 +17,7 @@ def KMeans_phase(vehicle_fname):
     city_fname = 'input/market.json'
     convert_coef_fname = 'input/latlong_to_meter_coef.txt'
 
-    (n_items, item_list) = load_item_from_text(item_fname)
+    n_items = load_item_from_text(item_fname)
     #(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
     (n_cities, city_list) = load_node_from_json(city_fname, format='market', n_items=n_items)
     (n_vehicles, vehicle_list) = load_vehicle_from_json(vehicle_fname, n_items=n_items)
@@ -98,3 +98,6 @@ def KMeans_phase(vehicle_fname):
     summary.append('\n\n')
     return ('\n'.join(summary), '\n'.join(details), round((time2-time1)*1000.0, 0))
     # return (summary, details, time in ms)
+
+if __name__ == '__main__':
+    KMeans_phase('input/vehicle_40.json')

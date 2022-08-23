@@ -34,7 +34,7 @@ def TSP_no_Kmeans(n_vehicle = 20):
     depot_data = json.load(codecs.open('input/depot.json', 'r', 'utf-8-sig'))
     dump_file = 'output/TSP_no_KMeans.json'
 
-    (n_items, item_list) = load_item_from_text('input/item.txt')
+    n_items = load_item_from_text('input/item.txt')
     #(n_cities, city_list) = load_node_from_text(city_fname, format='market', n_items=n_items)
     (n_cities, city_list) = load_node_from_json('input/market.json', format='market', n_items=n_items)
     (n_vehicles, vehicle_list) = load_vehicle_from_json('input/vehicle_{}.json'.format(n_vehicle), n_items=n_items)

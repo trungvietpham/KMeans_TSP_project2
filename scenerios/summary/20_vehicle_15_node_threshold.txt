@@ -1,35 +1,33 @@
 1. Generate data: 
-	No gendata
-
-
+	No. vehicles = 20
 2. KMeans clustering phase:
 	Summary: 
-		Converged after 15 steps
+		Converged after 8 steps
 		No. of clusters = No. of vehicles = 20
-		No. of customers = 312
-		No. of good types =  2
-		Total picked capacity = [77345. 75650.] kg
-		Total delivered capacity = [77345. 75650.] kg
-		Total distance = 2059.308 (km)
-		Clustering duration = 2974.0 ms
+		No. of customers = 450
+		No. of good types =  4
+		Total picked capacity = [108724. 111465. 114814. 110912.] kg
+		Total delivered capacity = [108724. 111465. 114814. 110912.] kg
+		Total distance = 1709.463 (km)
+		Clustering duration = 2590.0 ms
 
 
 
 3. Kmeans sub-clustering phase:
 	Summary: 
-		Total try KMeans times = 31
+		Total try KMeans times = 58
 		No. cluster parent = 20
-		Total no. cluster child = 38
-		Total distance = 1791.0 (km)
-		Total time for clustering = 642.0 ms
+		Total no. cluster child = 58
+		Total distance = 872.0 (km)
+		Total time for clustering = 7006.0 ms
 
 
 
 4. TSP phase:
 	Summary: 
-		Total route length = 2031.0 (km)
-		Total time computing TSP = 17650.0 ms
-		Total cost = 2229.346398208812
+		Total route length = 867.0 (km)
+		Total time computing TSP = 15465.0 ms
+		Total cost = 580.0
 
 
 

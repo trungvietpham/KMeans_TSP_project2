@@ -28,7 +28,7 @@ def get_nearest_depot(point, depot_list):
 
 def TSP_phase(n_vehicles = 20):
     #Load correlation 
-    n_items, _ = load_item_from_text('input/item.txt')
+    n_items = load_item_from_text('input/item.txt')
     correlation = json.load(open('input/correlation.json', 'r'))
     cluster_data = json.load(open('output/pre_TSP_phase.json', 'r'))
     depot_data = json.load(codecs.open('input/depot.json', 'r', 'utf-8-sig'))

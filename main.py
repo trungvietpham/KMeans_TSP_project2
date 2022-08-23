@@ -24,8 +24,8 @@ details = []
 summary = []
 adding_to_detail = 'Scenerios: \n'
 gendata_ret = ''
-while gendata_ret not in ['y', 'n']:
-    gendata_ret = input('1. Generate data? (y/n): ')
+while gendata_ret not in ['y']:
+    gendata_ret = input('1. Generate data? (Onlly \'y\' is approved ^^ ): ')
 
 summary.append('1. Generate data: ')
 details.append('1. Generate data: ')
@@ -60,7 +60,6 @@ if gendata_ret == 'y':
     gendata(n_vehicle)
     print('Generate done!')
 else: 
-
     while True:
         try:
             n_vehicle = int(input('Input a number to specify no. of vehicles scenarios: '))

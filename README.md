@@ -1,14 +1,5 @@
-Chạy file main.py, các thông tin output cụ thể được lưu trong folder scenerios
-Để tắt graph pygame, sủ dụng nút esc
-
-Lấy thư viện ở đâu thì để vào code
-Đổi tên figure, tên của trục, Thêm nhãn, ghi trong cụm có bao nhiêu điểm
-
-Dump ra file ngay sau mỗi khi TSP xong 1 route
-setup tương đối kích thước của pygame
-
-scenerios ghi lại kết quả sau mỗi lượt
-
-Cần 1 setting, cập nhật những tham số: n_types, hệ số từng xe
-1 cái note để xem tham số nên trong khoảng nào
-phút 40
+Cài đặt các thư viện cần thiết để chạy project: pip install -r requirements.txt
+Chạy file main.py và thực hiện input theo như yêu cầu trong quá trình chạy
+Cấu hình các thông số cơ bản ở file config.txt, đường dẫn tới file: config/config.txt
+Các lưu ý để cấu hình file config.txt được đặt trong file note.txt, đường dẫn tới file: config/note.txt
+Thông tin về các kịch bản và luồng chạy kịch bản (gồm input, output và các kết quả) trong folder scenerios

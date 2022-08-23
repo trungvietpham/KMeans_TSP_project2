@@ -10,4 +10,6 @@ def compare():
             (str(float(no_kmeans['Distance'])) + ' km', str(no_kmeans['Cost']), str(no_kmeans['Time']) + ' ms')]
 
     df = pd.DataFrame(data, columns=['Distance','Cost', 'Time'], index=['TSP with Kmeans', 'TSP no Kmeans'])
+    print('\n')
     print(df)
+    print('\n')

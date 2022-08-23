@@ -434,6 +434,8 @@ def main():
             if pygame.key.get_pressed()[pygame.K_ESCAPE]:
                 break
             for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    quit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     x_mouse, y_mouse = event.pos                    
                     for i in range(len(nodes_rect)):
