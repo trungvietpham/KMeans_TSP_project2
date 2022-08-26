@@ -33,12 +33,13 @@ details.append('\nDescription: randomly generate demand for each depot, customer
 if gendata_ret == 'y':
     while True:
         try:
-            n_vehicle = input('\tNo. vehicle (type an int number or \'s\' to skip, default = 15) = ')
+            n_vehicle = input('\tNo. vehicle (type an int number in range (5-30) or \'s\' to skip, default = 15) = ')
             if n_vehicle == 's': 
                 n_vehicle = 15
             else: 
                 n_vehicle = int(n_vehicle)
-            break
+            
+            if n_vehicle>=5 and n_vehicle<=30: break
         except ValueError:
             print("Invalid input")
 

@@ -33,6 +33,7 @@ if int((height-100)/3) * 4 <width - 150:
     height = height-100
     width = int(height/3) * 4
 SIZE = width, height
+
 class Graph(object):
     def __init__(self):
         self.nodes = set()
@@ -213,7 +214,7 @@ def convert_lat_long_to_descartes(location_list, x_low, x_high, y_low, y_high):
 def round(point_list):
     return np.round(point_list)
 
-def create_button(rect, text, font_color = (0,0,0), text_color = (255,255,255), size = 16):
+def create_button(rect, text, font_color = (0,0,0), text_color = (255,255,255), size = 50):
     global SCREEN
     color_dark = (100,100,100)
     pygame.draw.rect(SCREEN, font_color, rect)
@@ -232,7 +233,7 @@ def create_button(rect, text, font_color = (0,0,0), text_color = (255,255,255), 
 
 def main():
 
-    offset = [60, 60]
+    offset = [90, 90]
     x_low, y_low = offset
     x_high, y_high = np.array(SIZE) - np.array(offset)
     TSP_data = get_cluster_data()
@@ -396,7 +397,7 @@ def main():
     # Lấy tọa độ của chuột khi drag
     mouse_down = np.zeros(2)
     mouse_up = np.zeros(2)
-
+    w_btn, h_btn = 160, 60
     x_zoom_scaler, y_zoom_scaler = 1, 1
     try:
         init()
@@ -405,16 +406,16 @@ def main():
         while True:
             graph.update()
             pygame.event.pump()
-            home_rect = pygame.Rect(10, 10, 80, 30)
-            zoom_rect = pygame.Rect(110, 10, 80, 30)
-            drag_rect = pygame.Rect(210, 10, 80, 30)
+            home_rect = pygame.Rect(10, 10, w_btn, h_btn)
+            zoom_rect = pygame.Rect(10+w_btn+20, 10, w_btn, h_btn)
+            drag_rect = pygame.Rect(10+2*w_btn+40, 10, w_btn, h_btn)
             tool_bar_rects = [home_rect, zoom_rect, drag_rect]
             
             # Vẽ khung của map để dễ nhìn
-            create_button(pygame.Rect(offset[0]-5, offset[1]-5, SIZE[0] - 2 * (offset[0] - 5), 5), '', grey) # Top
-            create_button(pygame.Rect(offset[0]-5, offset[1]-5, 5, SIZE[1] - 2 * (offset[1] - 5)), '', grey) # Left
-            create_button(pygame.Rect(offset[0]-5, SIZE[1]-offset[1], SIZE[0] - 2 * (offset[0] - 5), 5), '', grey) # Down
-            create_button(pygame.Rect(SIZE[0]-offset[0], offset[1]-5, 5, SIZE[1] - 2 * (offset[1] - 5)), '', grey) # Right
+            create_button(pygame.Rect(offset[0]-5, offset[1]-5, SIZE[0] - 2 * (offset[0] - 5), 5), '', grey, size=35) # Top
+            create_button(pygame.Rect(offset[0]-5, offset[1]-5, 5, SIZE[1] - 2 * (offset[1] - 5)), '', grey, size=35) # Left
+            create_button(pygame.Rect(offset[0]-5, SIZE[1]-offset[1], SIZE[0] - 2 * (offset[0] - 5), 5), '', grey, size=35) # Down
+            create_button(pygame.Rect(SIZE[0]-offset[0], offset[1]-5, 5, SIZE[1] - 2 * (offset[1] - 5)), '', grey, size=35) # Right
 
             create_button(pygame.Rect(0, 0, SIZE[0], offset[1]-5), '', BGCOLOR) # BG top
             create_button(pygame.Rect(0, 0, offset[0]-5, SIZE[1]), '', BGCOLOR) # BG left

@@ -95,12 +95,15 @@ def plotting_for_pre_phase2(show_text_flag = True):
             plt.plot(x_values, y_values, 'bo', linestyle="--", markersize=2, linewidth=1)
             plt.scatter(latitude, longtitude, c=color, marker=marker, s=10)
             plt.scatter(center_child['lat'], center_child['long'], c = 'red', marker='o', s=18)
-            if show_text_flag:
+            if show_text_flag and len(clusters_i['child_cluster_list'])>1:
                 label = f"Id: {clusters_i['cluster_id']}.{child_cluster_index}\nType: Child\nN_childs: {len(clusters_i['child_cluster_list'][child_cluster_index]['node_list'])}"
-                plt.annotate(label, (center_location['lat'], center_location['long']), textcoords = 'offset points', xytext = (0,5), ha ='center', size = 8)
+                plt.annotate(label, (clusters_i['child_cluster_list'][child_cluster_index]['center']['lat'], clusters_i['child_cluster_list'][child_cluster_index]['center']['long']), textcoords = 'offset points', xytext = (0,5), ha ='center', size = 8)
 
         plt.scatter(center_location['lat'], center_location['long'], c='red', marker='o', s = 25)
-    
+        if show_text_flag:
+            label = f"Id: {clusters_i['cluster_id']}\nType: Parent\nN_childs: {len(clusters_i['child_cluster_list'])}"
+            plt.annotate(label, (center_location['lat'], center_location['long']), textcoords = 'offset points', xytext = (0,5), ha ='center', size = 8)
+
     plt.xlabel('latitude', loc = 'right')
     plt.ylabel('longitude', loc = 'top') 
 
@@ -109,8 +112,8 @@ def plotting_for_pre_phase2(show_text_flag = True):
 
 
 if __name__ == '__main__':
-    # a = plotting_for_pre_phase2()
-    b = plotting_for_phase1()
+    a = plotting_for_pre_phase2()
+    # b = plotting_for_phase1()
     plt.show()
 
 # plt.show()
